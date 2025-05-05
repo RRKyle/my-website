@@ -1,3 +1,93 @@
-/* In class homework use a sans serif font on web pages- easier to read */
-/* In class homework for line-height only use em, rem, or percentage */
-/* Instead of a specific selector you can use the universal seletor of * to apply it to everything */
+/* Root selector / Pseudo-class selector */
+:root {
+    --red-color: #961919;
+}
+
+/* Type selectors */
+ body {
+    color:#2c2c2c;
+    /*font-family:'lato', sans-serif;*/
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  
+body {
+    background-color:#c3bfc2;  
+}
+
+h3 {
+    font-size: 115%; 
+    font-variant:small-caps;
+    line-height:1em; 
+    text-align:left;
+}
+
+ul {
+    color:#07506b; 
+}
+
+a {
+    color:#07506b;
+}
+
+    /* If I choose a different color for type selector "a", it changes the color of the names but not the bullets. They remain the same color as the "ul" type selectors. Figure out how to fix that */
+
+ /* ID selector */
+ #header {
+    color:#2c2c2c;
+    font-weight:bold;
+    font-family:'lato', sans-serif;
+    font-variant: small-caps;
+}
+    
+ 
+/* Class selectors */
+ .sub {
+     color:#000000;
+}
+  
+.images {
+    border-width: 0.3rem;
+    border-style: solid;
+    border-color: #0000ff;
+    background-color:#1e90ff; 
+    padding:0.6rem;    
+    margin-top: 1.0rem; /
+    margin-bottom: 1.0rem; /
+}
+
+.back-link {
+    color:#6a5acd;
+    font-weight: 100;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.back-link:hover {
+    color:#483d8b;
+    text-decoration: underline;
+}
+
+.country-list {
+    column-count: 2;
+    column-gap: 2;
+    max-width: 40em;
+    margin: 1rem;
+}
+
+/* Combination selector */
+p.sub strong {
+    color:#000000;
+    font-style: oblique;
+    background-color:#e0f7fa;
+    padding: 0.1em 0.3em;
+    border-radius: 0.2em;
+}
+
+/* Relational selectors */
+section p {    /* Decendant selector */
+       color:#003366; 
+}
+ 
+footer > p {    /* Parent-Child selector*/    
+        text-align: center; 
+        color:var(--red-color)
+}
