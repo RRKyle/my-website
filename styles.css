@@ -6,14 +6,11 @@
 /* Type selectors */
  body {
     color:#2c2c2c;
+    background-color:#c3bfc2;
     /*font-family:'lato', sans-serif;*/
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
   
-body {
-    background-color:#c3bfc2;  
-}
-
 h3 {
     font-size: 115%; 
     font-variant:small-caps;
