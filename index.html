@@ -4,163 +4,198 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta 
-    name="description"
-    content="Description of Website"
-    />
-    <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Description of Website" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Great+Vibes&family=Quicksand&family=Roboto&family=Open+Sans&family=Merriweather&family=montserrat&family=Playfair+Display:wght@600&family=Cinzel:wght@700&family=Raleway:wght@600&family=Cormorant+Garamond&family=Lato&display=swap"
+    rel="stylesheet">
   <title>My Travels</title> <!--new title?-->
 </head>
 
 <body>
-
-  <header>
-    <h1 id="header">Beyond the Barracks: Exploring Europe Together</h1>
-    <!--<h1 id="top">Duty Station Detours: Our Travels Across the Continent</h1>-->
-
-  </header>
-  <main>
-    <section>
-        <!--<h2>Exploration Nation: European Wanderlust</h2>-->
-        <!--<h3>European Wanderlust</h3>-->
-     <h3 class="sub">A Journey of passion-driven discovery across Europe, told from our unique perspective</h3>
-    <section>
-      <p class="sub">While serving on active duty in the Army and stationed in Germany, my wife and I were <strong>incredibly</strong> fortunate to have the opportunity to travel. During the four years we spent there,
-      we were able to visit the following countries:</p>
-    </section>
-      <ul class="country-list">
-        <li><a href="#germany">Germany</a></li>
-        <li><a href="#italy">Italy</a></li>
-        <li><a href="#iceland">Iceland</a></li>
-        <li><a href="#poland">Poland</a></li>
-        <li><a href="#scotland">Scotland</a></li>
-        <li><a href="#romania">Romania</a></li>
-        <li><a href="#austria">Austria</a></li>
-        <li><a href="#france">France</a></li>
-        <li><a href="#normandy tour">Normandy Tour</a></li>
-        <li><a href="#game of thrones tours">Game of Thrones Tours</a></li>
-      </ul>
-      <!--Will each country be a link to it's own page? How much input and detail per page?Should the content be kept to a minimum to avoid spiraling into a monster sized project?-->
-    </section>
-      <h2 class="sub">Exploration Nation: European Wanderlust</h2>
-      <!--<h3>European Wanderlust</h3>-->
+  <div class="overlay">
+    
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="html/photos.html">Photo Gallery</a></li>
+          <li><a href="html/tbd.html">TBD</a></li>
+          <li><a href="html/tbd2.html">TBD</a></li>
+        </ul>
+      </nav>
+      <main>
+      <header>
+      <h1 class="header">Beyond the Barracks: Exploring Europe Together</h1>
+      </header>
+      <section>
+        <!--<h3 class="header">A Journey of passion-driven discovery across Europe, told from our unique perspective</h3>-->
+        <section>
+          <p class="emphasis">While serving on active duty in the Army and stationed in Germany, my wife and I were
+            incredibly fortunate to embark on <em>a journey of passion-fueled discovery throughout Europe</em>. Over the
+            course of four unforgettable years, <em>we explored</em> the continent <em>through our own unique lens,</em>
+            creating lasting memories and gaining a deeper appreciation for its cultures, history, and <strong>wondrous
+              landscapes</strong>. Each country we visited offered something distinct—whether it was breathtaking
+            scenery, rich traditions, or meaningful personal experiences. The following is just a small glimpse into the
+            places that helped shape our experience—<em>capturing</em> only a fraction of <em>the unforgettable moments
+              we were grateful to share</em> along the way:
+          </p>
+        </section>
+        <ul id="country-list">
+          <li><a href="#germany">Germany</a></li>
+          <li><a href="#italy">Italy</a></li>
+          <li><a href="#iceland">Iceland</a></li>
+          <li><a href="#romania">Romania</a></li>
+          <li><a href="#austria">Austria</a></li>
+          <li><a href="#france">France</a></li>
+        </ul>
+        <!--Will each country be a link to it's own page? How much input and detail per page?Should the content be kept to a minimum to avoid spiraling into a monster sized project?-->
+      </section>
+      <h2 id="sub">Exploration Nation: European Wanderlust</h2>
       <!--Do I want pictures/thumbnails on main page or just links to the country and pictures?-->
-    <section id="germany">
-      <h3>Germany</h3>
-      <p>Add one sentence representing Deutschland</p>
-      <ul>
-        <li>Munich</li>
-        <li>Nuremberg</li>
-        <li>Garmish</li>
-        <li>Berlin</li>
-      </ul>
-      <p><a href="#top" class="back-link">Back to top</a></p>
-    </section>
 
-    <section id="italy">
-      <h3>Italy</h3>
-      <p>Add one sentence representing Italia</p>
-      <ul>
-        <li>Rome</li>
-        <li>Pompeii</li>
-        <li>Venice</li>
-        <li>Milan</li>
-      </ul>
-      <p><a href="#top" class="back-link">Back to top</a></p>
-    </section>
+      <section id="germany" class="country-block">
+        <h3 class="country-header">
+          <span class="country-title">
+            <span class="flag">🇩🇪</span> GERMANY
+          </span>
+        </h3>
 
-    <section id="iceland">
-      <h3>Iceland: Land of Fire &amp; Ice</h3>
-      <p>Add one sentence representing Ísland</p>
-      <ul>
-        <li>Reykjavík</li>
-        <li>TBD</li> <!--Add city or site like the volcano or falls-->
-      </ul>
-      <p><a href="#top" class="back-link">Back to top</a></p>
-    </section>
+        <figure class="photo-frame">
+          <img src="images/Neuschwanstein_Castle.png" alt="Neuschwanstein Castle in Bavaria">
+          <figcaption>Neuschwanstein Castle, the fairy-tale icon of Bavaria</figcaption>
+        </figure>
 
-    <section id="poland">
-      <h3>Poland</h3>
-      <p>Add one sentence representing Polska</p>
-      <ul>
-        <li>Krakow</li>
-        <li>Warsaw</li>
-        <li>boleslawiec</li>
-      </ul>
-      <p><a href="#top" class="back-link">Back to top</a></p>
-    </section>
+        <p class="tag-line">Add one sentence representing Deutschland. More on Germany <a href="html/germany.html" class="accent-link"> HERE</a></p>
 
-    <section id="scotland">
-      <h3>Scotland</h3>
-      <p>Add one sentence representing Alba (Scots Gaelic)</p>
-      <ul>
-        <li>Edinburgh</li>
-        <li>Glasgow</li>
-        <li>Loch Ness</li>
-        <img class="images" src="images/nessie.jpg" alt="A picture of Loch Ness and 'Nessie'" width="300px">
-      </ul>
-      <p><a href="#top" class="back-link">Back to top</a></p>
-    </section>
+        <ul class="globe-list">
+          <li>Munich</li>
+          <li>Nuremberg</li>
+          <li>Garmisch</li>
+          <li>Berlin</li>
+        </ul>
 
-    <section id="romania">
-      <h3>Romania</h3>
-      <p>Add one sentence representing România</p>
-      <ul>
-        <li>Transylvania</li> <!--Dracula's Castle-->
-        <li>Bucharest</li>
-      </ul>
-      <p><a href="#top" class="back-link">Back to top</a></p>
-    </section>
+        <p><a href="#top" class="back-link">Back to top <i class="fas fa-turn-up"></i></a></p>
+      </section>
 
-    <section id="austria">
-      <h3>Austria</h3>
-      <p>Add one sentence representing Österreich</p>
-      <ul>
-        <li>Vienna</li>
-        <li>Salzburg</li> <!--Include Sound of Music tour?-->
-        <li>Bad Goisern</li> <!--Krampusnacht-->
-      </ul>
-      <p><a href="#top" class="back-link">Back to top</a></p>
-    </section>
+      <section id="italy" class="country-block">
+        <h3 class="country-header">
+          <span class="country-title">
+            <span class="flag">🇮🇹</span> ITALY
+          </span>
+        </h3>
 
-    <section id="france">
-      <h3>France</h3>
-      <p>Add one sentence representing la France</p>
-      <ul>
-        <li>Paris</li>
-        <li>Strasbourg</li>
-        <li>Le Mont-Saint-Michel</li>
-        <img class="images" src="images/mont-saint-michel.jpg" alt="A picture of beautiful Mont Saint-Michel" width="300px">
-      </ul>
-      <p><a href="#top" class="back-link">Back to top</a></p>
-    </section>
+        <figure class="photo-frame">
+          <img src="images/tbd.png" alt="tbd">
+          <figcaption>TBD</figcaption>
+        </figure>
 
-    <section id="normandy-tour">
-      <!--Normandy tour or WWII historical sites to include Battle of the Bulge and Eagles Nest-->
-      <h3>Normandy Tour</h3>
-      <ul>
-        <li>Beaches</li>
-        <li>Cemetery</li>
-        <li>Caen</li>
-      </ul>
-      <p><a href="#top" class="back-link">Back to top</a></p>
-    </section>
+        <p class="tag-line">Italia: Where old ruins and modern life come together More on Italy <a href="html/italy.html" class="accent-link"> HERE</a></p>
 
-    <section id="game-of-thrones-tours">
-      <h3>Game of Thrones Tours</h3>
-      <ul>
-        <li>Northern Ireland, UK</li>
-        <li>Dubrovnik, Croatia</li>
-        <li>Kirkjufell, Iceland</li>
-      </ul>
-      <p><a href="#top" class="back-link">Back to top</a></p>
-    </section>
-  </main>
+        <ul class="globe-list">
+          <li>Rome</li>
+          <li>Pompeii</li>
+          <li>Venice</li>
+          <li>Milan</li>
+        </ul>
+        <p><a href="#top" class="back-link">Back to top <i class="fas fa-turn-up"></i></a></p>
+      </section>
 
-  <footer>
-    <p>&copy; rrk / 2025 My Travel Log</p>
-  </footer>
-        <!-- Do a Photo Gallery page that has pics from these and others that aren't listed -->
+      <section id="iceland" class="country-block">
+        <h3 class="country-header">
+          <span class="country-title">
+            <span class="flag">🇮🇸</span> ICELAND
+          </span>
+        </h3>
+
+        <figure class="photo-frame">
+          <img src="images/tbd.png" alt="tbd">
+          <figcaption>TBD</figcaption>
+        </figure>
+
+        <p class="tag-line">Ísland: The Land of Fire &amp; Ice. More on Iceland <a href="html/iceland.html" class="accent-link"> HERE</a></p>
+
+        <ul class="globe-list">
+          <li>Reykjavík</li>
+          <li>TBD</li> <!--Add city or site like the volcano or falls-->
+        </ul>
+        <p><a href="#top" class="back-link" >Back to top <i class="fas fa-turn-up"></i></a></p>
+      </section>
+
+      <section id="romania" class="country-block">
+        <h3 class="country-header">
+          <span class="country-title">
+            <span class="flag">🇷🇴</span> ROMANIA
+          </span>
+        </h3>
+        <figure class="photo-frame">
+          <img src="images/vlad_castle.jpg" alt="A picture of vlad the impaler's castle">
+          <figcaption>Bran Castle, commonly linked to the Dracula legend</figcaption>
+        </figure>
+
+        <p class="tag-line">România: Beyond Dracula. From Transylvania to timeless village life. More on Romania <a href="html/romania.html" class="accent-link"> HERE</a></p>
+
+        <ul class="globe-list">
+          <li>Transylvania</li>
+          <li>Bucharest</li>
+        </ul>
+
+        <p><a href="#top" class="back-link">Back to top <i class="fas fa-turn-up"></i></a></p>
+      </section>
+
+      <section id="austria" class="country-block">
+        <h3 class="country-header">
+          <span class="country-title">
+            <span class="flag">🇦🇹</span> AUSTRIA
+          </span>
+        </h3>
+
+        <figure class="photo-frame">
+          <img src="images/Vienna.png" alt="vienna at Christmas">
+          <figcaption>Christmas market in Vienna, Austria</figcaption>
+        </figure>
+
+        <p class="tag-line">Tag line here. More on Österreich <a href="html/austria.html" class="accent-link"> HERE</a></p>
+
+        <ul class="globe-list">
+          <li>Vienna</li>
+          <li>Salzburg</li> <!--Include Sound of Music tour?-->
+          <li>Bad Goisern</li> <!--Krampusnacht-->
+        </ul>
+
+        <p><a href="#top" class="back-link">Back to top <i class="fas fa-turn-up"></i></a></p>
+      </section>
+
+      <section id="france" class="country-block">
+        <h3 class="country-header">
+          <span class="country-title">
+            <span class="flag">🇫🇷</span> FRANCE
+          </span>
+        </h3>
+        <figure class="photo-frame">
+          <img src="images/mont-saint-michel.jpg" alt="A picture of beautiful Mont Saint-Michel">
+          <figcaption>The calm charm of Mont-Saint-Michel at low tide</figcaption>
+        </figure>
+
+        <p class="tag-line">Add one sentence representing la France. More on la France <a href="html/france.html" class="accent-link"> HERE</a></p>
+
+        <ul class="globe-list">
+          <li>Paris</li>
+          <li>Strasbourg</li>
+          <li>Normandy</li>
+          <li>Le Mont-Saint-Michel</li>
+        </ul>
+
+        <p><a href="#top" class="back-link">Back to top <i class="fas fa-turn-up"></i></a></p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; rrk / 2025 My Travel Log</p>
+    </footer>
+    <!-- Do a Photo Gallery page that has pics from these and others that aren't listed -->
+  </div>
 </body>
-
 </html>
