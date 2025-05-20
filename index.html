@@ -9,39 +9,39 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Great+Vibes&family=Quicksand&family=Roboto&family=Open+Sans&family=Merriweather&family=montserrat&family=Playfair+Display:wght@600&family=Cinzel:wght@700&family=Raleway:wght@600&family=Cormorant+Garamond&family=Lato&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico:wght@400;500;600;700;800&family=Great+Vibes&family=Quicksand&family=Roboto:wght@400;500;600;700;800&family=Open+Sans&family=Merriweather&family=Montserrat&family=Playfair+Display:wght@600&family=Cinzel:wght@700&family=Raleway:wght@600&family=Cormorant+Garamond&family=Lato&display=swap"
     rel="stylesheet">
   <title>My Travels</title> <!--new title?-->
 </head>
 
 <body>
   <div class="overlay">
-    
-      <nav id="nav-menu">
-        <ul>
-          <li><a href="index.html" class="current">Home</a></li>
-          <li><a href="html/photos.html">Photo Gallery</a></li>
-          <li><a href="html/tbd.html">TBD</a></li>
-          <li><a href="html/tbd2.html">TBD</a></li>
-        </ul>
-      </nav>
-      <main>
+
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="html/photos.html">Photo Gallery</a></li>
+        <li><a href="html/tbd.html">TBD</a></li>
+        <li><a href="html/tbd2.html">TBD</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="laurel"></div>
       <header>
-      <h1 class="header">Beyond the Barracks: Exploring Europe Together</h1>
+        <h1 class="header">Beyond the Barracks: Exploring Europe Together</h1>
       </header>
       <section>
-        <!--<h3 class="header">A Journey of passion-driven discovery across Europe, told from our unique perspective</h3>-->
-        <section>
-          <p class="emphasis">While serving on active duty in the Army and stationed in Germany, my wife and I were
-            incredibly fortunate to embark on <em>a journey of passion-fueled discovery throughout Europe</em>. Over the
-            course of four unforgettable years, <em>we explored</em> the continent <em>through our own unique lens,</em>
-            creating lasting memories and gaining a deeper appreciation for its cultures, history, and <strong>wondrous
-              landscapes</strong>. Each country we visited offered something distinct—whether it was breathtaking
-            scenery, rich traditions, or meaningful personal experiences. The following is just a small glimpse into the
-            places that helped shape our experience—<em>capturing</em> only a fraction of <em>the unforgettable moments
-              we were grateful to share</em> along the way:
-          </p>
-        </section>
+        <!--<section>-->
+        <p class="emphasis">While serving on active duty in the Army and stationed in Germany, my wife and I were
+          incredibly fortunate to embark on <em>a journey of passion-fueled discovery throughout Europe</em>. Over the
+          course of four unforgettable years, <em>we explored</em> the continent <em>through our own unique lens,</em>
+          creating lasting memories and gaining a deeper appreciation for its cultures, history, and <strong>wondrous
+            landscapes</strong>. Each country we visited offered something distinct—whether it was breathtaking
+          scenery, rich traditions, or meaningful personal experiences. The following is just a small glimpse into the
+          places that helped shape our experience—<em>capturing</em> only a fraction of <em>the unforgettable moments
+            we were grateful to share</em> along the way:
+        </p>
+        <!--</section>-->
         <ul id="country-list">
           <li><a href="#germany">Germany</a></li>
           <li><a href="#italy">Italy</a></li>
@@ -50,7 +50,6 @@
           <li><a href="#austria">Austria</a></li>
           <li><a href="#france">France</a></li>
         </ul>
-        <!--Will each country be a link to it's own page? How much input and detail per page?Should the content be kept to a minimum to avoid spiraling into a monster sized project?-->
       </section>
       <h2 id="sub">Exploration Nation: European Wanderlust</h2>
       <!--Do I want pictures/thumbnails on main page or just links to the country and pictures?-->
@@ -63,18 +62,25 @@
         </h3>
 
         <figure class="photo-frame">
-          <img src="images/Neuschwanstein_Castle.png" alt="Neuschwanstein Castle in Bavaria">
-          <figcaption>Neuschwanstein Castle, the fairy-tale icon of Bavaria</figcaption>
+          <!-- Adds the linkk to an external website -->
+          <a href="https://www.neuschwanstein.de/englisch/tourist/index.htm" target="blank" rel="noopener noreferrer">
+            <img src="images/Neuschwanstein_Castle.png" alt="Neuschwanstein Castle in Bavaria">
+          </a>
+            <figcaption>Neuschwanstein Castle, the fairy-tale icon of Bavaria</figcaption>
         </figure>
 
-        <p class="tag-line">Add one sentence representing Deutschland. More on Germany <a href="html/germany.html" class="accent-link"> HERE</a></p>
-
-        <ul class="globe-list">
+        <p class="tag-line">Deutschland: Alpine trails, medieval tales, and beer that tells its own story.
+           <a href="html/germany.html" class="accent-link">MORE HERE</a></p>
+        <!-- Commented out below to see how it looks on the individual page -->
+         
+        <!-- North sea winds, Bavarian steins, fests, and centuries in between -->
+        
+        <!--<ul class="globe-list">
           <li>Munich</li>
           <li>Nuremberg</li>
           <li>Garmisch</li>
           <li>Berlin</li>
-        </ul>
+        </ul>-->
 
         <p><a href="#top" class="back-link">Back to top <i class="fas fa-turn-up"></i></a></p>
       </section>
@@ -87,11 +93,12 @@
         </h3>
 
         <figure class="photo-frame">
-          <img src="images/tbd.png" alt="tbd">
-          <figcaption>TBD</figcaption>
+          <img src="images/venice.png" alt="Venice, Italy">
+          <figcaption>Venice, Italy</figcaption>
         </figure>
 
-        <p class="tag-line">Italia: Where old ruins and modern life come together More on Italy <a href="html/italy.html" class="accent-link"> HERE</a></p>
+        <p class="tag-line">Italia: Where old ruins and modern life come together. <a href="html/italy.html"
+            class="accent-link">MORE HERE</a></p>
 
         <ul class="globe-list">
           <li>Rome</li>
@@ -110,17 +117,18 @@
         </h3>
 
         <figure class="photo-frame">
-          <img src="images/tbd.png" alt="tbd">
-          <figcaption>TBD</figcaption>
+          <img src="images/iceland.jpg" alt="iceland">
+          <figcaption>Þingvallakirkja, quietly nestled in the heart of Þingvellir</figcaption>
         </figure>
 
-        <p class="tag-line">Ísland: The Land of Fire &amp; Ice. More on Iceland <a href="html/iceland.html" class="accent-link"> HERE</a></p>
+        <p class="tag-line">Ísland: Where fire and ice forged a Viking legacy. <a href="html/iceland.html"
+            class="accent-link">MORE HERE</a></p>
 
         <ul class="globe-list">
           <li>Reykjavík</li>
           <li>TBD</li> <!--Add city or site like the volcano or falls-->
         </ul>
-        <p><a href="#top" class="back-link" >Back to top <i class="fas fa-turn-up"></i></a></p>
+        <p><a href="#top" class="back-link">Back to top <i class="fas fa-turn-up"></i></a></p>
       </section>
 
       <section id="romania" class="country-block">
@@ -130,11 +138,14 @@
           </span>
         </h3>
         <figure class="photo-frame">
-          <img src="images/vlad_castle.jpg" alt="A picture of vlad the impaler's castle">
+          <a href="https://bran-castle.com/" target="blank" rel="noopener noreferrer">
+            <img src="images/vlad_castle.jpg" alt="A picture of vlad the impaler's castle">
+          </a>
           <figcaption>Bran Castle, commonly linked to the Dracula legend</figcaption>
         </figure>
 
-        <p class="tag-line">România: Beyond Dracula. From Transylvania to timeless village life. More on Romania <a href="html/romania.html" class="accent-link"> HERE</a></p>
+        <p class="tag-line">România: Beyond Dracula. From Transylvania to timeless village life. <a
+            href="html/romania.html" class="accent-link">MORE HERE</a></p>
 
         <ul class="globe-list">
           <li>Transylvania</li>
@@ -156,7 +167,8 @@
           <figcaption>Christmas market in Vienna, Austria</figcaption>
         </figure>
 
-        <p class="tag-line">Tag line here. More on Österreich <a href="html/austria.html" class="accent-link"> HERE</a></p>
+        <p class="tag-line">Österreich: The Alps, the Von Trapps, and a dash of Krampus. <a href="html/austria.html"
+            class="accent-link">MORE HERE</a></p>
 
         <ul class="globe-list">
           <li>Vienna</li>
@@ -178,7 +190,8 @@
           <figcaption>The calm charm of Mont-Saint-Michel at low tide</figcaption>
         </figure>
 
-        <p class="tag-line">Add one sentence representing la France. More on la France <a href="html/france.html" class="accent-link"> HERE</a></p>
+        <p class="tag-line">La France: From medieval strongholds to the shores of liberation. <a href="html/france.html"
+            class="accent-link">MORE HERE</a></p>
 
         <ul class="globe-list">
           <li>Paris</li>
@@ -198,4 +211,5 @@
     <!-- Do a Photo Gallery page that has pics from these and others that aren't listed -->
   </div>
 </body>
+
 </html>
