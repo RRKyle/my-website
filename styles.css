@@ -12,7 +12,7 @@ body {
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-    font-family: 'lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .overlay {
@@ -33,7 +33,7 @@ h3 {
 /* === Nav Menu === */
 #nav-menu {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 4rem;
     padding: 0 1rem;
 }
 
@@ -58,11 +58,13 @@ h3 {
     text-decoration: none;
     background-color: #6b8e23;
     color: #ffffff;
-    font-weight: bold;
     border-radius: 2rem;
     text-align: center;
     transition: background-color 0.3s ease;
     white-space: nowrap;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
 }
 
 #nav-menu ul li a.lastitem {
@@ -79,38 +81,54 @@ h3 {
 }
 
 /* === Header === */
+/* Keep laurel? */
+.laurel {
+  height: 30px; /* Adjust based on image height */
+  background-image: url("images/laurel.png"); /* Use your uploaded path */
+  background-repeat: repeat-x;
+  background-size: auto 100%; /* Scale height, let width repeat naturally */
+  background-position: center;
+  margin: 3rem auto;
+  width: 100%;
+}
+
 .header {
-    font-weight: bolder;
-    font-variant: small-caps;
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-variant: small-caps;
+    font-weight: 700;
+    font-size: 3.5rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 #sub {
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 section p {
-    font-size: 120%;
+    font-size: 1.2rem;
     color: #556b2f;
     line-height: 1.6;
     margin-bottom: 1rem;
     font-weight: 700;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* === Country Selector Links === */
 #country-list {
     list-style: none;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
     justify-content: center;
-    font-size: 125%;
 }
 
 #country-list a {
@@ -121,9 +139,11 @@ section p {
     border-radius: 2rem;
     background-color: rgba(255, 255, 255, 0.7);
     color: #4b5320;
-    font-weight: bolder;
     border: 2px solid #3b5f6f;
     transition: all 0.3s ease;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
 }
 
 #country-list a:hover {
@@ -152,7 +172,7 @@ section p {
 }
 
 .country-block:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .country-block h3 {
@@ -193,49 +213,60 @@ section p {
 .emphasis em {
     color: #2e4600;
     background-color: #cddbb0;
-    padding: 0.05em 0.2em;
+    padding: 0 0.7em;
     border-radius: 0.2em;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
     font-family: 'Pacifico', cursive;
 }
 
 /* === City List with Globe Icons === */
+/* Need to figure out if I want these on the homepage or individual pages */
 .globe-list {
     color: #4b5320;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    display: /*grid*/flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*grid-template-columns: repeat(2, 1fr);*/
+    gap: /*1rem*/6rem;
     list-style: none;
     /*list-style-position: inside;*//*uncomment if I decide to go back to bullets*/
     padding: 0;
-    margin: 1.5rem 0;
+    margin: /*1.5rem 0*/2rem auto;
     width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'quicksand', sans-serif;
+    /*margin-left: auto;
+    margin-right: auto;*/
 }
 
 .globe-list li {
-    padding-left: 30px;
+    white-space: nowrap;
+    /*margin-right: 1rem;*/
+    margin-bottom: /*0.5em*/0;
+    padding-left: /*30px*/0;
+    display: flex;
+    align-items: center;
     position: relative;
-    text-align: left;
-    margin-bottom: 0.5em;
+    text-align: /*left*/center;
     font-weight: 600;
-    font-family: 'quicksand', sans-serif;
+    font-size: 1.7rem;
+    font-family: 'Roboto', sans-serif;/*'quicksand', sans-serif*/;
 }
 
 .globe-list li::before {
     content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    display: inline-block;
     width: 30px;
     height: 30px;
     background-image: url('images/globe-glow.svg');
     background-size: contain;
     background-repeat: no-repeat;
+    margin-right: 0.5rem;
+    position: static;
+    /*left: 0;
+    top: 50%;
+    transform: /*translateY(-50%);*/
+    vertical-align: middle;
 }
 
 .globe-list li:hover::before {
@@ -276,40 +307,6 @@ section p {
     border-radius: 0 0 1rem 0;
     margin-top: 0.5rem;
     font-style: italic;
-}
-
-/* === Responsive Layout === */
-@media (max-width: 600px) {
-    .globe-list {
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-
-    .globe-list li {
-        text-align: center;
-    }
-
-    .country-block {
-        padding: 0.8rem;
-        border-width: 4px;
-    }
-
-    .photo-frame {
-        max-width: 90%;  /* Shrinks to fit smaller screens */
-    }
-
-     #nav-menu ul {
-        gap: 0.5rem;
-        flex-direction: column;
-        align-items: center;        
-    }
-    
-    #nav-menu ul li a {
-        padding: 0.5em 1em;
-        font-size: 0.9rem;
-        width: 100%;
-        max-width: 200px;
-    }
 }
 
 /* === Back to Top === */
@@ -384,4 +381,77 @@ article {
     column-count: 3;
     column-gap: 2em;
     column-rule: 2px solid #000000;
+}
+
+/* === Country Pages === */
+.photo-collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.photo-collage figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.photo-collage img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.photo-collage figcaption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 0.9rem;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* === Responsive Layout === */
+@media (max-width: 600px) {
+    .globe-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        /*grid-template-columns: 1fr;
+        justify-items: center;*/
+    }
+
+    .globe-list li {
+        text-align: center;
+    }
+
+    .country-block {
+        padding: 0.8rem;
+        border-width: 4px;
+    }
+
+    .photo-frame {
+        max-width: 90%;  /* Shrinks to fit smaller screens */
+    }
+
+     #nav-menu ul {
+        gap: 0.5rem;
+        flex-direction: column;
+        align-items: center;        
+    }
+    
+    #nav-menu ul li a {
+        padding: 0.5em 1em;
+        font-size: 0.9rem;
+        width: 100%;
+        max-width: 200px;
+    }
 }
