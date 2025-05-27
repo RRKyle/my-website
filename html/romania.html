@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico:wght@400;500;600;700;800&family=Indie+Flower&family=Great+Vibes&family=Quicksand&family=Roboto:wght@400;500;600;700;800&family=Open+Sans&family=Merriweather&family=Montserrat&family=Playfair+Display:wght@600&family=Cinzel:wght@700&family=Raleway:wght@600&family=Cormorant+Garamond&family=Lato&family=Crimson+Text&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/romania.css">
     <link rel="stylesheet" href="../styles.css">
     <title>Romania</title>
 </head>
@@ -13,30 +17,75 @@
         <nav id="nav-menu">
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="photos.html">Photo Gallery</a></li>
-                <li><a href="tbd.html">TBD</a></li>
-                <li><a href="tbd2.html">TBD</a></li>
+                <li><a href="/html/photos.html">Photos</a></li>
+                <li class="dropdown">
+                    <!--<a href="#" class="dropdown-pill" onclick="event.preventDefault();">Countries</a>-->
+                    <button class="dropdown-pill">Countries</button>
+                    <div class="dropdown-content">
+                        <a href="/html/germany.html">Germany</a>
+                        <a href="/html/italy.html">Italy</a>
+                        <a href="/html/iceland.html">Iceland</a>
+                        <a href="/html/romania.html">Romania</a>
+                        <a href="/html/austria.html">Austria</a>
+                        <a href="/html/france.html">France</a>
+                    </div>
+                </li>
             </ul>
         </nav>
         <main>
             <header>
-                <h1 class="header">România</h1>
+                <div class="section-title-fade">
+                    <span class="line-fade"></span>
+                    <img src="/images/big-flags/ro.png" alt="Romanian flag left" class="header-flag">
+                    <h1 class="header">România</h1>
+                    <img src="/images/big-flags/ro.png" alt="Romanian flag right" class="header-flag">
+                    <span class="line-fade"></span>
+                </div>
             </header>
+
             <section>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem
-                placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
-                Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia
-                integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per
-                conubia nostra inceptos himenaeos.</p>
+                <div class="visited">
+                    <h4>Just a Small Sampling of Our Pin Drops:</h4>
+                    <ul class="visited-grid">
+                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Bucharest</li>
+                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Brașov</li>
+                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Transylvania
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section>
+                <div class="text-page">
+                    <p>Driving through Romania's Carpathian Mountains felt like crossing into a Gothic landscape. The
+                        winding roads carved through dense forests and misty peaks, creating an atmosphere both serene
+                        and mysterious. As we entered Transylvania, the landscape grew even more dramatic—rolling hills
+                        dotted with rustic villages, fortified churches, and medieval watchtowers that seemed untouched
+                        by time. One of the most memorable stops was Bran Castle, often linked to the Dracula legend.
+                        Perched atop a rocky cliff, its towering spires and shadowy stone walls invited us in. We were
+                        able to tour both the interior and exterior of the castle, exploring narrow staircases,
+                        antique-filled rooms, and panoramic balconies that brought the region's history and lore vividly
+                        to life.</p>
+                    <div class="line-fade"></div>
+                    <p>We spent time in Brașov, a charming city nestled beneath the Carpathians with colorful baroque
+                        buildings, cozy cafés, and a lively central square. Its Black Church and narrow Rope Street
+                        offered a unique blend of history and whimsy. Finally, our journey led us to Bucharest,
+                        Romania's capital, where centuries-old Orthodox churches sit beside grand communist-era
+                        buildings. The city's energy was distinct—part old-world charm, part modern revival—making it a
+                        fitting end to a road trip filled with contrasts, legends, and unforgettable views.</p>
+                </div>
+
                 <section class="photo-collage">
-                   <figure>
-                      <img src="../images/romania..." alt="romania...">
-                      <figcaption>Description</figcaption>
-                   </figure>
-                   <figure>
-                      <img src="../images/romania..." alt="romania...">
-                      <figcaption>Description</figcaption>
-                   </figure>
+                    <figure>
+                        <img src="../images/romania..." alt="romania...">
+                        <figcaption>Description</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/romania..." alt="romania...">
+                        <figcaption>Description</figcaption>
+                    </figure>
                 </section>
             </section>
         </main>

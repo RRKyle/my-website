@@ -2,45 +2,140 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
-    <title>Iceland</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico:wght@400;500;600;700;800&family=Indie+Flower&family=Great+Vibes&family=Quicksand&family=Roboto:wght@400;500;600;700;800&family=Open+Sans&family=Merriweather&family=Montserrat&family=Playfair+Display:wght@600&family=Cinzel:wght@700&family=Raleway:wght@600&family=Allura&family=Satisfy&family=Cormorant+Garamond&family=Lato&family=Crimson+Text&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../CSS/iceland.css">
+  <title>Iceland</title>
 </head>
 
 <body>
-    <div class="overlay">
-        <nav id="nav-menu">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="photos.html">Photo Gallery</a></li>
-                <li><a href="tbd.html">TBD</a></li>
-                <li><a href="tbd2.html">TBD</a></li>
-            </ul>
-        </nav>
-        <main>
-            <header>
-                <h1 class="header">Ísland</h1>
-            </header>
-            <section>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem
-                placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
-                Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia
-                integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per
-                conubia nostra inceptos himenaeos.</p>
-                <section class="photo-collage">
-                   <figure>
-                      <img src="../images/iceland-city.jpg" alt="Reykjavík, Iceland">
-                      <figcaption>Reykjavík, Iceland</figcaption>
-                   </figure>
-                   <figure>
-                      <img src="../images/icelandic-horses.jpg" alt="icelandic-horses">
-                      <figcaption>Icelandic Horses</figcaption>
-                   </figure>
-                </section>
-            </section> 
-        </main>
-        <p><a href="../index.html" class="return-link">← Return to Homepage</a></p>
-    </div>
+  <div class="overlay">
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="/html/photos.html">Photos</a></li>
+        <li class="dropdown">
+          <button class="dropdown-pill">
+            Countries<i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/html/germany.html">Germany</a>
+            <a href="/html/italy.html">Italy</a>
+            <a href="/html/iceland.html">Iceland</a>
+            <a href="/html/romania.html">Romania</a>
+            <a href="/html/austria.html">Austria</a>
+            <a href="/html/france.html">France</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <header>
+        <div class="section-title-fade">
+          <span class="line-fade"></span>
+          <img src="/images/big-flags/is.png" alt="Icelandic flag left" class="header-flag">
+          <h1 class="header">Ísland</h1>
+          <img src="/images/big-flags/is.png" alt="Icelandic flag right" class="header-flag">
+          <span class="line-fade"></span>
+        </div>
+      </header>
+
+      <section>
+        <div class="section-title-fade">
+          <span class="line-fade"></span>
+          <h4 class="visited">A Few of Our Pin Drops:</h4>
+          <span class="line-fade"></span>
+        </div>
+      </section>
+      <section>
+        <ul class="visited-grid">
+          <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop-icon">Reykjavík</li>
+          <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop-icon">Þingvellir National Park
+          </li>
+          <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop-icon">Strokkur Geyser</li>
+        </ul>
+      </section>
+
+      <section>
+        <div class="text-page">
+          <p>We had an incredible time visiting Iceland—it's easily one of the most unique (and coldest) places we've
+            ever
+            been. We started our trip in Reykjavík, hoping to catch a glimpse of the Northern Lights, but unfortunately,
+            the weather didn't cooperate. It was too cloudy and snowy, so the lights stayed hidden—we searched for that
+            elusive Aurora not just in Iceland, but across much of Europe, and no matter where we went, we missed it.
+          </p>
+          <div class="line-fade"></div>
+          <p>The capital city of Reykjavík had a cool mix of modern style and quirky charm, with colorful buildings and
+            plenty of cozy spots to grab a coffee. You could still feel the roots of its Viking heritage woven into
+            everyday life. From there, we got to see some of Iceland's wild natural beauty. One of the most
+            unforgettable
+            moments was standing between the North American and Eurasian tectonic plates at Þingvellir National
+            Park—pretty surreal to be literally walking between continents. The Icelandic horses, brought to Iceland by
+            Norse settlers ceturies ago, were pretty cool as well</p>
+          <div class="line-fade"></div>
+          <p>Continuing on outside of the city, the scenery just kept getting better. We saw powerful waterfalls like
+            Gullfoss and Seljalandsfoss, and incredible geysers like Strokkur that shot boiling water straight into the
+            air every few minutes like nature's own fountain. One of the highlights for us was the Game of Thrones tour.
+            Even though some of the filming locations from the show were difficult to fully take in due to the snow,
+            seeing them in real life was a blast, especially since the landscapes already feel straight out of fantasy.
+            Iceland really is like nowhere else—raw, beautiful, and full of surprises.</p>
+        </div>
+        <section class="cork-board">
+          <figure class="photo photo1">
+            <a href="../images/iceland-city.jpg" target="blank">
+              <img src="../images/iceland-city.jpg" alt="Reykjavík, Iceland">
+            </a>
+            <figcaption>Reykjavík, Iceland</figcaption>
+          </figure>
+          <figure class="photo photo2">
+            <a href="../images/icelandic-horses.jpg" target="blank">
+              <img src="../images/icelandic-horses.jpg" alt="icelandic horses">
+            </a>
+            <figcaption>Icelandic Horses</figcaption>
+          </figure>
+          <figure class="photo photo3">
+            <a href="../images/iceland-plates.jpg" target="blank">
+              <img src="../images/iceland-plates.jpg" alt="iceland tectonic plates">
+            </a>
+            <figcaption>Tectonic Plates- Þingvellir National Park</figcaption>
+          </figure>
+          <figure class="photo photo4">
+            <video controls>
+              <source src="../images/iceland-geyser.mp4" type="video/mp4" alt="strokkur geyser">
+              Your browser does not support this video format.
+            </video>
+            <figcaption>strokkur geyser</figcaption>
+          </figure>
+          <figure class="photo photo5">
+            <a href="../images/got.jpg" target="blank">
+              <img src="../images/got.jpg" alt="game of thrones location">
+            </a>
+            <figcaption>Game of Thrones Filming Location</figcaption>
+          </figure>
+          <figure class="photo photo6">
+            <a href="../images/trek.jpg" target="blank">
+              <img src="../images/trek.jpg" alt="chasing the sunset">
+            </a>
+            <figcaption>Chase this light through the Icelandic snow</figcaption>
+          </figure>
+          <figure class="photo photo7">
+            <a href="../images/waterfall.jpg" target="blank">
+              <img src="../images/waterfall.jpg" alt="gullfoss waterfall">
+            </a>
+            <figcaption>Gullfoss Waterfall- Located in Iceland's Golden Circle</figcaption>
+          </figure>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p><a href="../index.html" class="return-link">← Return to Homepage</a></p>
+    </footer>
+  </div>
 </body>
+
 </html>

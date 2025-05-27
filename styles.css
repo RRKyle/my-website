@@ -22,14 +22,6 @@ body {
     border-radius: 3rem;
 }
 
-h3 {
-    font-size: 2rem;
-    font-variant: small-caps;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
 /* === Nav Menu === */
 #nav-menu {
     text-align: center;
@@ -44,27 +36,12 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 6rem;
 }
 
 #nav-menu ul li {
     flex: 1 1 auto;
-    max-width: 160px;
-}
-
-#nav-menu ul li a {
-    display: block;
-    padding: 0.75em 1.25em;
-    text-decoration: none;
-    background-color: #6b8e23;
-    color: #ffffff;
-    border-radius: 2rem;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    white-space: nowrap;
-    font-size: 1.1rem;
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
+    max-width: 110px;
 }
 
 #nav-menu ul li a.lastitem {
@@ -80,68 +57,188 @@ h3 {
     background-color: #556b2f;
 }
 
-/* === Header === */
-/* Keep laurel? */
-.laurel {
-  height: 30px; /* Adjust based on image height */
-  background-image: url("images/laurel.png"); /* Use your uploaded path */
-  background-repeat: repeat-x;
-  background-size: auto 100%; /* Scale height, let width repeat naturally */
-  background-position: center;
-  margin: 3rem auto;
-  width: 100%;
+/* Style the dropdown container */
+.dropdown {
+    position: relative;
 }
 
-.header {
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-variant: small-caps;
+#nav-menu ul li a,
+.dropdown-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 48px;
+    padding: 0;
+    /* center with flex instead */
+    font-size: 1rem;
     font-weight: 700;
-    font-size: 3.5rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: #6b8e23;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-pill i {
+    margin-left: 0.3em;
+    font-size: 0.7em;
+    line-height: 1;
+    vertical-align: middle;
+    position: relative;
+    top: 1px;
+    transition: transform 0.3s ease;
+    transform: rotate(0deg);
+    /* tweak as needed */
+}
+
+.dropdown:hover .dropdown-pill i {
+  transform: rotate(180deg);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    margin-top: .1em 0;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    display: block;
+    /*background-color: #6b8e23;
+    color: #fff;*/
+    text-decoration: none;
+    text-align: center;
+    /*font-weight: bold;*/
+    padding: 0.6em 1em;
+    margin: 0.1em 0;
+    width: 110px;
+    border-radius: 999px;
+    transition: background 0.2s ease;
+    box-sizing: border-box;
+}
+
+/* Optional: change background on hover */
+/*.dropdown-content a:hover {
+    background-color: #c9a472;
+    color: #000;
+}*/
+
+.section-title-fade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+/* Header */
+.section-title-fade .header {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #121b01;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
 }
 
-#sub {
-    text-align: center;
-    margin-bottom: 2.5rem;
-    font-weight: 500;
-    font-size: 3rem;
-    font-family: 'Roboto', sans-serif;
+.section-title-fade .line-fade {
+    flex: 1;
+    height: 5px;
+    background: linear-gradient(to right, transparent, #333, transparent);
+    opacity: 0.7;
+}
+
+.line-fade {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, transparent, #333, transparent);
+    opacity: 0.7;
+    margin: 2rem 0;
 }
 
 section p {
     font-size: 1.2rem;
     color: #556b2f;
     line-height: 1.6;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
+}
+
+.text-page {
+    /*background-color: rgba(255, 255, 255, 0.2);  /* tried to find a subtle page-like background */
+    background-image: url(../images/paperboard-texture.jpg);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid #c9a472;
+    border-radius: 30px;
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 2rem auto;
+    max-width: 60em;
+    width: 100%;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    /* for a glassy effect but not sure if it makes a diff */
+}
+
+/* Optional paragraph styling */
+.text-page p {
+    /*margin: 1rem 0;*/
+    font-size: 1.1rem;
+    line-height: 2;
 }
 
 /* === Country Selector Links === */
 #country-list {
     list-style: none;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2rem;
     justify-content: center;
+    background-image: url(../images/paperboard-texture.jpg);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid #c9a472;
+    border-radius: 30px;
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 2rem auto;
+    max-width: 60em;
+    width: 100%;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+
 }
 
 #country-list a {
     display: inline-block;
-    padding: 0.4rem 0.9rem;
-    width: 140px;
+    padding: 0.6rem 0rem;
+    width: 110px;
     text-align: center;
     border-radius: 2rem;
     background-color: rgba(255, 255, 255, 0.7);
-    color: #4b5320;
-    border: 2px solid #3b5f6f;
+    color: #1a1a1a;
+    border: 4px solid #c9a472;
+    /*#3b5f6f*/
+    ;
     transition: all 0.3s ease;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
 }
@@ -156,10 +253,12 @@ section p {
 
 /* === Country Section Block === */
 .country-block {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 1rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    background-image: url(../images/paperboard-texture.jpg);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem 2rem 1rem 2rem;
+    box-shadow: 0 6 16px rgba(0, 0, 0, 0.1);
     margin: 2rem auto;
     max-width: 60em;
     width: 100%;
@@ -167,29 +266,38 @@ section p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 8px ridge rgb(63, 159, 248);
+    border: 5px solid #c9a472;
+    border-radius: 30px;
     transition: transform 0.3s ease;
+    backdrop-filter: blur(4px);
 }
 
 .country-block:hover {
     transform: scale(1.02);
 }
 
-.country-block h3 {
-    font-size: 1.8em;
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
-}
-
+/* Controls the Layout of Country-Title */
 .country-header {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
+    gap: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-variant: small-caps;
     font-family: 'cinzel', serif;
 }
 
-.country-title {
+/*h3 {
+    font-size: 2rem;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}*/
+
+/* Controls the style of the text */
+/*.country-title {
     font-size: 2rem;
     font-variant: small-caps;
     font-weight: bold;
@@ -198,59 +306,52 @@ section p {
     gap: 0.5rem;
 }
 
-.flag {
-    font-size: 1.8rem;
-}
-
 /* === Taglines and Emphasis === */
 .tag-line {
     color: #1a1a1a;
     font-style: italic;
-    margin: 1rem 0 1.5rem;
-    font-family: 'raleway', sans-serif;
+    margin: 2rem 0 1rem;
+    font-size: 1.1rem;
+    font-family: 'Cinzel', serif;
+    /*'raleway', sans-serif; */
 }
 
 .emphasis em {
-    color: #2e4600;
+    color: #121b01;
     background-color: #cddbb0;
     padding: 0 0.7em;
     border-radius: 0.2em;
-    font-size: 1.5rem;
-    font-weight: 600;
-    font-family: 'Pacifico', cursive;
+    font-size: 2.1rem;
+    font-weight: bolder;
+    font-family: 'Great Vibes', cursive;
 }
 
 /* === City List with Globe Icons === */
 /* Need to figure out if I want these on the homepage or individual pages */
-.globe-list {
+/*.globe-list {
     color: #4b5320;
-    display: /*grid*/flex;
+    display: flex; /*grid
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    /*grid-template-columns: repeat(2, 1fr);*/
-    gap: /*1rem*/6rem;
-    list-style: none;
-    /*list-style-position: inside;*//*uncomment if I decide to go back to bullets*/
+    flex-wrap: wrap;  /*grid-template-columns: repeat(2, 1fr);
+    gap:  6rem; /*1rem
+    list-style: none; /*list-style-position: inside; uncomment if I decide to go back to bullets
     padding: 0;
-    margin: /*1.5rem 0*/2rem auto;
-    width: fit-content;
-    /*margin-left: auto;
-    margin-right: auto;*/
+    margin: 2rem auto; /*1.5rem 0
+    width: fit-content;  /*margin-left: auto; margin-right: auto;
 }
 
 .globe-list li {
-    white-space: nowrap;
-    /*margin-right: 1rem;*/
-    margin-bottom: /*0.5em*/0;
-    padding-left: /*30px*/0;
+    white-space: nowrap; /*margin-right: 1rem;
+    margin-bottom:  0; /*0.5em
+    padding-left: 0; /*30px
     display: flex;
     align-items: center;
     position: relative;
-    text-align: /*left*/center;
+    text-align: center; /*left
     font-weight: 600;
-    font-size: 1.7rem;
-    font-family: 'Roboto', sans-serif;/*'quicksand', sans-serif*/;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif; /*'quicksand', sans-serif; 
 }
 
 .globe-list li::before {
@@ -258,39 +359,37 @@ section p {
     display: inline-block;
     width: 30px;
     height: 30px;
-    background-image: url('images/globe-glow.svg');
+    background-image: url('images/pushpin.png');
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 0.5rem;
-    position: static;
-    /*left: 0;
-    top: 50%;
-    transform: /*translateY(-50%);*/
+    position: static; /*left: 0; top: 50%; transform: /*translateY(-50%);
     vertical-align: middle;
 }
 
 .globe-list li:hover::before {
-    filter: brightness(1.5) drop-shadow(0 0 4px #00f);
-}
+    filter: brightness(1.2) drop-shadow(0 0 4px #00f);
+}*/
 
 /* === Image and Frame Styling === */
 .photo-frame {
     display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     border: 0.3rem double #0000ff;
     background-color: #1e90ff;
-    padding: 0.6rem;
-    margin: 1rem auto;
+    padding: 1rem;
+    margin: 0.75rem 0 auto;
     border-radius: 2rem 0 2rem 0;
     text-align: center;
 }
 
 .photo-frame img {
     display: block;
-    max-width: 100%;
+    aspect-ratio: 18 / 9;
+    width: 100%;
     height: auto;
-    border: 0.2rem solid #ffffff;
+    border: 0.3rem solid #ffffff;
     border-radius: 1rem 0 1rem 0;
     transition: filter 0.3s ease;
 }
@@ -300,12 +399,12 @@ section p {
 }
 
 .photo-frame figcaption {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #ffffff;
     background-color: rgba(0, 0, 139, 0.5);
     padding: 0.3rem 0.5rem;
     border-radius: 0 0 1rem 0;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     font-style: italic;
 }
 
@@ -313,14 +412,13 @@ section p {
 .back-link {
     color: #1e90ff;
     display: inline-block;
-    margin-top: 1rem;
     transition: transform 0.2s ease, color 0.2s ease;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
     font-weight: 700;
     cursor: pointer;
     font-family: 'Cinzel', serif;
 }
 
+/* Style for the Font Awesome arrow up */
 .back-link i {
     font-size: 1.4em;
     margin-left: 0.4em;
@@ -334,7 +432,7 @@ section p {
     color: #191970;
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
-    transform: scale(1.15);
+    transform: scale(1);
 }
 
 .back-link:hover i {
@@ -365,7 +463,7 @@ section p {
 }
 
 .return-link:hover {
-    color: #4169e1;
+    color: #191970;
     text-decoration: underline;
 }
 
@@ -394,64 +492,235 @@ article {
 }
 
 .photo-collage figure {
-  margin: 0;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .photo-collage img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
 .photo-collage figcaption {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-size: 0.9rem;
-  width: 100%;
-  text-align: center;
-  padding: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
 }
 
 /* === Responsive Layout === */
-@media (max-width: 600px) {
-    .globe-list {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-        /*grid-template-columns: 1fr;
-        justify-items: center;*/
+/* Medium Screens */
+@media (max-width: 900px) {
+    #nav-menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
     }
 
-    .globe-list li {
+    .section-title-fade .header {
+        font-size: 2.4rem;
+    }
+
+    .country-header {
+        font-size: 1.6rem;
+    }
+
+    article {
+        column-count: 2;
+        column-gap: 1.5em;
+    }
+
+    .photo-collage {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+}
+
+/* Small Screens */
+@media (max-width: 600px) {
+
+    #nav-menu ul {
+        flex-direction: column;
+        gap: 0.6rem;
+        align-items: center;
+    }
+
+    #nav-menu ul,
+    .dropdown {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    #nav-menu ul li,
+    #nav-menu ul li a,
+    .dropdown-content a {
+        width: 100%;
+        max-width: 250px;
         text-align: center;
     }
 
-    .country-block {
-        padding: 0.8rem;
-        border-width: 4px;
+    #nav-menu ul li {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 2rem;
+        box-sizing: border-box;
+    }
+
+    #nav-menu ul li a,
+    .dropdown-pill {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 2rem;
+        box-sizing: border-box;
+        height: 48px;
+        line-height: 1;
+        /* keeps text aligned without vertical drift */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dropdown-content {
+        position: static;
+        /* Prevents overflow issues on mobile */
+        display: none;
+        /* stays hidden unless toggled */
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: flex;
+    }
+
+    .section-title-fade .header,
+    .visited {
+        font-size: 2rem;
+    }
+
+    .emphasis em {
+        display: inline-block;
+        max-width: 100%;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .country-header {
+        flex-direction: column;
+        font-size: 1.4rem;
+        gap: 0.5rem;
+    }
+
+    /* Make article columns collapse to 1 */
+    article {
+        column-count: 1;
+        column-rule: none;
+    }
+
+    /* Reduce padding/margins for blocks */
+    .overlay,
+    .text-page,
+    .country-block,
+    #country-list {
+        padding: 1rem;
+        margin: 1rem;
+        border-width: 3px;
+    }
+
+    /* Shrink header fonts */
+    .section-title-fade .header,
+    .visited {
+        font-size: 2rem;
     }
 
     .photo-frame {
-        max-width: 90%;  /* Shrinks to fit smaller screens */
+        max-width: 100%;
+        padding: 0.5rem;
+        /* Shrinks to fit smaller screens */
     }
 
-     #nav-menu ul {
-        gap: 0.5rem;
-        flex-direction: column;
-        align-items: center;        
+    .photo-frame img {
+        aspect-ratio: auto;
     }
-    
-    #nav-menu ul li a {
-        padding: 0.5em 1em;
+
+    .photo-collage {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 10px;
+    }
+
+    .back-link,
+    .accent-link,
+    .return-link {
         font-size: 0.9rem;
-        width: 100%;
-        max-width: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    .section-title-fade .header {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+}
+
+/* Extra Small Screens: Very narrow phones (~350px and below) */
+@media (max-width: 400px) {
+
+    .section-title-fade .header,
+    .visited {
+        font-size: 1.6rem;
+    }
+
+    .country-header {
+        font-size: 1.2rem;
+    }
+
+    #nav-menu ul li a,
+    .dropdown-content a {
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+
+    .photo-frame figcaption {
+        font-size: 0.8rem;
+    }
+
+    .text-page {
+        padding: 1rem 1rem;
+        margin: 1rem;
+    }
+
+    .text-page p {
+        font-size: 1rem;
+    }
+
+    section p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 350px) {
+    .section-title-fade .header {
+        font-size: 1.6rem;
+        line-height: 1.2;
     }
 }

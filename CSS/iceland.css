@@ -1,0 +1,233 @@
+/*.section-title-fade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}*/
+
+.section-title-fade h1 {
+  margin: 0;
+}
+
+/*.line-fade {
+  flex: 1;
+  height: 5px;
+  background: linear-gradient(to right, transparent, #333, transparent);
+  opacity: 0.7;
+}*/
+
+.header-flag {
+  width: 40px;
+  height: auto;
+  flex-shrink: 0;
+  padding: 2em;
+}
+
+/* "Our Pin Drops" header */
+.visited {
+  text-align: center;
+  color: #121b01;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-family: 'Great Vibes', cursive;
+}
+
+/* Places visited grid layout */
+.visited-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /*grid-template-rows: 1 1fr;*/
+  gap: 4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Style for places visited */
+.visited-grid li {
+  font-size: 1.4rem;
+  color: #121b01;
+  font-weight: bold;
+  font-family: 'Great Vibes', cursive;
+}
+
+.pin-drop-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: -0.1rem;
+  vertical-align: middle;
+}
+
+/*.text-page {
+  /*background-color: rgba(255, 255, 255, 0.2); /* soft page-like background 
+  background-image: url(../images/paperboard-texture.jpg);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #c9a472;
+  border-radius: 30px;
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 2rem auto;
+  max-width: 60em;
+  width: 100%;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  /* optional glassy effect 
+}*/
+
+/* Optional paragraph styling */
+.text-page p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+/*.places-visited-box {
+  position: relative;
+  background-image: url(../images/paperboard-texture.jpg);
+  /*background-color: #fdf8f2;
+  border: 5px solid #c9a472;
+  border-radius: 30px;
+  padding: 0rem 2rem 1rem 2rem;
+  margin: 2rem auto;
+  max-width: 60em;
+  width: 100%;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
+}*/
+
+/*.places-visited-box::after {
+  content: "";
+  background: url('../images/postage.png') no-repeat center;
+  background-size: 100px;
+  position: absolute;
+  top:0px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  opacity: 0.9;
+  transform: rotate(-10deg);
+}*/
+
+/* Convert the photos to a grid layout for smaller screens???*/
+
+.cork-board {
+  position: relative;
+  margin: 2rem auto;
+  max-width: 1200px;
+  min-height: 600px;
+  background: url('../images/cork-board.jpg') center/cover no-repeat;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.photo {
+  position: absolute;
+  width: 300px;
+  padding: 0.5rem;
+  background: white;
+  border: 6px solid white;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.photo1 {
+  top: 30px;
+  right: -3%;
+  transform: rotate(3deg);
+}
+
+.photo2 {
+  top: 40px;
+  left: -1%;
+  transform: rotate(2deg);
+}
+
+.photo3 {
+  bottom: 50px;
+  left: -1%;
+  transform: rotate(-5deg);
+}
+
+.photo4 {
+  bottom: 40px;
+  right: 10px;
+  transform: rotate(0deg);
+}
+
+.photo5 {
+  bottom: 30px;
+  left: 58%;
+  transform: translateX(-50%) rotate(5deg);
+}
+
+.photo6 {
+  top: 30px;
+  left: 36%;
+  transform: translateX(-50%) rotate(6deg);
+}
+
+.photo7 {
+  top: 10px;
+  left: 60%;
+  transform: translateX(-50%) rotate(-1deg);
+}
+
+.photo img,
+.photo video {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.photo figcaption {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #333;
+}
+
+.photo::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background: url('../images/pushpin1.png') no-repeat center;
+  background-size: contain;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .photo {
+    position: static;
+    margin: 1rem auto;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .visited-grid {
+    justify-content: center;
+    gap: 2rem;
+    /*padding: 2rem 1rem;
+    background-size: cover;*/
+  }
+}
+
+@media (max-width: 400px) {
+  .visited-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
