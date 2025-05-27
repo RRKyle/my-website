@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico:wght@400;500;600;700;800&family=Indie+Flower&family=Great+Vibes&family=Quicksand&family=Roboto:wght@400;500;600;700;800&family=Open+Sans&family=Merriweather&family=Montserrat&family=Playfair+Display:wght@600&family=Cinzel:wght@700&family=Raleway:wght@600&family=Cormorant+Garamond&family=Lato&family=Crimson+Text&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/austria.css">
     <link rel="stylesheet" href="../styles.css">
     <title>Austria</title>
 </head>
@@ -13,34 +17,98 @@
         <nav id="nav-menu">
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="photos.html">Photo Gallery</a></li>
-                <li><a href="tbd.html">TBD</a></li>
-                <li><a href="tbd2.html">TBD</a></li>
+                <li><a href="/html/photos.html">Photos</a></li>
+                <li class="dropdown">
+                    <!--<a href="#" class="dropdown-pill" onclick="event.preventDefault();">Countries</a>-->
+                    <button class="dropdown-pill">Countries</button>
+                    <div class="dropdown-content">
+                        <a href="/html/germany.html">Germany</a>
+                        <a href="/html/italy.html">Italy</a>
+                        <a href="/html/iceland.html">Iceland</a>
+                        <a href="/html/romania.html">Romania</a>
+                        <a href="/html/austria.html">Austria</a>
+                        <a href="/html/france.html">France</a>
+                    </div>
+                </li>
             </ul>
         </nav>
+
         <main>
             <header>
-                <h1 class="header">Österreich</h1>
+                <div class="section-title-fade">
+                    <span class="line-fade"></span>
+                    <img src="/images/big-flags/at.png" alt="Austrian flag left" class="header-flag">
+                    <h1 class="header">Österreich</h1>
+                    <img src="/images/big-flags/at.png" alt="Austrian flag left" class="header-flag">
+                    <span class="line-fade"></span>
+                </div>
             </header>
             <section>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem
-                placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
-                Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia
-                integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per
-                conubia nostra inceptos himenaeos.</p>
+                <div class="visited">
+                    <h4>Just a Small Sampling of Our Pin Drops:</h4>
+                    <ul class="visited-grid">
+                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Vienna</li>
+                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Salzburg</li>
+                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Bad Goisern</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class="text-page">
+                    <p>Our Austrian Christmas adventure began in Vienna from December 3rd to 5th, where the city
+                        transformed into a winter wonderland of music, lights, and festive cheer. Strolling through
+                        the
+                        elegant boulevards, we visited grand Christmas markets filled with handcrafted ornaments,
+                        the
+                        scent of roasted almonds, and steaming mugs of glühwein. The grandeur of the palaces and the
+                        sounds of classical music gave the entire visit a romantic, old-world charm. On December
+                        6th, we
+                        traveled to Salzburg, where the Christkindlmarkt in the historic Old Town welcomed us with
+                        its
+                        cozy stalls and warm lights beneath the Hohensalzburg Fortress — a picture-perfect alpine
+                        holiday setting.</p>
+                    <div class="line-fade"></div>
+                    <p>On December 7th, we made our way to Bad Goisern for the unforgettable experience of
+                        Krampusnacht.
+                        As night fell, the streets came alive with fire, drums, and the clatter of chains as
+                        fearsome
+                        Krampus figures paraded through the town. It was an intense, thrilling contrast to the
+                        peaceful
+                        markets, offering a deeper glimpse into the region's ancient Alpine folklore. Each
+                        destination
+                        on this trip offered a unique take on the season — from festive elegance in Vienna, to
+                        Salzburg's storybook setting, to the wild tradition of Krampusnacht in the mountains.</p>
+                    <div class="line-fade"></div>
+                    <p>On a separate trip, we returned to Salzburg and took part in the “Hills Are Alive” tour, a
+                        joyful
+                        exploration of locations made famous by The Sound of Music. From the iconic Mirabell Gardens
+                        to
+                        the rolling hills and lakeside views, it was a musical journey through breathtaking
+                        landscapes.
+                        We also explored Innsbruck, where colorful buildings and baroque architecture stood out
+                        against
+                        the dramatic backdrop of the surrounding mountains. The city's blend of imperial grandeur,
+                        lively plazas, and alpine charm made it a memorable stop. From strolling along
+                        Maria-Theresien-Straße to admiring the iconic Golden Roof — where Emperor Maximilian I once
+                        watched festivals and gatherings in the square below during the early 1500s — Innsbruck
+                        offered
+                        a vibrant yet relaxed atmosphere, a striking contrast to the festive energy we would later
+                        encounter on our Christmas trip.</p>
+                </div>
                 <section class="photo-collage">
-                   <figure>
-                      <img src="../images/austria..." alt="austria...">
-                      <figcaption>Description</figcaption>
-                   </figure>
-                   <figure>
-                      <img src="../images/austria..." alt="austria...">
-                      <figcaption>Description</figcaption>
-                   </figure>
+                    <figure>
+                        <img src="../images/austria..." alt="austria...">
+                        <figcaption>Description</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/austria..." alt="austria...">
+                        <figcaption>Description</figcaption>
+                    </figure>
                 </section>
             </section>
         </main>
         <p><a href="../index.html" class="return-link">← Return to Homepage</a></p>
     </div>
 </body>
+
 </html>

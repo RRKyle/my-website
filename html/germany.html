@@ -1,54 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
-    <title>Germany</title>
-</head>
-<body>
-   <div class="overlay">
-    <nav id="nav-menu">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="photos.html">Photo Gallery</a></li>
-          <li><a href="tbd.html">TBD</a></li>
-          <li><a href="tbd2.html">TBD</a></li>
-          <!--<li><a href="germany.html" class="current">Germany</a></li>-->
-        </ul>
-      </nav>
-      <main>
-        <header>
-          <h1 class="header">Deutschland</h1>
-        </header>
-        <section>
-          <ul class="globe-list">
-            <li>Munich</li>
-            <li>Nuremberg</li>
-            <li>Garmisch</li>
-            <li>Berlin</li>
-          </ul>
-        </section>
-          <section>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-        
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-            <!-- Add pictures to make the collage -->
-            <section class="photo-collage">
-                 <figure>
-                    <img src="../images/germany..." alt="germany...">
-                    <figcaption>Description</figcaption>
-                 </figure>
-                 <figure>
-                    <img src="../images/germany..." alt="germany...">
-                    <figcaption>Description</figcaption>
-                 </figure>
-            </section>
-          </section>
-      </main>
-      <p><a href="../index.html" class="return-link">← Return to Homepage</a></p>
-   </div> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico:wght@400;500;600;700;800&family=Indie+Flower&family=Great+Vibes&family=Quicksand&family=Roboto:wght@400;500;600;700;800&family=Open+Sans&family=Merriweather&family=Montserrat&family=Playfair+Display:wght@600&family=Cinzel:wght@700&family=Raleway:wght@600&family=Cormorant+Garamond&family=Lato&family=Crimson+Text&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../CSS/germany.css">
+  <title>Germany</title>
+</head>
+
+<body>
+  <div class="overlay">
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="/html/photos.html">Photos</a></li>
+        <li class="dropdown">
+          <!--<a href="#" class="dropdown-pill" onclick="event.preventDefault();">Countries</a>-->
+          <button class="dropdown-pill">Countries</button>
+          <div class="dropdown-content">
+            <a href="/html/germany.html">Germany</a>
+            <a href="/html/italy.html">Italy</a>
+            <a href="/html/iceland.html">Iceland</a>
+            <a href="/html/romania.html">Romania</a>
+            <a href="/html/austria.html">Austria</a>
+            <a href="/html/france.html">France</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <header>
+        <div class="section-title-fade">
+          <span class="line-fade"></span>
+          <img src="/images/big-flags/de.png" alt="German flag left" class="header-flag">
+          <h1 class="header">Deutschland</h1>
+          <img src="/images/big-flags/de.png" alt="German flag right" class="header-flag">
+          <span class="line-fade"></span>
+        </div>
+      </header>
+
+      <section>
+        <div class="visited">
+          <h4>Just a Small Sampling of Our Pin Drops:</h4>
+          <ul class="visited-grid">
+            <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Berlin</li>
+            <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Nuremberg</li>
+            <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Munich</li>
+            <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Bavarian Alps</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div class="text-page">
+          <p>During our four+ years in Europe, Germany served as our home base, and living in Wiesbaden gave us the
+            perfect launching point to experience the country's incredible range. Nestled near the Rhine River, this
+            elegant spa town blended old-world charm with modern comforts. From our doorstep, we explored every
+            corner—from snow-covered alps to windswept coastlines, from buzzing cities to quiet forests, each region
+            revealing something new and unforgettable.</p>
+          <div class="line-fade"></div>
+          <p>The Bavarian Alps delivered some of the most dramatic landscapes we encountered—snow-capped peaks, alpine
+            lakes, and charming towns like Garmisch and Berchtesgaden. In contrast, the deep woods of the Black Forest
+            offered misty trails, cuckoo clocks, and timeless legends. We marveled at towering Gothic cathedrals like
+            those in Cologne and Ulm, while castles and palaces such as Neuschwanstein and Sanssouci transported us
+            straight into the pages of history.</p>
+          <div class="line-fade"></div>
+          <p>Germany truly came alive in winter, when Christmas markets turned city squares into glowing wonderlands
+            filled with mulled wine, handcrafted ornaments, and warm chimney cakes. From Nuremberg to Lübeck, every
+            market
+            had its own charm. The northern ports—like Hamburg and Bremen—introduced a different rhythm altogether,
+            blending maritime history with modern vibrance.</p>
+          <div class="line-fade"></div>
+          <p>Berlin left a lasting impression, both for its modern energy and its haunting history. We stood at
+            Checkpoint
+            Charlie and walked along remnants of the Berlin Wall, reflecting on the Cold War divide that once split a
+            nation. The former East German border, still dotted with watchtowers and memorials, painted a stark contrast
+            to the vibrant city Berlin has become. Driving through the eastern countryside, the lingering architecture
+            and
+            wide stretches of rural landscape served as a living reminder of a not-so-distant past.</p>
+          <div class="line-fade"></div>
+          <p>We also soaked in the culture through fests, food, and music. The beer flowed freely at every celebration,
+            always paired with smoky bratwursts and laughter under striped tents. We caught unforgettable live
+            shows—Depeche Mode in Gelsenkirchen and Jimmy Eat World in Cologne—where music pulsed through packed crowds.
+            Germany didn't just serve as a home; it offered a vivid, immersive experience that shaped how we saw
+            history,
+            culture, and life in Europe.</p>
+        </div>
+        <!-- Add pictures to make the collage -->
+        <section class="photo-collage">
+          <figure>
+            <img src="../images/germany..." alt="germany...">
+            <figcaption>Description</figcaption>
+          </figure>
+          <figure>
+            <img src="../images/germany..." alt="germany...">
+            <figcaption>Description</figcaption>
+          </figure>
+        </section>
+      </section>
+    </main>
+    <p><a href="../index.html" class="return-link">← Return to Homepage</a></p>
+  </div>
 </body>
+
 </html>

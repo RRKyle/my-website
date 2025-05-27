@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico:wght@400;500;600;700;800&family=Indie+Flower&family=Great+Vibes&family=Quicksand&family=Roboto:wght@400;500;600;700;800&family=Open+Sans&family=Merriweather&family=Montserrat&family=Playfair+Display:wght@600&family=Cinzel:wght@700&family=Raleway:wght@600&family=Cormorant+Garamond&family=Lato&family=Crimson+Text&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/france.css">
     <title>France</title>
 </head>
 
@@ -13,34 +17,91 @@
         <nav id="nav-menu">
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="photos.html">Photo Gallery</a></li>
-                <li><a href="tbd.html">TBD</a></li>
-                <li><a href="tbd2.html">TBD</a></li>
+                <li><a href="/html/photos.html">Photos</a></li>
+                <li class="dropdown">
+                    <!--<a href="#" class="dropdown-pill" onclick="event.preventDefault();">Countries</a>-->
+                    <button class="dropdown-pill">Countries</button>
+                    <div class="dropdown-content">
+                        <a href="/html/germany.html">Germany</a>
+                        <a href="/html/italy.html">Italy</a>
+                        <a href="/html/iceland.html">Iceland</a>
+                        <a href="/html/romania.html">Romania</a>
+                        <a href="/html/austria.html">Austria</a>
+                        <a href="/html/france.html">France</a>
+                    </div>
+                </li>
             </ul>
         </nav>
         <main>
             <header>
-                <h1 class="header">la France</h1>
+                <div class="section-title-fade">
+                    <span class="line-fade"></span>
+                    <img src="/images/big-flags/fr.png" alt="French flag left" class="header-flag">
+                    <h1 class="header">La France</h1>
+                    <img src="/images/big-flags/fr.png" alt="French flag right" class="header-flag">
+                    <span class="line-fade"></span>
+                </div>
             </header>
+
             <section>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem
-                placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
-                Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia
-                integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per
-                conubia nostra inceptos himenaeos.</p>
+                <div class="visited">
+                    <h4>Just a Small Sampling of Our Pin Drops:</h4>
+                    <ul class="visited-grid">
+                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Paris</li>
+                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Strasbourg</li>
+                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">D-Day Normandy Expedition</li>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <div class="text-page">
+                    <p>Our travels through France gave us a rich mix of history, celebration, and old-world charm. The
+                        most memorable experience we had was exploring the powerful and historic landscapes of World War
+                        II. We toured the D-Day landing beaches, stood atop the rugged cliffs of Pointe du Hoc, and
+                        visited the Normandy American Cemetery and Memorial overlooking Omaha Beach—each stop a solemn
+                        tribute to the courage and sacrifice of those who fought there. In the town of
+                        Sainte-Mère-Église, we saw a striking and enduring symbol of that history: to this day, a
+                        mannequin paratrooper hangs from the church steeple, honoring Private John Steele, who was
+                        famously caught there during the airborne landings. That same trip also took us to the stunning
+                        Mont Saint-Michel, a tidal island crowned by a medieval abbey. Its winding stone streets and
+                        panoramic views made it feel like we had stepped into a medieval masterpiece brought to life.
+                    </p>
+                    <div class="line-fade"></div>
+                    <p>Another unforgettable visit was to Paris for a New Year’s Eve celebration. As the clock
+                        approached midnight, the Eiffel Tower lit up in a glittering display, and the air along the
+                        Seine buzzed with excitement. Fireworks, cheers, music, and the sounds of many intoxicated
+                        individuals filled the night, making it a truly cinematic way to ring in the new year. The
+                        following morning was quiet and peaceful. We set out to find a local café and enjoy a good cup
+                        of coffee, taking time to reflect on the night before as the city slowly came back to life—then
+                        continued on to Notre-Dame Cathedral, still fully intact in all its Gothic splendor before the
+                        devastating fire of 2019, where its stained-glass windows and towering façade offered a moment
+                        of quiet awe in the heart of the city.</p>
+                    <div class="line-fade"></div>
+                    <p>On a separate trip, we visited Strasbourg during the holiday season to experience its
+                        world-famous Christmas market. With its timber-framed buildings, festive lights, and cozy aromas
+                        of mulled wine and spiced pastries, the city felt like a winter fairytale. Each market stall
+                        seemed to glow with festive charm, and the atmosphere felt straight out of a winter fairytale.
+                        From historic reflections to joyful celebrations, France gifted us some of the most poignant and
+                        lasting memories of our time in Europe.</p>
+                    <p>Monet's Garden???</p>
+                </div>
+
                 <section class="photo-collage">
-                   <figure>
-                      <img src="../images/france..." alt="france...">
-                      <figcaption>Description</figcaption>
-                   </figure>
-                   <figure>
-                      <img src="../images/france..." alt="france...">
-                      <figcaption>Description</figcaption>
-                   </figure>
+                    <figure>
+                        <img src="../images/france..." alt="france...">
+                        <figcaption>Description</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/france..." alt="france...">
+                        <figcaption>Description</figcaption>
+                    </figure>
                 </section>
             </section>
         </main>
         <p><a href="../index.html" class="return-link">← Return to Homepage</a></p>
     </div>
 </body>
+
 </html>

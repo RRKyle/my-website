@@ -1,0 +1,92 @@
+.section-title-fade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.section-title-fade h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  /* Or your preferred header font */
+}
+
+.line-fade {
+  flex: 1;
+  height: 5px;
+  background: linear-gradient(to right, transparent, #333, transparent);
+  opacity: 0.7;
+}
+
+.header-flag {
+  width: 40px;
+  height: auto;
+  flex-shrink: 0;
+  padding: 2em;
+}
+
+.visited {
+  text-align: center;
+  color: #121b01;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-family: 'Great Vibes', cursive;
+}
+
+.visited-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 1 1fr;
+  gap: 4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Style for places visited */
+.visited-grid li {
+  font-size: 1.4rem;
+  color: #121b01;
+  font-weight: bold;
+  font-family: 'Great Vibes', cursive;
+}
+
+/* style for pin-drop */
+.pin-drop-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: -0.1rem;
+  vertical-align: middle;
+}
+
+.text-page {
+  /*background-color: rgba(255, 255, 255, 0.2); /* soft page-like background */
+  background-image: url(../images/paperboard-texture.jpg);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #c9a472;
+  border-radius: 30px;
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 2rem auto;
+  max-width: 60em;
+  width: 100%;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  /* optional glassy effect */
+}
+
+/* Optional paragraph styling */
+.text-page p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  line-height: 2;
+}
