@@ -12,7 +12,6 @@
   font-weight: bold;
   text-align: center;
   font-family: 'Cinzel', serif;
-  /* Or your preferred header font */
 }
 
 .line-fade {
@@ -23,7 +22,6 @@
 }
 
 .header-flag {
-  width: 40px;
   height: auto;
   flex-shrink: 0;
   padding: 2em;
@@ -69,25 +67,210 @@
 
 .text-page {
   background-color: rgba(255, 255, 255, 0.2);
-  /* soft page-like background */
   background-image: url(../images/paperboard-texture.jpg);
   background-blend-mode: lighten;
   background-size: cover;
   background-repeat: no-repeat;
   border: 5px solid #c9a472;
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 1rem 2rem 1rem 2rem;
   margin: 2rem auto;
-  max-width: 60em;
+  max-width: 1200px;
   width: 100%;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
-  /* optional glassy effect */
+  backdrop-filter: blur(4px); /* glassy effect- keep? */
 }
 
-/* Optional paragraph styling */
+/* paragraph styling */
 .text-page p {
   margin: 1.5rem 0;
   font-size: 1.1rem;
   line-height: 2;
+}
+
+.cork-board {
+  position: relative;
+  margin: 2rem auto;
+  max-width: 1200px;
+  min-height: 800px;
+  background: url('../images/cork-board.jpg') center/cover no-repeat;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.photo {
+  position: absolute;
+  width: 300px;
+  padding: 0.5rem;
+  background: #ffffff;
+  border: 6px solid #ffffff;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.photo1 {
+  top: -3%;
+  right: -5%;
+  transform: rotate(3deg);
+  width: 300px;
+}
+
+.photo2 {
+  top: -3%;
+  left: -3%;
+  transform: rotate(2deg);
+  width: 360px;
+}
+
+.photo3 {
+  bottom: -12%;
+  left: -6%;
+  transform: rotate(-5deg);
+  width: 300px;
+}
+
+.photo4 {
+  bottom: -10%;
+  right: -5%;
+  transform:
+    /*translateX(-50%)*/
+    rotate(-4deg);
+  width: 300px;
+}
+
+.photo5 {
+  bottom: -8%;
+  left: 33%;
+  transform: translateX(-50%) rotate(0deg);
+  width: 340px;
+}
+
+.photo6 {
+  top: 0%;
+  left: 60%;
+  transform: translateX(-50%) rotate(-3deg);
+  width: 320px;
+}
+
+.photo7 {
+  top: 20px;
+  left: 40%;
+  transform: translateX(-50%) rotate(6deg);
+  width: 320px;
+}
+
+.photo8 {
+  top: 35%;
+  right: -7%;
+  transform: rotate(0deg);
+  width: 320px;
+}
+
+.photo9 {
+  bottom: 22%;
+  left: 0%;
+  transform: rotate(-3deg);
+  width: 540px;
+}
+
+.photo10 {
+  bottom: -8%;
+  left: 45%;
+  transform: rotate(5deg);
+  width: 360px;
+}
+
+.photo img,
+.photo video {
+  object-fit: cover;
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  border: 6px solid rgb(109, 98, 98);
+}
+
+.photo1 img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo2 img {
+  height: 290px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo3 img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo4 img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo5 img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo6 img {
+  height: 460px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo7 img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo8 img {
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo9 img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo10 img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.photo figcaption {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #333;
+}
+
+.photo::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background: url('../images/pushpin1.png') no-repeat center;
+  background-size: contain;
+  z-index: 2;
 }

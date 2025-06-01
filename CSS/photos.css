@@ -1,0 +1,301 @@
+.cork-board {
+  position: relative;
+  margin: 2rem auto;
+  max-width: 1200px;
+  min-height: 1200px;
+  background: url('../images/cork-board.jpg') center/cover no-repeat;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.photo {
+  position: absolute;
+  max-width: 100%;
+  width: 25vw;
+  /*width: 300px;*/
+  padding: 0.5rem;
+  background: #ffffff;
+  border: 6px solid #ffffff;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.photo1 {
+  top: 0%;
+  right: -7%;
+  transform: rotate(3deg);
+  /*width: 400px;*/
+  width: 18vw;
+}
+
+.photo2 {
+  top: -2%;
+  left: -5%;
+  transform: rotate(2deg);
+  /*width: 320px;*/
+  width: 18vw;
+}
+
+.photo3 {
+  bottom: -5%;
+  left: 25%;
+  transform: rotate(-2deg);
+  /*width: 300px;*/
+  width: 20vw;
+}
+
+.photo4 {
+  bottom: -5%;
+  left: -10%;
+  transform:
+    /*translateX(-50%)*/
+    rotate(2deg);
+  /*width: 370px;*/
+  width: 22vw;
+}
+
+.photo5 {
+  top: -3%;
+  left: 36%;
+  transform: translateX(-50%) rotate(-1deg);
+  /*width: 400px;*/
+  width: 18vw;
+}
+
+.photo6 {
+  bottom: -7%;
+  right: -5%;
+  transform: rotate(-3deg);
+  /*width: 340px;*/
+  width: 12vw;
+}
+
+.photo7 {
+  top: 49%;
+  right: -5%;
+  transform:
+    /*translateX(-50%)*/
+    rotate(2deg);
+  /*width: 320px;*/
+  width: 15vw;
+}
+
+.photo8 {
+  top: 25%;
+  right: -5%;
+  transform: rotate(-1deg);
+  /*width: 380px;*/
+  width: 18vw;
+}
+
+.photo9 {
+  bottom: 15%;
+  left: -8%;
+  transform: rotate(0deg);
+  /*width: 380px;*/
+  width: 16vw;
+}
+
+.photo10 {
+  top: 35%;
+  left: 10%;
+  transform: rotate(1deg);
+  /*width: 980px;*/
+  width: 30vw;
+}
+
+.photo11 {
+  top: 16%;
+  left: 0%;
+  transform: translateX(-50%) rotate(0deg);
+  /*width: 400px;*/
+  width: 16vw;
+}
+
+.photo12 {
+  top: 16%;
+  left: 12%;
+  transform: rotate (10deg);
+  /*width: 980px;*/
+  width: 38vw;
+}
+
+.photo13 {
+  top: -2%;
+  right: 10%;
+  transform: translateX(-50%) rotate(-4deg);
+  /*width: 400px;*/
+  width: 14vw;
+}
+
+.photo14 {
+  top: 40%;
+  left: 0%;
+  transform: translateX(-50%) rotate(-4deg);
+  /*width: 400px;*/
+  width: 16vw;
+}
+
+.photo15 {
+  bottom: -3%;
+  right: 14%;
+  transform: rotate(3deg);
+  /*width: 400px;*/
+  width: 12vw;
+}
+
+.photo16 {
+  bottom: 15%;
+  left: 16%;
+  transform: rotate(-1deg);
+  /*width: 380px;*/
+  width: 25vw;
+}
+
+.photo img,
+.photo video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  /*margin-bottom: 0.5rem;*/
+  border: 6px solid rgb(109, 98, 98);
+}
+
+.photo1 img {
+  height: auto;
+  /*height: 300px;*/
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo2 img {
+  height: auto;
+  /*height: 290px;*/
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo3 img {
+  height: auto;
+  /*height: 300px;*/
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo4 img {
+  height: auto;
+  /*height: 240px;*/
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo5 img {
+  height: auto;
+  /*height: 320px;*/
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo6 img {
+  height: auto;
+  /*height: 400px;*/
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo7 img {
+  height: auto;
+  /*height: 240px;*/
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo8 img {
+  height: auto;
+  /*height: 380px;*/
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo9 img {
+  height: auto;
+  /*height: 240px;*/
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo10 img {
+  height: auto;
+  /*height: 200px;*/
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo11 img {
+  height: auto;
+  /*height: 320px;*/
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo12 img {
+  /*height: auto;*/
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo13 img {
+  height: auto;
+  /*height: 320px;*/
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo14 img {
+  height: auto;
+  /*height: 300px;*/
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo15 img {
+  height: auto;
+  /*height: 320px;*/
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo16 img {
+  height: auto;
+  /*height: 380px;*/
+  width: 100%;
+  object-fit: cover;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.photo figcaption {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #333;
+}
+
+.photo::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background: url('../images/pushpin1.png') no-repeat center;
+  background-size: contain;
+  z-index: 2;
+}

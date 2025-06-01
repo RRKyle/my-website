@@ -18,7 +18,6 @@
 }*/
 
 .header-flag {
-  width: 40px;
   height: auto;
   flex-shrink: 0;
   padding: 2em;
@@ -63,22 +62,22 @@
   vertical-align: middle;
 }
 
-/*.text-page {
-  /*background-color: rgba(255, 255, 255, 0.2); /* soft page-like background 
+.text-page {
+  background-color: rgba(255, 255, 255, 0.2);
   background-image: url(../images/paperboard-texture.jpg);
   background-blend-mode: lighten;
   background-size: cover;
   background-repeat: no-repeat;
   border: 5px solid #c9a472;
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 1rem 2rem 1rem 2rem;
   margin: 2rem auto;
-  max-width: 60em;
+  max-width: 1200px;
   width: 100%;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4px);
-  /* optional glassy effect 
-}*/
+  /* optional glassy effect */
+}
 
 /* Optional paragraph styling */
 .text-page p {
@@ -117,6 +116,7 @@
 
 .cork-board {
   position: relative;
+  overflow: visible;
   margin: 2rem auto;
   max-width: 1200px;
   min-height: 600px;
@@ -127,66 +127,138 @@
 
 .photo {
   position: absolute;
+  overflow: visible;
   width: 300px;
   padding: 0.5rem;
-  background: white;
-  border: 6px solid white;
+  background: #ffffff;
+  border: 6px solid #ffffff;
   box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
   transition: transform 0.3s ease;
 }
 
 .photo1 {
-  top: 30px;
+  top: 10px;
   right: -3%;
-  transform: rotate(3deg);
+  transform: rotate(-3deg);
+  width: 280px;
 }
 
 .photo2 {
-  top: 40px;
-  left: -1%;
+  top: 0px;
+  left: -20px;
   transform: rotate(2deg);
+  width: 380px;
 }
 
 .photo3 {
-  bottom: 50px;
+  bottom: -20px;
   left: -1%;
   transform: rotate(-5deg);
+  width: 280px;
 }
 
 .photo4 {
-  bottom: 40px;
-  right: 10px;
-  transform: rotate(0deg);
+  bottom: -10px;
+  right: -5%;
+  transform:
+    /*translateX(-50%)*/
+    rotate(-1deg);
+  width: 300px;
 }
 
 .photo5 {
   bottom: 30px;
-  left: 58%;
-  transform: translateX(-50%) rotate(5deg);
+  left: 35%;
+  transform: translateX(-50%) rotate(6deg);
+  width: 290px;
 }
 
 .photo6 {
-  top: 30px;
-  left: 36%;
-  transform: translateX(-50%) rotate(6deg);
+  top: 40px;
+  left: 60%;
+  transform: translateX(-50%) rotate(1deg);
+  width: 320px;
 }
 
 .photo7 {
-  top: 10px;
-  left: 60%;
-  transform: translateX(-50%) rotate(-1deg);
+  top: 20px;
+  left: 38%;
+  transform: translateX(-50%) rotate(4deg);
+  width: 280px;
 }
+
+/*.photo8 {
+  bottom: 40px;
+  right: 10px;
+  transform: rotate(0deg);
+  width: 320px;
+}*/
 
 .photo img,
 .photo video {
-  width: 100%;
-  height: auto;
-  max-height: 400px;
   object-fit: cover;
   display: block;
   margin-bottom: 0.5rem;
+  width: 100%;
+  border: 6px solid rgb(109, 98, 98);
+  box-sizing: border-box;
 }
+
+.photo1 img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo2 img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo3 img {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo4 video {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+  /*aspect-ratio: 16/9;*/
+}
+
+.photo5 img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo6 img {
+  height: 540px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo7 img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*.photo8 img {
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
+}*/
+
+/**,
+*::before,
+*::after {
+  box-sizing: border-box;
+}*/
 
 .photo figcaption {
   font-size: 0.95rem;
