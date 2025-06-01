@@ -3,7 +3,7 @@
   margin: 2rem auto;
   max-width: 1200px;
   min-height: 1200px;
-  background: url('../images/cork-board.jpg') center/cover no-repeat;
+  background: url('/images/cork-board.jpg') center/cover no-repeat;
   padding: 2rem;
   border-radius: 8px;
 }
@@ -295,7 +295,7 @@
   transform: translateX(-50%);
   width: 50px;
   height: 50px;
-  background: url('../images/pushpin1.png') no-repeat center;
+  background: url('/images/pushpin1.png') no-repeat center;
   background-size: contain;
   z-index: 2;
 }
