@@ -3,7 +3,7 @@
   margin: 2rem auto;
   max-width: 1200px;
   min-height: 1200px;
-  background: url('/images/cork-board.jpg') center/cover no-repeat;
+  background: url('../images/cork-board.jpg') center/cover no-repeat;
   padding: 2rem;
   border-radius: 8px;
 }
