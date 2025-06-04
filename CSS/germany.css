@@ -1,24 +1,14 @@
-.section-title-fade {
+.section-title-fade h2 {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   margin: 2rem 0;
-}
-
-.section-title-fade h1 {
-  margin: 0;
-  font-size: 2.5rem;
+  font-size: 4rem;
+  color: #121b01;
   font-weight: bold;
   text-align: center;
-  font-family: 'Cinzel', serif;
-}
-
-.line-fade {
-  flex: 1;
-  height: 5px;
-  background: linear-gradient(to right, transparent, #333, transparent);
-  opacity: 0.7;
+  transform: none;
 }
 
 .header-flag {
@@ -27,12 +17,20 @@
   padding: 2em;
 }
 
+.visited-heading {
+  line-height: 1;
+  margin: 0;
+  font-family: 'Great Vibes', cursive;
+  color: #121b01;
+  font-size: 2rem;
+  text-align: center;
+}
+
 .visited {
   text-align: center;
   color: #121b01;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-size: 2rem;
+  margin-top: 0.25rem;
+  margin-bottom: 4rem;
   font-family: 'Great Vibes', cursive;
 }
 
@@ -41,7 +39,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  grid-template-rows: 1 1fr;
   gap: 4rem;
   list-style: none;
   padding: 0;
@@ -65,34 +62,20 @@
   vertical-align: middle;
 }
 
-.text-page {
-  background-color: rgba(255, 255, 255, 0.2);
-  background-image: url(../images/paperboard-texture.jpg);
-  background-blend-mode: lighten;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 5px solid #c9a472;
-  border-radius: 15px;
-  padding: 1rem 2rem 1rem 2rem;
-  margin: 2rem auto;
-  max-width: 1200px;
+.divider-line {
   width: 100%;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px); /* glassy effect- keep? */
-}
-
-/* paragraph styling */
-.text-page p {
-  margin: 1.5rem 0;
-  font-size: 1.1rem;
-  line-height: 2;
+  height: 5px;
+  background: linear-gradient(to right, transparent, #333, transparent);
+  opacity: 0.7;
+  margin: 2.5rem auto;
+  border-radius: 1rem;
 }
 
 .cork-board {
   position: relative;
-  margin: 2rem auto;
+  margin: 5rem auto;
   max-width: 1200px;
-  min-height: 800px;
+  min-height: 1200px;
   background: url('../images/cork-board.jpg') center/cover no-repeat;
   padding: 2rem;
   border-radius: 8px;
@@ -110,76 +93,93 @@
 }
 
 .photo1 {
-  top: -3%;
+  top: -2%;
   right: -5%;
-  transform: rotate(3deg);
-  width: 300px;
+  transform: rotate(1deg);
+  width: 360px;
 }
 
 .photo2 {
   top: -3%;
-  left: -3%;
+  left: -8%;
   transform: rotate(2deg);
-  width: 360px;
+  width: 340px;
 }
 
 .photo3 {
-  bottom: -12%;
-  left: -6%;
-  transform: rotate(-5deg);
+  bottom: 8%;
+  right: -3%;
+  transform: rotate(-2deg);
   width: 300px;
 }
 
 .photo4 {
-  bottom: -10%;
-  right: -5%;
+  bottom: 22%;
+  right: 24%;
   transform:
     /*translateX(-50%)*/
-    rotate(-4deg);
-  width: 300px;
-}
-
-.photo5 {
-  bottom: -8%;
-  left: 33%;
-  transform: translateX(-50%) rotate(0deg);
+    rotate(-2deg);
   width: 340px;
 }
 
-.photo6 {
-  top: 0%;
-  left: 60%;
-  transform: translateX(-50%) rotate(-3deg);
+.photo5 {
+  bottom: -2%;
+  left: 15%;
+  transform:
+    /*translateX(-50%)*/
+    rotate(3deg);
   width: 320px;
 }
 
+.photo6 {
+  top: -2%;
+  left: 55%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 360px;
+}
+
 .photo7 {
-  top: 20px;
-  left: 40%;
+  top: 2%;
+  left: 32%;
   transform: translateX(-50%) rotate(6deg);
   width: 320px;
 }
 
 .photo8 {
-  top: 35%;
-  right: -7%;
+  bottom: 0%;
+  right: 22%;
   transform: rotate(0deg);
-  width: 320px;
+  width: 360px;
 }
 
 .photo9 {
-  bottom: 22%;
-  left: 0%;
-  transform: rotate(-3deg);
+  top: 25%;
+  left: -4%;
+  transform: rotate(0deg);
   width: 540px;
 }
 
 .photo10 {
-  bottom: -8%;
-  left: 45%;
-  transform: rotate(5deg);
+  bottom: 2%;
+  left: -10%;
+  transform: rotate(-2deg);
   width: 360px;
 }
+
+.photo11 {
+  bottom: 24%;
+  left: -2%;
+  transform: rotate(4deg);
+  width: 500px;
+}
+
+.photo12 {
+  top: 18%;
+  right: -5%;
+  transform: rotate(1deg);
+  width: 340px;
+}
+
 
 .photo img,
 .photo video {
@@ -191,7 +191,7 @@
 }
 
 .photo1 img {
-  height: 240px;
+  height: 200px;
   width: 100%;
   object-fit: cover;
 }
@@ -203,19 +203,19 @@
 }
 
 .photo3 img {
-  height: 220px;
+  height: 260px;
   width: 100%;
   object-fit: cover;
 }
 
 .photo4 img {
-  height: 300px;
+  height: 380px;
   width: 100%;
   object-fit: cover;
 }
 
 .photo5 img {
-  height: 220px;
+  height: 200px;
   width: 100%;
   object-fit: cover;
 }
@@ -233,7 +233,7 @@
 }
 
 .photo8 img {
-  height: 320px;
+  height: 400px;
   width: 100%;
   object-fit: cover;
 }
@@ -245,15 +245,21 @@
 }
 
 .photo10 img {
-  height: 220px;
+  height: 180px;
   width: 100%;
   object-fit: cover;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.photo11 img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo12 img {
+  height: 480px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .photo figcaption {

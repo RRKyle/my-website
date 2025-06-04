@@ -1,4 +1,11 @@
 /* === Base === */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /*:root {
     --red-color: #961919;
 }*/
@@ -17,16 +24,43 @@ body {
 
 .overlay {
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 5rem;
+    padding: 0.5rem;
     margin: 5rem;
     border-radius: 3rem;
+}
+
+.section-title-fade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+/* Header */
+.section-title-fade h1 {
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #121b01;
+    text-align: center;
+}
+
+.section-title-fade .line-fade {
+    flex: 1;
+    height: 5px;
+    background: linear-gradient(to right, transparent, #333, transparent);
+    opacity: 0.7;
+    transform: translate(0.15rem);
+    /*margin: 0;*/
 }
 
 /* === Nav Menu === */
 #nav-menu {
     text-align: center;
-    margin-bottom: 4rem;
+    /*margin-bottom: 6rem;*/
     padding: 0 1rem;
+    margin-bottom: 5rem;
 }
 
 #nav-menu ul {
@@ -70,7 +104,6 @@ body {
     width: 160px;
     height: 48px;
     padding: 0;
-    /* center with flex instead */
     font-size: 1rem;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
@@ -133,40 +166,6 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    /* make sure it's above other elements*/
-    /* background-color: white; */
-}
-
-.section-title-fade {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin: 2rem 0;
-}
-
-/* Header */
-.section-title-fade .header {
-    margin: 0;
-    font-size: 3rem;
-    font-weight: bold;
-    color: #121b01;
-    text-align: center;
-}
-
-.section-title-fade .line-fade {
-    flex: 1;
-    height: 5px;
-    background: linear-gradient(to right, transparent, #333, transparent);
-    opacity: 0.7;
-}
-
-.line-fade {
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(to right, transparent, #333, transparent);
-    opacity: 0.7;
-    margin: 2rem 0;
 }
 
 .narrative {
@@ -178,18 +177,18 @@ nav {
     border-radius: 15px;
     padding: 1rem 2rem 1rem 2rem;
     margin: 2rem auto;
-    max-width: 60em;
+    max-width: 960px;
     width: 100%;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4px);
-    /* for a glassy effect but not sure if it makes a diff */
 }
 
 section p {
     font-size: 1.3rem;
     color: #556b2f;
     line-height: 1.6;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-weight: 700;
 }
 
@@ -203,26 +202,24 @@ section p {
     font-family: 'Great Vibes', cursive;
 }
 
-/*.text-page {
-    /*background-color: rgba(255, 255, 255, 0.2);  /* tried to find a subtle page-like background 
+.text-page {
+    background-color: rgba(255, 255, 255, 0.2);
     background-image: url(../images/paperboard-texture.jpg);
     background-blend-mode: lighten;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 1rem 2rem 1rem 2rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    width: 100%;
     border: 5px solid #c9a472;
     border-radius: 15px;
-    padding: 1rem 2rem 1rem 2rem;
-    margin: 2rem auto;
-    /*max-width: 60em;
-    width: 100%;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4px);
-    /* for a glassy effect but not sure if it makes a diff 
-}*/
+    max-width: 1200px;
+}
 
-/* Optional paragraph styling */
 .text-page p {
-    /*margin: 1rem 0;*/
+    margin: 1rem 0;
     font-size: 1.1rem;
     line-height: 2;
 }
@@ -242,7 +239,7 @@ section p {
     border-radius: 15px;
     padding: 1rem 2rem 1rem 2rem;
     margin: 2rem auto;
-    max-width: 60em;
+    max-width: 960px;
     width: 100%;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4px);
@@ -274,23 +271,12 @@ section p {
 
 /* === Country Section Block === */
 .country-block {
-    background-image: url(../images/paperboard-texture.jpg);
-    background-blend-mode: lighten;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 1rem 2rem 1rem 2rem;
-    box-shadow: 0 6 16px rgba(0, 0, 0, 0.1);
-    margin: 2rem auto;
-    max-width: 60em;
-    width: 100%;
+    max-width: 960px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 5px solid #c9a472;
-    border-radius: 15px;
     transition: transform 0.3s ease;
-    backdrop-filter: blur(4px);
 }
 
 .country-block:hover {
@@ -309,24 +295,6 @@ section p {
     font-family: 'cinzel', serif;
 }
 
-/*h3 {
-    font-size: 2rem;
-    font-variant: small-caps;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 1rem;
-}*/
-
-/* Controls the style of the text */
-/*.country-title {
-    font-size: 2rem;
-    font-variant: small-caps;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
 /* === Taglines === */
 .tag-line {
     color: #1a1a1a;
@@ -336,51 +304,6 @@ section p {
     font-family: 'Cinzel', serif;
     /*'raleway', sans-serif; */
 }
-
-/* === City List with Globe Icons === */
-/* Need to figure out if I want these on the homepage or individual pages */
-/*.globe-list {
-    color: #4b5320;
-    display: flex; /*grid
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;  /*grid-template-columns: repeat(2, 1fr);
-    gap:  6rem; /*1rem
-    list-style: none; /*list-style-position: inside; uncomment if I decide to go back to bullets
-    padding: 0;
-    margin: 2rem auto; /*1.5rem 0
-    width: fit-content;  /*margin-left: auto; margin-right: auto;
-}
-
-.globe-list li {
-    white-space: nowrap; /*margin-right: 1rem;
-    margin-bottom:  0; /*0.5em
-    padding-left: 0; /*30px
-    display: flex;
-    align-items: center;
-    position: relative;
-    text-align: center; /*left
-    font-weight: 600;
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif; /*'quicksand', sans-serif; 
-}
-
-.globe-list li::before {
-    content: "";
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-image: url('images/pushpin.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 0.5rem;
-    position: static; /*left: 0; top: 50%; transform: /*translateY(-50%);
-    vertical-align: middle;
-}
-
-.globe-list li:hover::before {
-    filter: brightness(1.2) drop-shadow(0 0 4px #00f);
-}*/
 
 /* === Image and Frame Styling === */
 .photo-frame {
@@ -490,42 +413,6 @@ article {
     column-count: 3;
     column-gap: 2em;
     column-rule: 2px solid #000000;
-}
-
-/* === Country Pages === */
-.photo-collage {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
-    padding: 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.photo-collage figure {
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.photo-collage img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
-.photo-collage figcaption {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 0.9rem;
-    width: 100%;
-    text-align: center;
-    padding: 0.5rem;
 }
 
 /* === Responsive Layout === */

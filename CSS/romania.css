@@ -1,24 +1,14 @@
-.section-title-fade {
+.section-title-fade h2 {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   margin: 2rem 0;
-}
-
-.section-title-fade h1 {
-  margin: 0;
-  font-size: 2.5rem;
+  font-size: 4rem;
+  color: #121b01;
   font-weight: bold;
   text-align: center;
-  font-family: 'Cinzel', serif;
-}
-
-.line-fade {
-  flex: 1;
-  height: 5px;
-  background: linear-gradient(to right, transparent, #333, transparent);
-  opacity: 0.7;
+  transform: none;
 }
 
 .header-flag {
@@ -27,12 +17,20 @@
   padding: 2em;
 }
 
+.visited-heading {
+  line-height: 1;
+  margin: 0;
+  font-family: 'Great Vibes', cursive;
+  color: #121b01;
+  font-size: 2rem;
+  text-align: center;
+}
+
 .visited {
   text-align: center;
   color: #121b01;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-size: 2rem;
+  margin-top: 0.25rem;
+  margin-bottom: 4rem;
   font-family: 'Great Vibes', cursive;
 }
 
@@ -41,7 +39,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  grid-template-rows: 1 1fr;
   gap: 4rem;
   list-style: none;
   padding: 0;
@@ -65,33 +62,18 @@
   vertical-align: middle;
 }
 
-.text-page {
-  background-color: rgba(255, 255, 255, 0.2);
-  background-image: url(../images/paperboard-texture.jpg);
-  background-blend-mode: lighten;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 5px solid #c9a472;
-  border-radius: 15px;
-  padding: 1rem 2rem 1rem 2rem;
-  margin: 2rem auto;
-  max-width: 1200px;
+.divider-line {
   width: 100%;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
-  /* glassy effect- keep? */
-}
-
-/* paragraph styling */
-.text-page p {
-  margin: 1.5rem 0;
-  font-size: 1.1rem;
-  line-height: 2;
+  height: 5px;
+  background: linear-gradient(to right, transparent, #333, transparent);
+  opacity: 0.7;
+  margin: 2.5rem auto;
+  border-radius: 1rem;
 }
 
 .cork-board {
   position: relative;
-  margin: 2rem auto;
+  margin: 5rem auto;
   max-width: 1200px;
   min-height: 600px;
   background: url('../images/cork-board.jpg') center/cover no-repeat;
@@ -224,12 +206,6 @@
   width: 100%;
   object-fit: cover;
 }*/
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 .photo figcaption {
   font-size: 0.95rem;

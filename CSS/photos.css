@@ -1,6 +1,25 @@
+.section-title-fade h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  font-size: 4rem;
+  color: #121b01;
+  font-weight: bold;
+  text-align: center;
+  transform: none;
+}
+
+.header-flag {
+  height: auto;
+  flex-shrink: 0;
+  padding: 2em;
+}
+
 .cork-board {
   position: relative;
-  margin: 2rem auto;
+  margin: 5rem auto;
   max-width: 1200px;
   min-height: 1200px;
   background: url('../images/cork-board.jpg') center/cover no-repeat;
@@ -38,21 +57,21 @@
 }
 
 .photo3 {
-  bottom: -5%;
-  left: 25%;
+  bottom: -8%;
+  right: 15%;
   transform: rotate(-2deg);
   /*width: 300px;*/
-  width: 20vw;
+  width: 18vw;
 }
 
 .photo4 {
-  bottom: -5%;
-  left: -10%;
+  bottom: -3%;
+  left: -13%;
   transform:
     /*translateX(-50%)*/
     rotate(2deg);
   /*width: 370px;*/
-  width: 22vw;
+  width: 18vw;
 }
 
 .photo5 {
@@ -90,16 +109,16 @@
 }
 
 .photo9 {
-  bottom: 15%;
-  left: -8%;
+  bottom: 45%;
+  left: 52%;
   transform: rotate(0deg);
   /*width: 380px;*/
-  width: 16vw;
+  width: 14vw;
 }
 
 .photo10 {
   top: 35%;
-  left: 10%;
+  left: 7%;
   transform: rotate(1deg);
   /*width: 980px;*/
   width: 30vw;
@@ -132,25 +151,61 @@
 .photo14 {
   top: 40%;
   left: 0%;
-  transform: translateX(-50%) rotate(-4deg);
+  transform: translateX(-50%) rotate(3deg);
   /*width: 400px;*/
   width: 16vw;
 }
 
 .photo15 {
-  bottom: -3%;
-  right: 14%;
-  transform: rotate(3deg);
+  bottom: 20%;
+  left: 12%;
+  transform: rotate(-5deg);
   /*width: 400px;*/
   width: 12vw;
 }
 
 .photo16 {
   bottom: 15%;
-  left: 16%;
+  left: -15%;
+  transform: rotate(-2deg);
+  /*width: 380px;*/
+  width: 18vw;
+}
+
+.photo17 {
+  bottom: 28%;
+  left: 44%;
   transform: rotate(-1deg);
   /*width: 380px;*/
-  width: 25vw;
+  width: 20vw;
+}
+
+.photo18 {
+  bottom: 11%;
+  right: 15%;
+  transform: rotate(4deg);
+  /*width: 380px;*/
+  width: 20vw;
+}
+
+.photo19 {
+  bottom: -3%;
+  left: -13%;
+  transform:
+    /*translateX(-50%)*/
+    rotate(2deg);
+  /*width: 370px;*/
+  width: 18vw;
+}
+
+.photo20 {
+  bottom: -3%;
+  left: -13%;
+  transform:
+    /*translateX(-50%)*/
+    rotate(2deg);
+  /*width: 370px;*/
+  width: 18vw;
 }
 
 .photo img,
@@ -186,7 +241,7 @@
 
 .photo4 img {
   height: auto;
-  /*height: 240px;*/
+  /*height: 200px;*/
   width: 100%;
   object-fit: cover;
 }
@@ -270,15 +325,37 @@
 
 .photo16 img {
   height: auto;
-  /*height: 380px;*/
+  /*height: 160px;*/
   width: 100%;
   object-fit: cover;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.photo17 img {
+  /*height: auto;*/
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo18 img {
+  /*height: auto;*/
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo19 img {
+  height: auto;
+  /*height: 200px;*/
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo20 img {
+  height: auto;
+  /*height: 200px;*/
+  width: 100%;
+  object-fit: cover;
 }
 
 .photo figcaption {

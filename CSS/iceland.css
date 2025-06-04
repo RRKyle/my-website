@@ -1,21 +1,15 @@
-/*.section-title-fade {
+.section-title-fade h2 {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   margin: 2rem 0;
-}*/
-
-.section-title-fade h1 {
-  margin: 0;
+  font-size: 4rem;
+  color: #121b01;
+  font-weight: bold;
+  text-align: center;
+  transform: none;
 }
-
-/*.line-fade {
-  flex: 1;
-  height: 5px;
-  background: linear-gradient(to right, transparent, #333, transparent);
-  opacity: 0.7;
-}*/
 
 .header-flag {
   height: auto;
@@ -23,23 +17,28 @@
   padding: 2em;
 }
 
-/* "Our Pin Drops" header */
+.visited-heading {
+  line-height: 1;
+  margin: 0;
+  font-family: 'Great Vibes', cursive;
+  color: #121b01;
+  font-size: 2rem;
+  text-align: center;
+}
+
 .visited {
   text-align: center;
   color: #121b01;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-size: 2rem;
+  margin-top: 0.25rem;
+  margin-bottom: 4rem;
   font-family: 'Great Vibes', cursive;
 }
 
-/* Places visited grid layout */
 .visited-grid {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /*grid-template-rows: 1 1fr;*/
   gap: 4rem;
   list-style: none;
   padding: 0;
@@ -55,6 +54,7 @@
   font-family: 'Great Vibes', cursive;
 }
 
+/* style for pin-drop */
 .pin-drop-icon {
   width: 50px;
   height: 50px;
@@ -62,62 +62,20 @@
   vertical-align: middle;
 }
 
-.text-page {
-  background-color: rgba(255, 255, 255, 0.2);
-  background-image: url(../images/paperboard-texture.jpg);
-  background-blend-mode: lighten;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 5px solid #c9a472;
-  border-radius: 15px;
-  padding: 1rem 2rem 1rem 2rem;
-  margin: 2rem auto;
-  max-width: 1200px;
+.divider-line {
   width: 100%;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
-  /* optional glassy effect */
+  height: 5px;
+  background: linear-gradient(to right, transparent, #333, transparent);
+  opacity: 0.7;
+  margin: 2.5rem auto;
+  border-radius: 1rem;
 }
 
-/* Optional paragraph styling */
-.text-page p {
-  margin: 1rem 0;
-  font-size: 1.1rem;
-  line-height: 2;
-}
-
-/*.places-visited-box {
-  position: relative;
-  background-image: url(../images/paperboard-texture.jpg);
-  /*background-color: #fdf8f2;
-  border: 5px solid #c9a472;
-  border-radius: 30px;
-  padding: 0rem 2rem 1rem 2rem;
-  margin: 2rem auto;
-  max-width: 60em;
-  width: 100%;
-  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
-}*/
-
-/*.places-visited-box::after {
-  content: "";
-  background: url('../images/postage.png') no-repeat center;
-  background-size: 100px;
-  position: absolute;
-  top:0px;
-  right: 20px;
-  width: 100px;
-  height: 100px;
-  opacity: 0.9;
-  transform: rotate(-10deg);
-}*/
-
-/* Convert the photos to a grid layout for smaller screens???*/
 
 .cork-board {
   position: relative;
   overflow: visible;
-  margin: 2rem auto;
+  margin: 5rem auto;
   max-width: 1200px;
   min-height: 600px;
   background: url('../images/cork-board.jpg') center/cover no-repeat;
@@ -252,12 +210,6 @@
   height: 320px;
   width: 100%;
   object-fit: cover;
-}*/
-
-/**,
-*::before,
-*::after {
-  box-sizing: border-box;
 }*/
 
 .photo figcaption {
