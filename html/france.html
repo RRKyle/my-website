@@ -2,43 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Experience the elegance of France through our journey — Parisian streets, festive markets, and cultural treasures." />
     <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico:wght@400;500;600;700;800&family=Indie+Flower&family=Great+Vibes&family=Quicksand&family=Roboto:wght@400;500;600;700;800&family=Open+Sans&family=Merriweather&family=Montserrat&family=Playfair+Display:wght@600&family=Cinzel:wght@700&family=Raleway:wght@600&family=Cormorant+Garamond&family=Lato&family=Crimson+Text&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico:wght@400;500;600;700;800&family=Indie+Flower&family=Great+Vibes&family=Quicksand&family=Roboto:wght@400;500;600;700;800;900&family=Open+Sans&family=Merriweather&family=Montserrat&family=Playfair+Display:wght@600&family=Cinzel:wght@700&family=Raleway:wght@600&family=Cormorant+Garamond&family=Allura&family=Satisfy&family=Lato&family=Crimson+Text&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../CSS/france.css">
-    <title>France</title>
+
+    <title>🇫🇷 France - Revolution and Romance</title>
 </head>
 
 <body>
     <div class="overlay">
-
-        <header>
-            <div class="section-title-fade">
+        <header class="hero">
+            <div class="ribbon-container">
                 <span class="line-fade"></span>
-                <img src="../images/big-flags/fr.png" alt="French flag left" class="header-flag">
+                <img src="../images/large-flags64x48/fr.png" alt="French flag left" class="header-flag">
                 <h2 class="header">La France</h2>
-                <img src="../images/big-flags/fr.png" alt="French flag right" class="header-flag">
+                <img src="../images/large-flags64x48/fr.png" alt="French flag right" class="header-flag">
                 <span class="line-fade"></span>
             </div>
         </header>
 
         <nav id="nav-menu">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../html/photos.html">Photos</a></li>
+                <li><a href="../index.html" class="nav-pill">Home</a></li>
+                <li><a href="../html/photos.html" class="nav-pill">Photos</a></li>
                 <li class="dropdown">
-                    <!--<a href="#" class="dropdown-pill" onclick="event.preventDefault();">Countries</a>-->
-                    <button class="dropdown-pill">Countries</button>
+                    <a href="#" class="nav-pill dropdown-pill current" aria-haspopup="true" aria-expanded="false">
+                        Countries <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
                     <div class="dropdown-content">
-                        <a href="../html/germany.html">Germany</a>
-                        <a href="../html/italy.html">Italy</a>
-                        <a href="../html/iceland.html">Iceland</a>
-                        <a href="../html/romania.html">Romania</a>
-                        <a href="../html/austria.html">Austria</a>
-                        <a href="../html/france.html">France</a>
+                        <a href="../html/germany.html" class="nav-pill">Germany</a>
+                        <a href="../html/italy.html" class="nav-pill">Italy</a>
+                        <a href="../html/iceland.html" class="nav-pill">Iceland</a>
+                        <a href="../html/romania.html" class="nav-pill">Romania</a>
+                        <a href="../html/austria.html" class="nav-pill">Austria</a>
+                        <a href="../html/france.html" class="nav-pill current">France</a>
                     </div>
                 </li>
             </ul>
@@ -56,11 +60,14 @@
             <section>
                 <div class="visited">
                     <ul class="visited-grid">
-                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Paris</li>
-                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Strasbourg</li>
-                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">D-Day Normandy
+                        <li><img src="../images/graphics/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Paris
+                        </li>
+                        <li><img src="../images/graphics/pin-drop.png" class="pin-drop-icon"
+                                alt="pin-drop icon">Strasbourg</li>
+                        <li><img src="../images/graphics/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">D-Day
+                            Normandy
                             Expedition</li>
-                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon"> Mont
+                        <li><img src="../images/graphics/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon"> Mont
                             Saint-Michel</li>
                     </ul>
                 </div>
@@ -105,58 +112,58 @@
                 <section class="cork-board">
 
                     <figure class="photo photo1">
-                        <a href="../images/utah-beach.jpg" target="blank">
-                            <img src="../images/utah-beach.jpg" alt="utah beach">
+                        <a href="../images/france/utah-beach.jpg" target="blank">
+                            <img src="../images/france/utah-beach.jpg" alt="utah beach">
                         </a>
                         <figcaption>1. Utah Beach: D-Day remembered</figcaption>
                     </figure>
 
                     <figure class="photo photo2">
-                        <a href="../images/monet-garden.png" target="blank">
-                            <img src="../images/monet-garden.png" alt="monet's garden">
+                        <a href="../images/france/monet-garden.png" target="blank">
+                            <img src="../images/france/monet-garden.png" alt="monet's garden">
                         </a>
                         <figcaption>2. Stepping into Monet's canvas — the footbridge at Giverny.</figcaption>
                     </figure>
 
                     <figure class="photo photo3">
-                        <a href="../images/monet-garden2.png" target="blank">
-                            <img src="../images/monet-garden2.png" alt="monet's living masterpiece">
+                        <a href="../images/france/monet-garden2.png" target="blank">
+                            <img src="../images/france/monet-garden.png" alt="monet's living masterpiece">
                         </a>
                         <figcaption>3. Not just a garden—Monet's living masterpiece</figcaption>
                     </figure>
 
                     <figure class="photo photo4">
-                        <a href="..//images/mont-st-michel.jpg" target="blank">
-                            <img src="../images/mont-st-michel.jpg" alt="mont st. michel">
+                        <a href="..//images/france/mont-st-michel.jpg" target="blank">
+                            <img src="../images/france/mont-st-michel.jpg" alt="mont st. michel">
                         </a>
                         <figcaption>4. Mont-Saint-Michel: A medieval stronghold turned sacred sanctuary since the 8th
                             century</figcaption>
                     </figure>
 
                     <figure class="photo photo5">
-                        <a href="../images/Sainte-Mère-Église.png" target="blank">
-                            <img src="../images/Sainte-Mère-Église.png" alt="Sainte-Mère-Église">
+                        <a href="../images/france/Sainte-Mère-Église.png" target="blank">
+                            <img src="../images/france/Sainte-Mère-Église.png" alt="Sainte-Mère-Église">
                         </a>
                         <figcaption>5. Sainte-Mère-Église: D-Day's silent witness</figcaption>
                     </figure>
 
                     <figure class="photo photo6">
-                        <a href="../images/eiffel.jpg" target="blank">
-                            <img src="../images/eiffel.jpg" alt="eiffel tower">
+                        <a href="../images/france/eiffel.jpg" target="blank">
+                            <img src="../images/france/eiffel.jpg" alt="eiffel tower">
                         </a>
                         <figcaption>6. The Eiffel Tower: Paris' enduring icon since the 1889 World's Fair</figcaption>
                     </figure>
 
                     <figure class="photo photo7">
-                        <a href="../images/american-cemetery.jpg" target="blank">
-                            <img src="../images/american-cemetery.jpg" alt="american cemetery">
+                        <a href="../images/france/american-cemetery.jpg" target="blank">
+                            <img src="../images/france/american-cemetery.jpg" alt="american cemetery">
                         </a>
                         <figcaption>7. Normandy American Cemetery and Memorial</figcaption>
                     </figure>
 
                     <!--<figure class="photo photo8">
                         <video controls>
-                            <source src="../images/.mp4" type="video/mp4" alt="description">
+                            <source src="../images/france/.mp4" type="video/mp4" alt="description">
                             Your browser does not support this video format.
                         </video>
                         <figcaption>8. description</figcaption>
@@ -168,6 +175,7 @@
         </main>
         <footer>
             <p><a href="../index.html" class="return-link">← Return to Homepage</a></p>
+            <p class="copyright">&copy; 2025 Beyond the Barracks. All rights reserved.</p>
         </footer>
 
     </div>

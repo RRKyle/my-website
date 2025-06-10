@@ -4,47 +4,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Description of Website" />
+  <meta name="description"
+    content="From combat boots to cobblestones — documenting an Army family's travels through Europe with heart, history, and perspective." />
   <link
-    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico:wght@400;500;600;700;800&family=Indie+Flower&family=Great+Vibes&family=Quicksand&family=Roboto:wght@400;500;600;700;800&family=Open+Sans&family=Merriweather&family=Montserrat&family=Playfair+Display:wght@600&family=Cinzel:wght@700&family=Raleway:wght@600&family=Cormorant+Garamond&family=Allura&family=Satisfy&family=Lato&family=Crimson+Text&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico:wght@400;500;600;700;800&family=Indie+Flower&family=Great+Vibes&family=Quicksand&family=Roboto:wght@400;500;600;700;800;900&family=Open+Sans&family=Merriweather&family=Montserrat&family=Playfair+Display:wght@600&family=Cinzel:wght@700&family=Raleway:wght@600&family=Cormorant+Garamond&family=Allura&family=Satisfy&family=Lato&family=Crimson+Text&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="../CSS/iceland.css">
-  <title>Euro Wanderlust</title>
+  <title>The Chronicles of Europe</title>
 </head>
 
 <body>
   <div class="overlay">
-
-    <header>
-      <div class="section-title-fade">
-        <span class="line-fade"></span>
-        <h1 class="header">Beyond the Barracks: Exploring Europe Together</h1>
-        <span class="line-fade"></span>
+    <header class="hero">
+      <div class="ribbon-container">
+        <div class="heading-group">
+          <span class="line-fade"></span>
+          <h1>Beyond the Barracks: Exploring Europe Together</h1>
+          <span class="line-fade"></span>
+        </div>
       </div>
     </header>
 
-
     <nav id="nav-menu">
       <ul>
-        <li><a href="index.html" class="current">Home</a></li>
-        <li><a href="html/photos.html">Photos</a></li>
+        <li><a href="index.html" class="nav-pill current">Home</a></li>
+        <li><a href="html/photos.html" class="nav-pill">Photos</a></li>
         <li class="dropdown">
-          <button class="dropdown-pill">
-            Countries<i class="fas fa-chevron-down" aria-hidden="true"></i>
-          </button>
+          <a href="#" class="nav-pill dropdown-pill" aria-haspopup="true" aria-expanded="false">
+            Countries <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </a>
           <div class="dropdown-content">
-            <a href="html/germany.html">Germany</a>
-            <a href="html/italy.html">Italy</a>
-            <a href="html/iceland.html">Iceland</a>
-            <a href="html/romania.html">Romania</a>
-            <a href="html/austria.html">Austria</a>
-            <a href="html/france.html">France</a>
+            <a href="html/germany.html" class="nav-pill">Germany</a>
+            <a href="html/italy.html" class="nav-pill">Italy</a>
+            <a href="html/iceland.html" class="nav-pill">Iceland</a>
+            <a href="html/romania.html" class="nav-pill">Romania</a>
+            <a href="html/austria.html" class="nav-pill">Austria</a>
+            <a href="html/france.html" class="nav-pill">France</a>
           </div>
         </li>
       </ul>
     </nav>
+
     <main>
 
 
@@ -56,7 +57,7 @@
             creating lasting memories and gaining a deeper appreciation for its cultures, history, and <strong>wondrous
               landscapes</strong>. Each country we visited offered something distinct—whether it was breathtaking
             scenery, rich traditions, or meaningful personal experiences. The following is just a small glimpse into the
-            places that helped shape our experience—<em>capturing</em> only a fraction of <em>the unforgettable moments
+            places that helped shape our experience—<em>capturing</em> only a fraction of <em>unforgettable moments
               we were grateful to share</em> along the way:
           </p>
         </div>
@@ -71,67 +72,65 @@
         </ul>
       </section>
 
-      <!--Do I want pictures/thumbnails on main page or just links to the country and pictures?-->
-
       <section id="germany" class="text-page country-block">
         <h3 class="country-header">
-          <img src="images/bigger-flags/de.png" alt="German flag">
+          <img src="images/xlarge-flags-72x54/de.png" alt="German flag">
           GERMANY
         </h3>
         <figure class="photo-frame">
           <!-- Adds the linkk to an external website -->
           <a href="https://www.neuschwanstein.de/englisch/tourist/index.htm" target="blank" rel="noopener noreferrer">
-            <img src="images/Neuschwanstein_Castle.png" alt="Neuschwanstein Castle in Bavaria">
+            <img src="images/germany/Neuschwanstein_Castle.png" alt="Neuschwanstein Castle in Bavaria">
           </a>
           <figcaption>Neuschwanstein Castle, the fairy-tale icon of Bavaria</figcaption>
         </figure>
         <p class="tag-line">Deutschland: Alpine trails, medieval tales, and beer that tells its own story.
-          <a href="./html/germany.html" class="accent-link">MORE HERE</a>
+          <a href="./html/germany.html" class="accent-link">MORE</a>
         </p>
         <p><a href="#top" class="back-link">Back to top <i class="fas fa-turn-up"></i></a></p>
       </section>
 
       <section id="italy" class="text-page country-block">
         <h3 class="country-header">
-          <img src="images/bigger-flags/it.png" alt="Italian flag">
+          <img src="images/xlarge-flags-72x54/it.png" alt="Italian flag">
           ITALY
         </h3>
         <figure class="photo-frame">
           <a href="https://www.venicewelcome.com/info/tips_about_venice/10-things-do-not-miss-in-venice.htm"
             target="blank" rel="noopener noreferrer">
-            <img src="images/venice.png" alt="Venice, Italy">
+            <img src="images/italy/venice.png" alt="Venice, Italy">
           </a>
           <figcaption>Venice, Italy: where the streets are made of water.</figcaption>
         </figure>
         <p class="tag-line">Italia: Where old ruins and modern life come together. <a href="./html/italy.html"
-            class="accent-link">MORE HERE</a></p>
+            class="accent-link">MORE</a></p>
         <p><a href="#top" class="back-link">Back to top <i class="fas fa-turn-up"></i></a></p>
       </section>
 
       <section id="iceland" class="text-page country-block">
         <h3 class="country-header">
-          <img src="images/bigger-flags/is.png" alt="Icelandic flag">
+          <img src="images/xlarge-flags-72x54/is.png" alt="Icelandic flag">
           ICELAND
         </h3>
         <figure class="photo-frame">
           <a href="https://www.visiticeland.com/article/the-golden-circle" target="blank" rel="noopener noreferrer">
-            <img src="images/iceland.jpg" alt="iceland">
+            <img src="images/iceland/iceland.jpg" alt="iceland">
           </a>
           <figcaption>Þingvallakirkja, quietly nestled in the heart of Þingvellir</figcaption>
         </figure>
         <p class="tag-line">Ísland: Where fire and ice forged a Viking legacy. <a href="./html/iceland.html"
-            class="accent-link">MORE HERE</a></p>
+            class="accent-link">MORE</a></p>
         <p><a href="#top" class="back-link">Back to top <i class="fas fa-turn-up"></i></a></p>
       </section>
 
       <section id="romania" class="text-page country-block">
         <h3 class="country-header">
-          <img src="images/bigger-flags/ro.png" alt="Romanian flag">
+          <img src="images/xlarge-flags-72x54/ro.png" alt="Romanian flag">
           ROMANIA
         </h3>
         <figure class="photo-frame">
           <a href="https://bran-castle.com/" target="blank" rel="noopener noreferrer">
-            <img src="images/vlad_castle.jpg" alt="A picture of vlad the impaler's castle">
+            <img src="images/romania/vlad_castle.jpg" alt="A picture of vlad the impaler's castle">
           </a>
           <figcaption>Bran Castle, commonly linked to the Dracula legend</figcaption>
         </figure>
@@ -142,44 +141,43 @@
 
       <section id="austria" class="text-page country-block">
         <h3 class="country-header">
-          <img src="images/bigger-flags/at.png" alt="Austrian flag">
+          <img src="images/xlarge-flags-72x54/at.png" alt="Austrian flag">
           AUSTRIA
         </h3>
         <figure class="photo-frame">
           <a href="https://www.visitingvienna.com/sightseeing/christmas-markets/" target="blank"
             rel="noopener noreferrer">
-            <img src="images/Vienna.png" alt="vienna at Christmas">
+            <img src="images/austria/Vienna.png" alt="vienna at Christmas">
           </a>
           <figcaption>Christmas market in Vienna, Austria</figcaption>
         </figure>
         <p class="tag-line">Österreich: The Alps, the Von Trapps, and a dash of Krampus. <a href="./html/austria.html"
-            class="accent-link">MORE HERE</a></p>
+            class="accent-link">MORE</a></p>
         <p><a href="#top" class="back-link">Back to top <i class="fas fa-turn-up"></i></a></p>
       </section>
 
       <section id="france" class="text-page country-block">
         <h3 class="country-header">
-          <img src="images/bigger-flags/fr.png" alt="French flag">
+          <img src="images/xlarge-flags-72x54/fr.png" alt="French flag">
           FRANCE
         </h3>
         <figure class="photo-frame">
           <a href="https://en.normandie-tourisme.fr/unmissable-sites/the-mont-saint-michel/" target="blank"
             rel="noopener noreferrer">
-            <img src="images/mont-saint-michel.jpg" alt="A picture of beautiful Mont Saint-Michel">
+            <img src="images/france/mont-saint-michel.jpg" alt="A picture of beautiful Mont Saint-Michel">
           </a>
           <figcaption>The calm charm of Mont-Saint-Michel at low tide</figcaption>
         </figure>
         <p class="tag-line">La France: From medieval strongholds to the shores of liberation. <a
-            href="./html/france.html" class="accent-link">MORE HERE</a></p>
+            href="./html/france.html" class="accent-link">MORE</a></p>
         <p><a href="#top" class="back-link">Back to top <i class="fas fa-turn-up"></i></a></p>
       </section>
 
     </main>
 
     <footer>
-      <p>&copy; rrk / 2025 My Travel Log</p>
+      <p class="copyright">&copy; 2025 Beyond the Barracks. All rights reserved.</p>
     </footer>
-    <!-- Do a Photo Gallery page that has pics from these and others that aren't listed -->
   </div>
 </body>
 

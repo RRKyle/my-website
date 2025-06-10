@@ -2,44 +2,50 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Wander through Austria's festive markets, alpine towns, and Krampus traditions during a magical winter adventure.">
+
     <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico:wght@400;500;600;700;800&family=Indie+Flower&family=Great+Vibes&family=Quicksand&family=Roboto:wght@400;500;600;700;800&family=Open+Sans&family=Merriweather&family=Montserrat&family=Playfair+Display:wght@600&family=Cinzel:wght@700&family=Raleway:wght@600&family=Cormorant+Garamond&family=Lato&family=Crimson+Text&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico:wght@400;500;600;700;800&family=Indie+Flower&family=Great+Vibes&family=Quicksand&family=Roboto:wght@400;500;600;700;800;900&family=Open+Sans&family=Merriweather&family=Montserrat&family=Playfair+Display:wght@600&family=Cinzel:wght@700&family=Raleway:wght@600&family=Cormorant+Garamond&family=Allura&family=Satisfy&family=Lato&family=Crimson+Text&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../CSS/austria.css">
 
-    <title>Austria</title>
+    <title>🇦🇹 Austria - Empire and Elegance</title>
 </head>
 
 <body>
     <div class="overlay">
-
-        <header>
-            <div class="section-title-fade">
+        <header class="hero">
+            <div class="ribbon-container">
+                <div class="heading-group">
                 <span class="line-fade"></span>
-                <img src="../images/big-flags/at.png" alt="Austrian flag left" class="header-flag">
+                <img src="../images/large-flags64x48/at.png" alt="Austrian flag left" class="header-flag">
                 <h2 class="header">Österreich</h2>
-                <img src="../images/big-flags/at.png" alt="Austrian flag left" class="header-flag">
+                <img src="../images/large-flags64x48/at.png" alt="Austrian flag right" class="header-flag">
                 <span class="line-fade"></span>
+                </div>
             </div>
         </header>
 
         <nav id="nav-menu">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../html/photos.html">Photos</a></li>
+                <li><a href="../index.html" class="nav-pill">Home</a></li>
+                <li><a href="../html/photos.html" class="nav-pill">Photos</a></li>
                 <li class="dropdown">
-                    <!--<a href="#" class="dropdown-pill" onclick="event.preventDefault();">Countries</a>-->
-                    <button class="dropdown-pill">Countries</button>
+                    <a href="#" class="nav-pill dropdown-pill current" aria-haspopup="true" aria-expanded="false">
+                        Countries <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
                     <div class="dropdown-content">
-                        <a href="../html/germany.html">Germany</a>
-                        <a href="../html/italy.html">Italy</a>
-                        <a href="../html/iceland.html">Iceland</a>
-                        <a href="../html/romania.html">Romania</a>
-                        <a href="../html/austria.html">Austria</a>
-                        <a href="../html/france.html">France</a>
+                        <a href="../html/germany.html" class="nav-pill">Germany</a>
+                        <a href="../html/italy.html" class="nav-pill">Italy</a>
+                        <a href="../html/iceland.html" class="nav-pill">Iceland</a>
+                        <a href="../html/romania.html" class="nav-pill">Romania</a>
+                        <a href="../html/austria.html" class="nav-pill current">Austria</a>
+                        <a href="../html/france.html" class="nav-pill">France</a>
                     </div>
                 </li>
             </ul>
@@ -58,10 +64,14 @@
             <section>
                 <div class="visited">
                     <ul class="visited-grid">
-                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Vienna</li>
-                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Salzburg</li>
-                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Bad Goisern</li>
-                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Innsbruck</li>
+                        <li><img src="../images/graphics/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Vienna
+                        </li>
+                        <li><img src="../images/graphics/pin-drop.png" class="pin-drop-icon"
+                                alt="pin-drop icon">Salzburg</li>
+                        <li><img src="../images/graphics/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Bad
+                            Goisern</li>
+                        <li><img src="../images/graphics/pin-drop.png" class="pin-drop-icon"
+                                alt="pin-drop icon">Innsbruck</li>
                     </ul>
                 </div>
             </section>
@@ -111,57 +121,57 @@
                 <section class="cork-board">
 
                     <figure class="photo photo1">
-                        <a href="../images/arches.jpg" target="blank">
-                            <img src="../images/arches.jpg" alt="beautiful arches, vienna">
+                        <a href="../images/austria/arches.jpg" target="blank">
+                            <img src="../images/austria/arches.jpg" alt="beautiful arches, vienna">
                         </a>
                         <figcaption>1. Arched beauty along Vienna's historic Ringstraße</figcaption>
                     </figure>
 
                     <figure class="photo photo2">
-                        <a href="../images/krampus2.JPG" target="blank">
-                            <img src="../images/krampus2.JPG" alt="krampus">
+                        <a href="../images/austria/krampus2.JPG" target="blank">
+                            <img src="../images/austria/krampus2.JPG" alt="krampus">
                         </a>
-                        <figcaption>2. Not all who visit children in December bring gifts</Caption>
+                        <figcaption>2. Not all who visit children in December bring gifts</figcaption>
                     </figure>
 
                     <figure class="photo photo3">
-                        <a href="../images/hofburg-palace.jpg" target="blank">
-                            <img src="../images/hofburg-palace.jpg" alt="hofburg palace">
+                        <a href="../images/austria/hofburg-palace.jpg" target="blank">
+                            <img src="../images/austria/hofburg-palace.jpg" alt="hofburg palace">
                         </a>
                         <figcaption>3. Hofburg Palace glowing over Vienna's Michaelerplatz."</figcaption>
                     </figure>
 
                     <figure class="photo photo4">
-                        <a href="..//images/salzburg.png" target="blank">
-                            <img src="../images/salzburg.png" alt="hohensalzburg and the golden sphaera">
+                        <a href="..//images/austria/salzburg.png" target="blank">
+                            <img src="../images/austria/salzburg.png" alt="hohensalzburg and the golden sphaera">
                         </a>
                         <figcaption>4. Hohensalzburg and the golden sphaera — Salzburg in a single frame</figcaption>
                     </figure>
 
                     <figure class="photo photo5">
-                        <a href="../images/.jpg" target="blank">
-                            <img src="../images/.jpg" alt="description">
+                        <a href="../images/austria/.jpg" target="blank">
+                            <img src="../images/austria/.jpg" alt="description">
                         </a>
                         <figcaption>5. description</figcaption>
                     </figure>
 
                     <figure class="photo photo6">
-                        <a href="../images/krampus.JPG" target="blank">
-                            <img src="../images/krampus.JPG" alt="krampus in the shadows">
+                        <a href="../images/austria/krampus.JPG" target="blank">
+                            <img src="../images/austria/krampus.JPG" alt="krampus in the shadows">
                         </a>
                         <figcaption>6. Krampus emerges through fire and shadow</figcaption>
                     </figure>
 
                     <figure class="photo photo7">
-                        <a href="../images/.jpg" target="blank">
-                            <img src="../images/.jpg" alt="description">
+                        <a href="../images/austria/.jpg" target="blank">
+                            <img src="../images/austria/.jpg" alt="description">
                         </a>
                         <figcaption>7. description</figcaption>
                     </figure>
 
                     <!--<figure class="photo photo8">
                         <video controls>
-                            <source src="../images/.mp4" type="video/mp4" alt="description">
+                            <source src="../images/austria/.mp4" type="video/mp4" alt="description">
                             Your browser does not support this video format.
                         </video>
                         <figcaption>8. description</figcaption>
@@ -173,6 +183,7 @@
         </main>
         <footer>
             <p><a href="../index.html" class="return-link">← Return to Homepage</a></p>
+            <p class="copyright">&copy; 2025 Beyond the Barracks. All rights reserved.</p>
         </footer>
 
     </div>

@@ -2,44 +2,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Uncover Romania’s blend of Gothic architecture, vibrant countryside, and deep-rooted folklore through our travels." />
     <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico:wght@400;500;600;700;800&family=Indie+Flower&family=Great+Vibes&family=Quicksand&family=Roboto:wght@400;500;600;700;800&family=Open+Sans&family=Merriweather&family=Montserrat&family=Playfair+Display:wght@600&family=Cinzel:wght@700&family=Raleway:wght@600&family=Cormorant+Garamond&family=Lato&family=Crimson+Text&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico:wght@400;500;600;700;800&family=Indie+Flower&family=Great+Vibes&family=Quicksand&family=Roboto:wght@400;500;600;700;800;900&family=Open+Sans&family=Merriweather&family=Montserrat&family=Playfair+Display:wght@600&family=Cinzel:wght@700&family=Raleway:wght@600&family=Cormorant+Garamond&family=Allura&family=Satisfy&family=Lato&family=Crimson+Text&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../CSS/romania.css">
 
-    <title>Romania</title>
+    <title>🇷🇴 Romania - Castles and Crossroads</title>
 </head>
 
 <body>
     <div class="overlay">
 
-        <header>
-            <div class="section-title-fade">
+        <header class="hero">
+            <div class="ribbon-container">
                 <span class="line-fade"></span>
-                <img src="../images/big-flags/ro.png" alt="Romanian flag left" class="header-flag">
+                <img src="../images/large-flags64x48/ro.png" alt="Romanian flag left" class="header-flag">
                 <h2 class="header">România</h2>
-                <img src="../images/big-flags/ro.png" alt="Romanian flag right" class="header-flag">
+                <img src="../images/large-flags64x48/ro.png" alt="Romanian flag right" class="header-flag">
                 <span class="line-fade"></span>
             </div>
         </header>
 
         <nav id="nav-menu">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../html/photos.html">Photos</a></li>
+                <li><a href="../index.html" class="nav-pill">Home</a></li>
+                <li><a href="../html/photos.html" class="nav-pill">Photos</a></li>
                 <li class="dropdown">
-                    <!--<a href="#" class="dropdown-pill" onclick="event.preventDefault();">Countries</a>-->
-                    <button class="dropdown-pill">Countries</button>
+                    <a href="#" class="nav-pill dropdown-pill current" aria-haspopup="true" aria-expanded="false">
+                        Countries <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
                     <div class="dropdown-content">
-                        <a href="../html/germany.html">Germany</a>
-                        <a href="../html/italy.html">Italy</a>
-                        <a href="../html/iceland.html">Iceland</a>
-                        <a href="../html/romania.html">Romania</a>
-                        <a href="../html/austria.html">Austria</a>
-                        <a href="../html/france.html">France</a>
+                        <a href="../html/germany.html" class="nav-pill">Germany</a>
+                        <a href="../html/italy.html" class="nav-pill">Italy</a>
+                        <a href="../html/iceland.html" class="nav-pill">Iceland</a>
+                        <a href="../html/romania.html" class="nav-pill current">Romania</a>
+                        <a href="../html/austria.html" class="nav-pill">Austria</a>
+                        <a href="../html/france.html" class="nav-pill">France</a>
                     </div>
                 </li>
             </ul>
@@ -48,6 +52,7 @@
 
 
             <section>
+
                 <div class="section-title-fade">
                     <span class="line-fade"></span>
                     <h4 class="visited-heading">A Few of Our Pin Drops:</h4>
@@ -58,11 +63,17 @@
             <section>
                 <div class="visited">
                     <ul class="visited-grid">
-                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Bucharest</li>
-                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Brașov</li>
-                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Transylvania
+                        <li><img src="../images/graphics/pin-drop.png" class="pin-drop-icon"
+                                alt="pin-drop icon">Bucharest
                         </li>
-                        <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Dracula's Castle
+                        <li><img src="../images/graphics/pin-drop.png" class="pin-drop-icon" alt="pin-drop icon">Brașov
+                        </li>
+                        <li><img src="../images/graphics/pin-drop.png" class="pin-drop-icon"
+                                alt="pin-drop icon">Transylvania
+                        </li>
+                        <li><img src="../images/graphics/pin-drop.png" class="pin-drop-icon"
+                                alt="pin-drop icon">Dracula's
+                            Castle
                         </li>
                     </ul>
                 </div>
@@ -92,58 +103,58 @@
                 <section class="cork-board">
 
                     <figure class="photo photo1">
-                        <a href="../images/draculas-castle.JPG" target="blank">
-                            <img src="../images/draculas-castle.JPG" alt="bran castle">
+                        <a href="../images/romania/draculas-castle.JPG" target="blank">
+                            <img src="../images/romania/draculas-castle.JPG" alt="bran castle">
                         </a>
                         <figcaption>1. Bran Castle, forever tied to the shadow of the Count</figcaption>
                     </figure>
 
                     <figure class="photo photo2">
-                        <a href="../images/.jpg" target="blank">
-                            <img src="../images/.jpg" alt="description">
+                        <a href="../images/romania/.jpg" target="blank">
+                            <img src="../images/romania/.jpg" alt="description">
                         </a>
                         <figcaption>2. description</figcaption>
                     </figure>
 
                     <figure class="photo photo3">
-                        <a href="../images/transylvania.JPG" target="blank">
-                            <img src="../images/transylvania.JPG" alt="transylvania">
+                        <a href="../images/romania/transylvania.JPG" target="blank">
+                            <img src="../images/romania/transylvania.JPG" alt="transylvania">
                         </a>
                         <figcaption>3. On the edge of the Carpathian Mountains, deep in Transylvania</figcaption>
                     </figure>
 
                     <figure class="photo photo4">
-                        <a href="..//images/romanian-parliament.JPG" target="blank">
-                            <img src="../images/romanian-parliament.JPG" alt="palace of parliament, romania">
+                        <a href="..//images/romania/romanian-parliament.JPG" target="blank">
+                            <img src="../images/romania/romanian-parliament.JPG" alt="palace of parliament, romania">
                         </a>
                         <figcaption>4. Romanian Parliament: An iconic symbol of both opulence and oppression
                         </figcaption>
                     </figure>
 
                     <figure class="photo photo5">
-                        <a href="../images/.jpg" target="blank">
-                            <img src="../images/.jpg" alt="description">
+                        <a href="../images/romania/.jpg" target="blank">
+                            <img src="../images/romania/.jpg" alt="description">
                         </a>
                         <figcaption>5. description</figcaption>
                     </figure>
 
                     <figure class="photo photo6">
-                        <a href="../images/umbrella-sky.JPG" target="blank">
-                            <img src="../images/umbrella-sky.JPG" alt="bucharest's umbrella sky">
+                        <a href="../images/romania/umbrella-sky.JPG" target="blank">
+                            <img src="../images/romania/umbrella-sky.JPG" alt="bucharest's umbrella sky">
                         </a>
                         <figcaption>6. A burst of color above the quiet charm of Buchares's Old Town</figcaption>
                     </figure>
 
                     <figure class="photo photo7">
-                        <a href="../images/.jpg" target="blank">
-                            <img src="../images/.jpg" alt="description">
+                        <a href="../images/romania/.jpg" target="blank">
+                            <img src="../images/romania/.jpg" alt="description">
                         </a>
                         <figcaption>7. description</figcaption>
                     </figure>
 
                     <!--<figure class="photo photo8">
                         <video controls>
-                            <source src="../images/.mp4" type="video/mp4" alt="description">
+                            <source src="../images/romania/.mp4" type="video/mp4" alt="description">
                             Your browser does not support this video format.
                         </video>
                         <figcaption>8. description</figcaption>
@@ -156,6 +167,7 @@
         </main>
         <footer>
             <p><a href="../index.html" class="return-link">← Return to Homepage</a></p>
+            <p class="copyright">&copy; 2025 Beyond the Barracks. All rights reserved.</p>
         </footer>
 
     </div>

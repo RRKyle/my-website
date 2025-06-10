@@ -2,49 +2,51 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Discover Iceland's snowy landscapes, geysers, and folklore through our winter adventure." />
   <link
-    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico:wght@400;500;600;700;800&family=Indie+Flower&family=Great+Vibes&family=Quicksand&family=Roboto:wght@400;500;600;700;800&family=Open+Sans&family=Merriweather&family=Montserrat&family=Playfair+Display:wght@600&family=Cinzel:wght@700&family=Raleway:wght@600&family=Allura&family=Satisfy&family=Cormorant+Garamond&family=Lato&family=Crimson+Text&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico:wght@400;500;600;700;800&family=Indie+Flower&family=Great+Vibes&family=Quicksand&family=Roboto:wght@400;500;600;700;800;900&family=Open+Sans&family=Merriweather&family=Montserrat&family=Playfair+Display:wght@600&family=Cinzel:wght@700&family=Raleway:wght@600&family=Cormorant+Garamond&family=Allura&family=Satisfy&family=Lato&family=Crimson+Text&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="../CSS/iceland.css">
-  <title>Iceland</title>
+  <title>🇮🇸 Iceland - Fire, Ice, and History</title>
 </head>
 
 <body>
   <div class="overlay">
 
-    <header>
-      <div class="section-title-fade">
-        <span class="line-fade"></span>
-        <img src="../images/big-flags/is.png" alt="Icelandic flag left" class="header-flag">
+    <header class="hero">
+            <div class="ribbon-container">
+                <span class="line-fade"></span>
+                <img src="../images/large-flags64x48/is.png" alt="Icelandic flag left" class="header-flag">
         <h2 class="header">Ísland</h2>
-        <img src="../images/big-flags/is.png" alt="Icelandic flag right" class="header-flag">
+        <img src="../images/large-flags64x48/is.png" alt="Icelandic flag right" class="header-flag">
         <span class="line-fade"></span>
       </div>
     </header>
 
     <nav id="nav-menu">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../html/photos.html">Photos</a></li>
-        <li class="dropdown">
-          <button class="dropdown-pill">
-            Countries<i class="fas fa-chevron-down" aria-hidden="true"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="../html/germany.html">Germany</a>
-            <a href="../html/italy.html">Italy</a>
-            <a href="../html/iceland.html">Iceland</a>
-            <a href="../html/romania.html">Romania</a>
-            <a href="../html/austria.html">Austria</a>
-            <a href="../html/france.html">France</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
+            <ul>
+                <li><a href="../index.html" class="nav-pill">Home</a></li>
+                <li><a href="../html/photos.html" class="nav-pill">Photos</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-pill dropdown-pill current" aria-haspopup="true" aria-expanded="false">
+                        Countries <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="../html/germany.html" class="nav-pill">Germany</a>
+                        <a href="../html/italy.html" class="nav-pill">Italy</a>
+                        <a href="../html/iceland.html" class="nav-pill current">Iceland</a>
+                        <a href="../html/romania.html" class="nav-pill">Romania</a>
+                        <a href="../html/austria.html" class="nav-pill">Austria</a>
+                        <a href="../html/france.html" class="nav-pill">France</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
     <main>
       <section>
         <div class="section-title-fade">
@@ -56,11 +58,14 @@
       <section>
         <div class="visited">
           <ul class="visited-grid">
-            <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop-icon">Reykjavík</li>
-            <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop-icon">Þingvellir National Park
+            <li><img src="../images/graphics/pin-drop.png" class="pin-drop-icon" alt="pin-drop-icon">Reykjavík</li>
+            <li><img src="../images/graphics/pin-drop.png" class="pin-drop-icon" alt="pin-drop-icon">Þingvellir National
+              Park
             </li>
-            <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop-icon">Strokkur Geyser</li>
-            <li><img src="../images/pin-drop.png" class="pin-drop-icon" alt="pin-drop-icon">Gullfoss Waterfalls</li>
+            <li><img src="../images/graphics/pin-drop.png" class="pin-drop-icon" alt="pin-drop-icon">Strokkur Geyser
+            </li>
+            <li><img src="../images/graphics/pin-drop.png" class="pin-drop-icon" alt="pin-drop-icon">Gullfoss Waterfalls
+            </li>
           </ul>
         </div>
       </section>
@@ -92,51 +97,51 @@
         <section class="cork-board">
 
           <figure class="photo photo1">
-            <a href="../images/iceland-city.jpg" target="blank">
-              <img src="../images/iceland-city.jpg" alt="Reykjavík, Iceland">
+            <a href="../images/iceland/iceland-city.jpg" target="blank">
+              <img src="../images/iceland/iceland-city.jpg" alt="Reykjavík, Iceland">
             </a>
             <figcaption>1. Reykjavík, Iceland</figcaption>
           </figure>
 
           <figure class="photo photo2">
-            <a href="../images/icelandic-horses.jpg" target="blank">
-              <img src="../images/icelandic-horses.jpg" alt="icelandic horses">
+            <a href="../images/iceland/icelandic-horses.jpg" target="blank">
+              <img src="../images/iceland/icelandic-horses.jpg" alt="icelandic horses">
             </a>
             <figcaption>2. Icelandic Horses</figcaption>
           </figure>
 
           <figure class="photo photo3">
-            <a href="../images/iceland-plates.jpg" target="blank">
-              <img src="../images/iceland-plates.jpg" alt="iceland tectonic plates">
+            <a href="../images/iceland/iceland-plates.jpg" target="blank">
+              <img src="../images/iceland/iceland-plates.jpg" alt="iceland tectonic plates">
             </a>
             <figcaption>3. Tectonic Plates- Þingvellir National Park</figcaption>
           </figure>
 
           <figure class="photo photo4">
             <video controls>
-              <source src="../images/iceland-geyser.mp4" type="video/mp4" alt="strokkur geyser">
+              <source src="../images/iceland/iceland-geyser.mp4" type="video/mp4" alt="strokkur geyser">
               Your browser does not support this video format.
             </video>
             <figcaption>4. strokkur geyser</figcaption>
           </figure>
 
           <figure class="photo photo5">
-            <a href="../images/got.jpg" target="blank">
-              <img src="../images/got.jpg" alt="game of thrones location">
+            <a href="../images/iceland/iceland-got.jpg" target="blank">
+              <img src="../images/iceland/iceland-got.jpg" alt="game of thrones location">
             </a>
             <figcaption>5. Game of Thrones Filming Location</figcaption>
           </figure>
 
           <figure class="photo photo6">
-            <a href="../images/trek.jpg" target="blank">
-              <img src="../images/trek.jpg" alt="chasing the sunset">
+            <a href="../images/iceland/iceland-trek.jpg" target="blank">
+              <img src="../images/iceland/iceland-trek.jpg" alt="chasing the sunset">
             </a>
             <figcaption>6. Chase this light through the Icelandic snow</figcaption>
           </figure>
 
           <figure class="photo photo7">
-            <a href="../images/waterfall.jpg" target="blank">
-              <img src="../images/waterfall.jpg" alt="gullfoss waterfall">
+            <a href="../images/iceland/iceland-waterfall.jpg" target="blank">
+              <img src="../images/iceland/iceland-waterfall.jpg" alt="gullfoss waterfall">
             </a>
             <figcaption>7. Gullfoss Waterfall- Located in Iceland's Golden Circle</figcaption>
           </figure>
@@ -146,6 +151,7 @@
     </main>
     <footer>
       <p><a href="../index.html" class="return-link">← Return to Homepage</a></p>
+      <p class="copyright">&copy; 2025 Beyond the Barracks. All rights reserved.</p>
     </footer>
   </div>
 </body>

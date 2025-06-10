@@ -2,194 +2,211 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--<link rel="stylesheet" href="styles.css">-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Snapshots from a journey beyond the barracks — our favorite photos across Europe." />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico:wght@400;500;600;700;800&family=Indie+Flower&family=Great+Vibes&family=Quicksand&family=Roboto:wght@400;500;600;700;800;900&family=Open+Sans&family=Merriweather&family=Montserrat&family=Playfair+Display:wght@600&family=Cinzel:wght@700&family=Raleway:wght@600&family=Cormorant+Garamond&family=Allura&family=Satisfy&family=Lato&family=Crimson+Text&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="../CSS/photos.css">
-  <title>Photos</title>
+  <title>🇪🇺Photo Gallery</title>
 </head>
 
 <body>
   <div class="overlay">
 
-    <div class="section-title-fade">
-      <span class="line-fade"></span>
-      <img src="../images/photo-frame.png" alt="image icon left" class="header-flag">
-      <h2 class="header">Photo Gallery</h2>
-      <img src="../images/photo-frame.png" alt="image icon right" class="header-flag">
-      <span class="line-fade"></span>
-    </div>
+    <header class="hero">
+      <div class="ribbon-container">
+        <span class="line-fade"></span>
+        <img src="../images/graphics/eu-flag.png" alt="image icon left" class="header-flag">
+        <h2 class="header">Photo Gallery</h2>
+        <img src="../images/graphics/eu-flag.png" alt="image icon right" class="header-flag">
+        <span class="line-fade"></span>
+      </div>
+    </header>
 
     <nav id="nav-menu">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../html/photos.html" class="current">Photos</a></li>
-        <li class="dropdown">
-          <!--<a href="#" class="dropdown-pill" onclick="event.preventDefault();">Countries</a>-->
-          <button class="dropdown-pill">Countries</button>
-          <div class="dropdown-content">
-            <a href="../html/germany.html">Germany</a>
-            <a href="../html/italy.html">Italy</a>
-            <a href="../html/iceland.html">Iceland</a>
-            <a href="../html/romania.html">Romania</a>
-            <a href="../html/austria.html">Austria</a>
-            <a href="../html/france.html">France</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
+            <ul>
+                <li><a href="../index.html" class="nav-pill">Home</a></li>
+                <li><a href="../html/photos.html" class="nav-pill current">Photos</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-pill dropdown-pill" aria-haspopup="true" aria-expanded="false">
+                        Countries <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="../html/germany.html" class="nav-pill">Germany</a>
+                        <a href="../html/italy.html" class="nav-pill">Italy</a>
+                        <a href="../html/iceland.html" class="nav-pill">Iceland</a>
+                        <a href="../html/romania.html" class="nav-pill">Romania</a>
+                        <a href="../html/austria.html" class="nav-pill">Austria</a>
+                        <a href="../html/france.html" class="nav-pill">France</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
 
     <main>
 
       <section class="cork-board">
 
         <figure class="photo photo1">
-          <a href="../images/bone_church2.temp.JPG" target="blank">
-            <img src="../images/bone_church2.JPG" alt="bone church">
+          <a href="../images/photo-gallery/bone_church2.JPG" target="blank">
+            <img src="../images/photo-gallery/bone_church2.JPG" alt="bone church">
           </a>
           <figcaption>1. "Bone Church": Czech Republic</figcaption>
         </figure>
 
         <figure class="photo photo2">
-          <a href="../images/stonehenge.jpg" target="blank">
-            <img src="../images/stonehenge.jpg" alt="stonehenge">
+          <a href="../images/photo-gallery/stonehenge.jpg" target="blank">
+            <img src="../images/photo-gallery/stonehenge.jpg" alt="stonehenge">
           </a>
           <figcaption>2. Stonehenge after 5,000 years</figcaption>
         </figure>
 
         <figure class="photo photo3">
-          <a href="../images/tallinn.jpg" target="blank">
-            <img src="../images/tallinn.jpg" alt="tallin, estonia">
+          <a href="../images/photo-gallery/copenhagen-denmark.JPG" target="blank">
+            <img src="../images/photo-gallery/copenhagen-denmark.JPG" alt="copenhagen, denmark">
           </a>
-          <figcaption>3. Tallinn, Estonia</figcaption>
+          <figcaption>3. Colorful facades line Nyhavn's harbor — a classic slice of Copenhagen</figcaption>
         </figure>
 
         <figure class="photo photo4">
-          <a href="../images/tallinn-night.jpg" target="blank">
-            <img src="../images/tallinn-night.jpg" alt="evening in tallin, estonia">
+          <a href="../images/photo-gallery/tallinn.jpg" target="blank">
+            <img src="../images/photo-gallery/tallinn.jpg" alt="tallin, estonia">
           </a>
-          <figcaption>4. Evening in Tallinn, Estonia</figcaption>
+          <figcaption>4. Tallinn, Estonia</figcaption>
         </figure>
 
         <figure class="photo photo5">
-          <a href="../images/prague.jpg" target="blank">
-            <img src="../images/prague.jpg" alt="prague, czech republic">
+          <a href="../images/photo-gallery/prague.jpg" target="blank">
+            <img src="../images/photo-gallery/prague.jpg" alt="prague, czech republic">
           </a>
           <figcaption>5. Skyline of Prague, Czech Republic</figcaption>
         </figure>
 
         <figure class="photo photo6">
-          <a href="../images/dark_hedges.jpg" target="blank">
-            <img src="../images/dark_hedges.jpg" alt="dark hedges, n. ireland">
+          <a href="../images/photo-gallery/dark_hedges.jpg" target="blank">
+            <img src="../images/photo-gallery/dark_hedges.jpg" alt="dark hedges, n. ireland">
           </a>
           <figcaption>6. Game of Thrones Dark Hedges (N. Ireland)</figcaption>
         </figure>
 
         <figure class="photo photo7">
-          <a href="../images/nessie.jpg" target="blank">
-            <img src="../images/nessie.jpg" alt="nessie in loch ness">
+          <a href="../images/photo-gallery/nessie.jpg" target="blank">
+            <img src="../images/photo-gallery/nessie.jpg" alt="nessie in loch ness">
           </a>
           <figcaption>7. Spotted: Loch Ness, Scotland</figcaption>
         </figure>
 
         <figure class="photo photo8">
-          <a href="../images/bone_church.JPG" target="blank">
-            <img src="../images/bone_church.JPG" alt="bone church">
+          <a href="../images/photo-gallery/bone_church.JPG" target="blank">
+            <img src="../images/photo-gallery/bone_church.JPG" alt="bone church">
           </a>
           <figcaption>8. Sedlec Ossuary "Bone Church": Czech Republic</figcaption>
         </figure>
 
         <figure class="photo photo9">
-          <a href="../images/dubrovnik.jpg" target="blank">
-            <img src="../images/dubrovnik.jpg" alt="dubrovnik, croatia">
+          <a href="../images/photo-gallery/dubrovnik.jpg" target="blank">
+            <img src="../images/photo-gallery/dubrovnik.jpg" alt="dubrovnik, croatia">
           </a>
           <figcaption>9. Dubrovnik, Croatia</figcaption>
         </figure>
 
         <figure class="photo photo10">
-          <a href="../images/dubrovnik-got.jpg" target="blank">
-            <img src="../images/dubrovnik-got.jpg" alt="game of thrones: dubrovnik, croatia">
+          <a href="../images/photo-gallery/dubrovnik-got.jpg" target="blank">
+            <img src="../images/photo-gallery/dubrovnik-got.jpg" alt="game of thrones: dubrovnik, croatia">
           </a>
           <figcaption>10. Game of Thrones King's Landing (Dubrovnik, Croatia)</figcaption>
         </figure>
 
         <figure class="photo photo11">
-          <a href="../images/st.petersburg.JPG" target="blank">
-            <img src="../images/st.petersburg.JPG" alt="the church on spilled blood, st. peterburg, russia">
+          <a href="../images/photo-gallery/st.petersburg.JPG" target="blank">
+            <img src="../images/photo-gallery/st.petersburg.JPG"
+              alt="the church on spilled blood, st. peterburg, russia">
           </a>
           <figcaption>11. St. Petersburg, Russia: Church of the Savior on Spilled Blood</figcaption>
         </figure>
 
         <figure class="photo photo12">
-          <a href="../images/olympia-greece.jpg" target="blank">
-            <img src="../images/olympia-greece.jpg" alt="the original olympic track in olympia, greece">
+          <a href="../images/photo-gallery/olympia-greece.jpg" target="blank">
+            <img src="../images/photo-gallery/olympia-greece.jpg" alt="the original olympic track in olympia, greece">
           </a>
           <figcaption>12. Olympia, Greece: The original Olympic track in 8th century BC</figcaption>
         </figure>
 
         <figure class="photo photo13">
-          <a href="../images/greek-helmets.jpg" target="blank">
-            <img src="../images/greek-helmets.jpg" alt="corinthian helmets, 7th-5th century BC">
+          <a href="../images/photo-gallery/greek-helmets.jpg" target="blank">
+            <img src="../images/photo-gallery/greek-helmets.jpg" alt="corinthian helmets, 7th-5th century BC">
           </a>
           <figcaption>13. Corinthian helmets, 7th-5th century BC</figcaption>
         </figure>
 
         <figure class="photo photo14">
-          <a href="../images/parthenon.jpg" target="blank">
-            <img src="../images/parthenon.jpg" alt="the parthenon, athens, greece">
+          <a href="../images/photo-gallery/parthenon.jpg" target="blank">
+            <img src="../images/photo-gallery/parthenon.jpg" alt="the parthenon, athens, greece">
           </a>
           <figcaption>14. The Parthenon, crown of the Acropolis in Athens</figcaption>
         </figure>
 
         <figure class="photo photo15">
-          <a href="../images/mykonos.jpg" target="blank">
-            <img src="../images/mykonos.jpg" alt="iconic windmill on mykonos">
+          <a href="../images/photo-gallery/mykonos.jpg" target="blank">
+            <img src="../images/photo-gallery/mykonos.jpg" alt="iconic windmill on mykonos">
           </a>
           <figcaption>15. Mykonos Windmill: Iconic against the Aegean blue</figcaption>
         </figure>
 
         <figure class="photo photo16">
-          <a href="../images/oslo.jpg" target="blank">
-            <img src="../images/oslo.jpg" alt="oslo marina">
+          <a href="../images/photo-gallery/oslo.jpg" target="blank">
+            <img src="../images/photo-gallery/oslo.jpg" alt="oslo marina">
           </a>
           <figcaption>16. Oslo's waterfront charm — where the marina meets the fjord</figcaption>
         </figure>
 
         <figure class="photo photo17">
-          <a href="../images/budapest.jpg" target="blank">
-            <img src="../images/budapest.jpg" alt="budapest">
+          <a href="../images/photo-gallery/budapest.jpg" target="blank">
+            <img src="../images/photo-gallery/budapest.jpg" alt="budapest">
           </a>
           <figcaption>17. Budapest</figcaption>
         </figure>
 
         <figure class="photo photo18">
-          <a href="../images/budapest-night.jpg" target="blank">
-            <img src="../images/budapest-night.jpg" alt="budapest">
+          <a href="../images/photo-gallery/budapest-night.jpg" target="blank">
+            <img src="../images/photo-gallery/budapest-night.jpg" alt="budapest">
           </a>
           <figcaption>18. Budapest at Night</figcaption>
         </figure>
 
-        <!--<figure class="photo photo19">
-          <a href="../images/tallinn-night.jpg" target="blank">
-            <img src="../images/tallinn-night.jpg" alt="keukenhof tulip fields">
+        <figure class="photo photo19">
+          <a href="../images/photo-gallery/amsterdam.jpg" target="blank">
+            <img src="../images/photo-gallery/amsterdam.jpg" alt="windmill in amsterdam">
           </a>
-          <figcaption>19. Keukenhof</figcaption>
-        </figure>-->
+          <figcaption>19. A slice of Dutch heritage in Amsterdam, The Netherlands</figcaption>
+        </figure>
 
-        <!--<figure class="photo photo20">
-          <a href="../images/tallinn-night.jpg" target="blank">
-            <img src="../images/tallinn-night.jpg" alt="keukenhof tulip fields">
+        <figure class="photo photo20">
+          <a href="../images/photo-gallery/czocha-castle.jpg" target="blank">
+            <img src="../images/photo-gallery/czocha-castle.jpg" alt="czocha castle-leśna, poland ">
           </a>
-          <figcaption>20. Keukenhof</figcaption>
-        </figure>-->
+          <figcaption>20. Just shy of the Polish-Czech border sits Czocha Castle in Leśna, Poland .</figcaption>
+        </figure>
 
+        <figure class="photo photo21">
+          <a href="../images/photo-gallery/little-mermaid.JPG" target="blank">
+            <img src="../images/photo-gallery/little-mermaid.JPG"
+              alt="the little mermaid sculpture in copenhagen, denmark">
+          </a>
+          <figcaption>21. Denmark's 1913 tribute to Hans Christian Andersen's The Little Mermaid.</figcaption>
+        </figure>
 
       </section>
 
     </main>
     <footer>
       <p><a href="../index.html" class="return-link">← Return to Homepage</a></p>
+      <p class="copyright">&copy; 2025 Beyond the Barracks. All rights reserved.</p>
     </footer>
 
   </div>

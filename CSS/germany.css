@@ -1,36 +1,23 @@
-.section-title-fade h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin: 2rem 0;
-  font-size: 4rem;
-  color: #121b01;
-  font-weight: bold;
-  text-align: center;
-  transform: none;
-}
-
 .header-flag {
-  height: auto;
-  flex-shrink: 0;
-  padding: 2em;
+  max-height: 48px;
+  padding: 0 1rem;
+  align-self: center;
 }
 
 .visited-heading {
   line-height: 1;
   margin: 0;
   font-family: 'Great Vibes', cursive;
-  color: #121b01;
-  font-size: 2rem;
+  color: #1a1a1a;
+  font-size: 2.8rem;
   text-align: center;
 }
 
 .visited {
   text-align: center;
-  color: #121b01;
-  margin-top: 0.25rem;
-  margin-bottom: 4rem;
+  color: #1a1a1a;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   font-family: 'Great Vibes', cursive;
 }
 
@@ -42,14 +29,14 @@
   gap: 4rem;
   list-style: none;
   padding: 0;
-  margin: 0 auto;
+  margin: 2rem auto;
   flex-wrap: wrap;
 }
 
 /* Style for places visited */
 .visited-grid li {
-  font-size: 1.4rem;
-  color: #121b01;
+  font-size: 2rem;
+  color: #1a1a1a;
   font-weight: bold;
   font-family: 'Great Vibes', cursive;
 }
@@ -74,9 +61,11 @@
 .cork-board {
   position: relative;
   margin: 5rem auto;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
   max-width: 1200px;
   min-height: 1200px;
-  background: url('../images/cork-board.jpg') center/cover no-repeat;
+  background: url('../images/graphics/cork-board.jpg') center/cover no-repeat;
   padding: 2rem;
   border-radius: 8px;
 }
@@ -276,7 +265,79 @@
   transform: translateX(-50%);
   width: 50px;
   height: 50px;
-  background: url('../images/pushpin1.png') no-repeat center;
+  background: url('../images/graphics/pushpin1.png') no-repeat center;
   background-size: contain;
   z-index: 2;
+}
+
+/* === Country Page Responsiveness === */
+
+/* Medium screens */
+@media (max-width: 900px) {
+  .visited-grid {
+    gap: 2rem;
+  }
+
+  .photo {
+    width: 240px;
+  }
+
+  .pin-drop-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  .cork-board {
+    padding: 1rem;
+    min-height: auto;
+  }
+
+  .photo {
+    width: 90%;
+    position: static;
+    margin: 1rem auto;
+    transform: none;
+  }
+
+  .photo img,
+  .photo video {
+    height: auto !important;
+    max-height: 300px;
+  }
+
+  .photo::before {
+    display: none;
+  }
+
+  .visited-heading {
+    font-size: 2rem;
+  }
+
+  .visited {
+    font-size: 1.4rem;
+    margin: 1rem auto;
+  }
+
+  .pin-drop-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 400px) {
+  .photo figcaption {
+    font-size: 0.8rem;
+  }
+
+  .visited-heading {
+    font-size: 1.6rem;
+  }
+
+  .visited-grid li {
+    font-size: 1.3rem;
+  }
 }
