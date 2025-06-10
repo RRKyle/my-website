@@ -4,6 +4,17 @@
   align-self: center;
 }
 
+.ribbon-container {
+background: linear-gradient(to left,
+  #800020, transparent 60%),
+linear-gradient(to right,
+  #800020, transparent 60%);
+}
+
+/*.ribbon-container {
+  background-color: #800020;
+}*/
+
 .visited-heading {
   line-height: 1;
   margin: 0;

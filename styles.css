@@ -46,18 +46,18 @@ body {
     max-width: none;
     /*margin: 0 auto;*/
     padding: 0.5rem 2rem;
-    background: linear-gradient(to left,
+    /*background: linear-gradient(to left,
             #6B8E23, transparent 50%),
         linear-gradient(to right,
-            #6B8E23, transparent 50%);
-    /*background: linear-gradient(to bottom right,
+            #6B8E23, transparent 50%);*/
+    background: linear-gradient(to left,
+            #aa7c47, transparent 60%),
+        linear-gradient(to right,
+            #aa7c47, transparent 60%);
+       /*background: linear-gradient(to bottom right,
             rgba(43, 58, 12, 0.8),
-            rgba(208, 237, 150, 0.8));
-    box-shadow:
-        inset 0 3px 3px rgba(255, 255, 255, 0.7),
-        /* Brighter top glow */
-    /*0 4px 8px rgba(0, 0, 0, 0.4);*/
-    /* Outer shadow */
+            rgba(208, 237, 150, 0.8));*/
+    
     border: 1px solid rgba(25, 36, 1, 0.8);
     text-shadow: 0.3px 0.3px 0.6px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -107,14 +107,14 @@ body {
     font-size: 3.5rem;
 }
 
-.heading-group {
+/*.heading-group {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
     width: 100%;
     flex-wrap: nowrap;
-}
+}*/
 
 /*.line-fade {
     flex-grow: 1;
@@ -202,7 +202,7 @@ body {
             rgba(43, 58, 12, 0.8),
             rgba(208, 237, 150, 0.8));
     border-radius: 25px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 4px solid rgba(170, 124, 71, 0.4);
     box-shadow:
         inset 0 3px 3px rgba(255, 255, 255, 0.7),
         /* Brighter top glow */
@@ -322,16 +322,14 @@ nav {
     background-blend-mode: lighten;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 1rem;
     padding: 1rem 2rem;
     margin: 2rem auto;
     width: 100%;
     max-width: 1200px;
-    border: 2px solid rgba(26, 38, 3, 0.2);
     box-shadow: 0 6px 18px rgba(26, 38, 3, 0.15);
     transition: background 0.3s ease, box-shadow 0.3s ease;
-    border: 5px solid #c9a472;
-    border-radius: 15px;
+    border: 5px solid rgba(170, 124, 71, 0.4);
+    border-radius: 25px;
 }
 
 section p {
@@ -352,10 +350,10 @@ section p {
         /* Brighter top glow */
         0 4px 8px rgba(0, 0, 0, 0.4);
     /* Outer shadow */
-    border: 1px solid rgba(25, 36, 1, 0.8);
+    border: 4px solid rgba(170, 124, 71, 0.4);
     text-shadow: 0.3px 0.3px 0.6px rgba(0, 0, 0, 0.1);
-    padding: 0.3em 0.5em;
-    border-radius: 0.3em;
+    padding: 0.2em 0.5em;
+    border-radius: 25px;
     font-size: 2.5rem;
     font-weight: bolder;
     font-family: 'Great Vibes', cursive;
@@ -389,7 +387,6 @@ section p {
     background-image: url(images/graphics/paperboard-texture.jpg);
     backdrop-filter: blur(4px);
     background-blend-mode: lighten;
-    border: 2px solid rgba(26, 38, 3, 0.2);
     box-shadow: 0 6px 18px rgba(26, 38, 3, 0.15);
     transition: background 0.3s ease, box-shadow 0.3s ease;
     list-style: none;
@@ -401,8 +398,8 @@ section p {
     width: 100%;
     padding: 2rem 2rem;
     margin: 5rem auto;
-    border: 5px solid #c9a472;
-    border-radius: 15px;
+    border: 5px solid rgba(170, 124, 71, 0.4);
+    border-radius: 25px;
 }
 
 #country-list a {
@@ -418,8 +415,8 @@ section p {
         /* Brighter top glow */
         0 4px 8px rgba(0, 0, 0, 0.4);
     /* Outer shadow */
-    border: 2px solid #c9a472;
-    border-radius: 15px;
+    border: 4px solid rgba(170, 124, 71, 0.4);
+    border-radius: 25px;
     font-size: 1.3rem;
     font-weight: 700;
     color: inherit;
@@ -435,7 +432,7 @@ section p {
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s ease;
-    border: 5px solid #c9a472;
+    border: 5px solid rgba(170, 124, 71, 0.4);
 }
 
 .country-block:hover {

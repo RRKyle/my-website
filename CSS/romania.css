@@ -4,6 +4,13 @@
   align-self: center;
 }
 
+.ribbon-container {
+background: linear-gradient(to left,
+  #FCD116, transparent 60%),
+linear-gradient(to right,
+  #FCD116, transparent 60%);
+}
+
 .visited-heading {
   line-height: 1;
   margin: 0;
