@@ -1,3 +1,38 @@
+#austria .country-header::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 140px;
+  background-image: url("../images/graphics/austria-brushstroke.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+#austria .country-name {
+  position: relative;
+  z-index: 2;
+  color: #1a1a1a;
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  font-weight: 900;
+  text-shadow:
+    -1px -1px 0 rgba(10, 169, 92, 0.85),
+    1px -1px 0 rgba(10, 169, 92, 0.85),
+    -1px 1px 0 rgba(10, 169, 92, 0.85),
+    1px 1px 0 rgba(10, 169, 92, 0.85);
+}
+
+#austria .country-header img {
+  position: relative;
+  z-index: 2;
+}
+
 .header-flag {
   max-height: 48px;
   padding: 0 1rem;

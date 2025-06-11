@@ -472,17 +472,59 @@ section p {
     transform: scale(1.02);
 }
 
-/* Controls the Layout of Country-Title */
-.country-header {
-    display: inline-flex;
-    justify-content: center;
+    /*display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     font-size: 3.2rem;
     font-weight: bold;
     font-variant: small-caps;
-    font-family: 'cinzel', serif;
+    font-family: 'cinzel', serif;*/
+
+/* === Country Title Styling with Brushstroke Background === */
+.country-header {
+    /* ADDED 6-11 TO EXPERIMENT WITH BRUSHSTROKE */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
 }
+
+/* ADDED 6-11 TO EXPERIMENT WITH BRUSHSTROKE */
+/*.country-name {
+    position: relative;
+    font-family: 'cinzel', serif;
+    font-variant: small-caps;
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    z-index: 2;
+}*/
+
+/* ADDED 6-11 TO EXPERIMENT WITH BRUSHSTROKE */
+/*.country-name::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("images/graphics/germany-brushstroke.png");
+    /* Path to your brush image 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 60px;
+    z-index: 1;
+    opacity: 0.9;
+}*/
 
 /* === Taglines === */
 .text-page p.tag-line {
