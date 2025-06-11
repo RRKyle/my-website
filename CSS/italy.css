@@ -24,24 +24,24 @@ linear-gradient(to right,
   text-align: center;
   color: #1a1a1a;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   font-family: 'Great Vibes', cursive;
 }
 
-.italy-map-container {
+/*.italy-map-container {
   position: relative;
   width: 100%;
   max-width: 400px;
   margin: 2rem auto;
-}
+}*/
 
-.italy-map {
+/*.italy-map {
   width: 100%;
   height: auto;
   display: block;
-}
+}*/
 
-.pin {
+/*.pin {
   position: absolute;
   transform: translate(-50%, -100%);
   font-family: 'Great Vibes', cursive;
@@ -51,16 +51,16 @@ linear-gradient(to right,
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+}*/
 
-.pin::before {
+/*.pin::before {
   content: "📍";
   font-size: 1.2rem;
   margin-bottom: 0.1rem;
-}
+}*/
 
 
-/*.visited-grid {
+.visited-grid {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -70,7 +70,7 @@ linear-gradient(to right,
   padding: 0;
   margin: 2rem auto;
   flex-wrap: wrap;
-}*/
+}
 
 /*.visited-grid {
   display: grid;
@@ -94,13 +94,13 @@ linear-gradient(to right,
   justify-items: center;
 }*/
 
-/* Style for places visited 
+/* Style for places visited */
 .visited-grid li {
   font-size: 2rem;
   color: #1a1a1a;
   font-weight: bold;
   font-family: 'Great Vibes', cursive;
-}*/
+}
 
 /*.visited-grid li {
   font-family: 'Great Vibes', cursive;
@@ -118,13 +118,13 @@ linear-gradient(to right,
   align-items: center;
 }*/
 
-/* style for pin-drop 
+/* style for pin-drop */
 .pin-drop-icon {
   width: 50px;
   height: 50px;
   margin-right: -0.1rem;
   vertical-align: middle;
-}*/
+}
 
 /*.pin-drop-icon {
   width: 24px;

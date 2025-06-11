@@ -22,11 +22,11 @@ body {
 .overlay {
     max-width: 100%;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.4);
     padding: 2rem;
     margin: 8rem 8rem;
     border-radius: 1rem;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.6);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(4px);
 }
@@ -46,18 +46,14 @@ body {
     max-width: none;
     /*margin: 0 auto;*/
     padding: 0.5rem 2rem;
-    /*background: linear-gradient(to left,
-            #6B8E23, transparent 50%),
-        linear-gradient(to right,
-            #6B8E23, transparent 50%);*/
     background: linear-gradient(to left,
             #aa7c47, transparent 60%),
         linear-gradient(to right,
             #aa7c47, transparent 60%);
-       /*background: linear-gradient(to bottom right,
+    /*background: linear-gradient(to bottom right,
             rgba(43, 58, 12, 0.8),
             rgba(208, 237, 150, 0.8));*/
-    
+
     border: 1px solid rgba(25, 36, 1, 0.8);
     text-shadow: 0.3px 0.3px 0.6px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -82,7 +78,7 @@ body {
             0% 100%
             /* bottom-left */
         );
-    margin-bottom: 3rem;
+    /*margin-bottom: 3rem;*/
     animation: wave 3s ease-in-out infinite;
     transform-origin: center;
     will-change: transform;
@@ -166,6 +162,7 @@ body {
 #nav-menu {
     text-align: center;
     padding: 0 1rem;
+    margin-top: 5rem;
     margin-bottom: 4rem;
 }
 
@@ -176,12 +173,15 @@ body {
     margin: 0;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 6rem;
+    gap: 2rem;
 }
 
 #nav-menu ul li {
-    flex: 1 1 auto;
-    max-width: 110px;
+    /*flex: 1 1 auto;
+    max-width: 110px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* === Pill Buttons === */
@@ -193,7 +193,7 @@ body {
     width: 160px;
     height: 48px;
     padding: 0;
-    margin: 0.25rem auto;
+    /*margin: 0.5rem 0;*/
     font-size: 1rem;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
@@ -277,7 +277,12 @@ body {
 /* === Dropdown === */
 .dropdown {
     position: relative;
+    margin-top: 0rem;
 }
+
+/*#nav-menu .dropdown {
+  margin-top: 0rem;
+}*/
 
 .dropdown-pill i {
     margin-left: 0.3em;
@@ -295,17 +300,45 @@ body {
 
 .dropdown-content {
     display: none;
+    flex-direction: column;
+    gap: 0.1rem;
     position: absolute;
     top: 100%;
     left: 0;
     z-index: 10;
-    margin-top: -0.05em;
-    flex-direction: column;
+    /*margin-top: 0.02rem;*/
     border-radius: 12px;
+    /*top: calc(100% + 0.1rem);*/
+
+    /*.dropdown-content {
+        padding: 0.5rem 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }*/
+}
+
+.dropdown-content .nav-pill {
+    margin: 0;
+    /* prevent double spacing */
 }
 
 .dropdown:hover .dropdown-content {
     display: flex;
+}
+
+.dropdown::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    /* creates invisible bridge */
+
+    /*height: 8px;
+     slightly larger buffer 
+    z-index: 5;
+    pointer-events: auto;*/
 }
 
 /* === Sticky Nav === */
