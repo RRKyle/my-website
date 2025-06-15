@@ -1,5 +1,4 @@
 /* === Base === */
-
 *,
 *::before,
 *::after {
@@ -12,7 +11,6 @@ body {
     background-size: 100% auto;
     background-repeat: repeat-y;
     background-position: top center;
-    background-position-y: 50px;
     background-attachment: scroll;
     margin: 0;
     padding: 0;
@@ -33,7 +31,6 @@ body {
 
 .hero {
     padding-top: 2rem;
-    /* Creates clean space above nav & below h1 */
     text-align: center;
 }
 
@@ -44,17 +41,11 @@ body {
     justify-content: center;
     gap: 1rem;
     max-width: none;
-    /*margin: 0 auto;*/
     padding: 0.5rem 2rem;
     background: linear-gradient(to left,
-            #aa7c47, transparent 60%),
+            #65910d, transparent 60%),
         linear-gradient(to right,
-            #aa7c47, transparent 60%);
-    /*background: linear-gradient(to bottom right,
-            rgba(43, 58, 12, 0.8),
-            rgba(208, 237, 150, 0.8));*/
-
-    border: 1px solid rgba(25, 36, 1, 0.8);
+            #65910d, transparent 60%);
     text-shadow: 0.3px 0.3px 0.6px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.4);
     box-shadow:
@@ -78,7 +69,6 @@ body {
             0% 100%
             /* bottom-left */
         );
-    /*margin-bottom: 3rem;*/
     animation: wave 3s ease-in-out infinite;
     transform-origin: center;
     will-change: transform;
@@ -96,26 +86,26 @@ body {
 }
 
 .ribbon-container h1 {
-    font-size: 3.5rem;
+    font-size: 3.4rem;
 }
 
 .ribbon-container h2 {
-    font-size: 3.5rem;
+    font-size: 4rem;
 }
 
-/*.heading-group {
+.heading-group {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
     width: 100%;
     flex-wrap: nowrap;
-}*/
+}
 
-/*.line-fade {
+.line-fade {
     flex-grow: 1;
     flex-shrink: 1;
-    height: 6px;
+    height: 8px;
     background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 0%, transparent 70%);
     opacity: 0.8;
     filter: blur(0.5px);
@@ -123,9 +113,9 @@ body {
     margin-inline: 0.75rem;
     min-width: 60px;
     max-width: 240px;
-}*/
+}
 
-.line-fade {
+/*.line-fade {
     flex-grow: 1;
     width: 100%;
     max-width: 420px;
@@ -134,7 +124,7 @@ body {
     opacity: 0.7;
     border-radius: 1rem;
     transform: translateY(0.1rem);
-}
+}*/
 
 @keyframes wave {
     0% {
@@ -177,8 +167,6 @@ body {
 }
 
 #nav-menu ul li {
-    /*flex: 1 1 auto;
-    max-width: 110px;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -193,7 +181,6 @@ body {
     width: 160px;
     height: 48px;
     padding: 0;
-    /*margin: 0.5rem 0;*/
     font-size: 1rem;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
@@ -205,9 +192,7 @@ body {
     border: 4px solid rgba(170, 124, 71, 0.4);
     box-shadow:
         inset 0 3px 3px rgba(255, 255, 255, 0.7),
-        /* Brighter top glow */
         0 4px 8px rgba(0, 0, 0, 0.4);
-    /* Outer shadow */
     text-decoration: none;
     white-space: nowrap;
     cursor: pointer;
@@ -225,11 +210,10 @@ body {
     left: 0;
     width: 100%;
     height: 65%;
-    /* More shine area */
     background: linear-gradient(to bottom,
             rgba(255, 255, 255, 0.95) 0%,
             rgba(255, 255, 255, 0.7) 40%,
-            /* Tweak opacity */
+
             rgba(255, 255, 255, 0.2) 80%,
             rgba(255, 255, 255, 0) 100%);
     border-top-left-radius: inherit;
@@ -249,14 +233,11 @@ body {
             rgba(255, 255, 255, 0) 0%,
             rgba(255, 255, 255, 0.4) 50%,
             rgba(255, 255, 255, 0) 100%);
-    /* Brighter white */
     transform: skewX(-20deg);
-    animation: shimmer 2.5s infinite;
+    animation: shimmer 3s infinite;
     border-radius: 4px;
     opacity: 0.6;
-    /* More visible */
     filter: blur(0.5px);
-    /* Slight glow */
     z-index: 3;
     pointer-events: none;
 }
@@ -306,20 +287,12 @@ body {
     top: 100%;
     left: 0;
     z-index: 10;
-    /*margin-top: 0.02rem;*/
     border-radius: 12px;
-    /*top: calc(100% + 0.1rem);*/
-
-    /*.dropdown-content {
-        padding: 0.5rem 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }*/
 }
 
+/* prevent double spacing */
 .dropdown-content .nav-pill {
     margin: 0;
-    /* prevent double spacing */
 }
 
 .dropdown:hover .dropdown-content {
@@ -333,12 +306,6 @@ body {
     left: 0;
     width: 100%;
     height: 0.5rem;
-    /* creates invisible bridge */
-
-    /*height: 8px;
-     slightly larger buffer 
-    z-index: 5;
-    pointer-events: auto;*/
 }
 
 /* === Sticky Nav === */
@@ -350,7 +317,6 @@ nav {
 
 .narrative {
     background-image: url(images/graphics/paperboard-texture.jpg);
-    /*background: linear-gradient(to bottom right, rgba(210, 240, 250, 0.6), rgba(255, 255, 255, 0.5));*/
     backdrop-filter: blur(4px);
     background-blend-mode: lighten;
     background-size: cover;
@@ -380,9 +346,7 @@ section p {
             rgba(208, 237, 150, 0.8));
     box-shadow:
         inset 0 3px 3px rgba(255, 255, 255, 0.7),
-        /* Brighter top glow */
         0 4px 8px rgba(0, 0, 0, 0.4);
-    /* Outer shadow */
     border: 4px solid rgba(170, 124, 71, 0.4);
     text-shadow: 0.3px 0.3px 0.6px rgba(0, 0, 0, 0.1);
     padding: 0.2em 0.5em;
@@ -393,20 +357,48 @@ section p {
 }
 
 .text-page {
-    background-image: url(images/graphics/paperboard-texture.jpg);
-    /*background: linear-gradient(to bottom right, rgba(210, 240, 250, 0.6), rgba(255, 255, 255, 0.5));*/
-    backdrop-filter: blur(4px);
-    background-blend-mode: lighten;
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+    background: url(images/graphics/paperboard-texture.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     border-radius: 15px;
-    padding: 1rem 2rem;
+    padding: 2rem;
     margin: 5rem auto;
     width: 100%;
     max-width: 1200px;
-    border: 2px solid rgba(26, 38, 3, 0.2);
-    box-shadow: 0 6px 18px rgba(26, 38, 3, 0.15);
-    transition: background 0.3s ease, box-shadow 0.3s ease;
+
+    /* Glass effect */
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px) saturate(1.4);
+    background-blend-mode: overlay;
+
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.4),
+        0 0 20px rgba(255, 255, 255, 0.15),
+        0 8px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.text-page::before {
+    content: "";
+    position: absolute;
+    left: -75%;
+    width: 10%;
+    height: 80%;
+    top: 10%;
+    background: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-20deg);
+    animation: shimmer 4s infinite;
+    z-index: 2;
+    pointer-events: none;
+    border-radius: 15px;
+    filter: blur(1px);
 }
 
 .text-page p {
@@ -417,6 +409,7 @@ section p {
 
 /* === Country Selector Links === */
 #country-list {
+    position: relative;
     background-image: url(images/graphics/paperboard-texture.jpg);
     backdrop-filter: blur(4px);
     background-blend-mode: lighten;
@@ -436,7 +429,10 @@ section p {
 }
 
 #country-list a {
+    position: relative;
     display: inline-block;
+    overflow: hidden;
+    z-index: 0;
     width: 160px;
     padding: 0.6rem 0;
     text-align: center;
@@ -445,15 +441,33 @@ section p {
             rgba(208, 237, 150, 0.8));
     box-shadow:
         inset 0 3px 3px rgba(255, 255, 255, 0.7),
-        /* Brighter top glow */
         0 4px 8px rgba(0, 0, 0, 0.4);
-    /* Outer shadow */
     border: 4px solid rgba(170, 124, 71, 0.4);
     border-radius: 25px;
     font-size: 1.3rem;
     font-weight: 700;
     color: inherit;
     transition: all 0.3s ease;
+}
+
+#country-list a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-20deg);
+    animation: shimmer 3s infinite;
+    border-radius: 4px;
+    opacity: 0.6;
+    filter: blur(0.5px);
+    z-index: 1;
+    pointer-events: none;
 }
 
 
@@ -472,18 +486,8 @@ section p {
     transform: scale(1.02);
 }
 
-    /*display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    font-size: 3.2rem;
-    font-weight: bold;
-    font-variant: small-caps;
-    font-family: 'cinzel', serif;*/
-
 /* === Country Title Styling with Brushstroke Background === */
 .country-header {
-    /* ADDED 6-11 TO EXPERIMENT WITH BRUSHSTROKE */
     position: relative;
     display: flex;
     justify-content: center;
@@ -496,35 +500,6 @@ section p {
     text-align: center;
     z-index: 1;
 }
-
-/* ADDED 6-11 TO EXPERIMENT WITH BRUSHSTROKE */
-/*.country-name {
-    position: relative;
-    font-family: 'cinzel', serif;
-    font-variant: small-caps;
-    font-size: 3.5rem;
-    font-weight: 900;
-    letter-spacing: 0.08em;
-    z-index: 2;
-}*/
-
-/* ADDED 6-11 TO EXPERIMENT WITH BRUSHSTROKE */
-/*.country-name::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url("images/graphics/germany-brushstroke.png");
-    /* Path to your brush image 
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 200px;
-    height: 60px;
-    z-index: 1;
-    opacity: 0.9;
-}*/
 
 /* === Taglines === */
 .text-page p.tag-line {
@@ -540,11 +515,8 @@ section p {
     display: block;
     width: 100%;
     max-width: 800px;
-    border: 1rem double
-        /* #0000ff */
-        #02464d;
+    border: 1rem double #02464d;
     background-color:
-        /* #1e90ff */
         #048593;
     padding: 1rem;
     margin: 0.75rem 0 auto;
@@ -570,7 +542,6 @@ section p {
     font-size: 1.5rem;
     color: #ffffff;
     background-color:
-        /* rgba(0, 0, 139, 0.5) */
         #02464d;
     padding: 0.3rem 0.5rem;
     border-radius: 0 0 1rem 0;
@@ -628,7 +599,6 @@ footer .copyright {
     font-size: 0.85rem;
     color: #555;
     margin-top: 0.5rem;
-    font-family: 'Open Sans', sans-serif;
 }
 
 /* === Article Column Styling === */
@@ -638,17 +608,29 @@ article {
     column-rule: 2px solid #000000;
 }
 
-/* === Responsive Layout === */
-/* Medium Screens */
-@media (max-width: 900px) {
+/* Shimmer animation keyframes */
+@keyframes shimmer {
+    0% {
+        left: -75%;
+    }
 
+    60%,
+    100% {
+        left: 130%;
+    }
+}
+
+/* === Responsive Layout === */
+/* === Medium Screens (≤900px) === */
+@media (max-width: 900px) {
     #nav-menu ul {
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
     }
 
-    .section-title-fade h1 {
+    .section-title-fade h1,
+    .section-title-fade h4 {
         font-size: 2.4rem;
     }
 
@@ -662,8 +644,11 @@ article {
     }
 }
 
+/* === Narrow Screens (≤700px) === */
 @media (max-width: 700px) {
-    .section-title-fade h1 {
+
+    .section-title-fade h1,
+    .section-title-fade h4 {
         font-size: 2.2rem;
     }
 
@@ -689,14 +674,14 @@ article {
     }
 }
 
-/* Small Screens */
+/* === Small Screens (≤600px) === */
 @media (max-width: 600px) {
-
     .ribbon-container h2 {
         font-size: 2.2rem;
     }
 
-    .section-title-fade h1 {
+    .section-title-fade h1,
+    .section-title-fade h4 {
         font-size: 2rem;
     }
 
@@ -706,7 +691,6 @@ article {
 
     #nav-menu ul,
     .dropdown {
-        display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -721,16 +705,13 @@ article {
         padding: 0.6rem 1.2rem;
         font-size: 1rem;
         font-weight: 700;
-        font-family: 'Roboto', sans-serif;
         border-radius: 2rem;
-        box-sizing: border-box;
         text-align: center;
     }
 
     #nav-menu ul li a,
     .dropdown-pill {
         height: 48px;
-        line-height: 1;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -758,7 +739,6 @@ article {
         gap: 0.5rem;
     }
 
-    /* Reduce padding/margins for blocks */
     .text-page,
     .overlay,
     .country-block,
@@ -795,10 +775,11 @@ article {
     }
 }
 
-/* Extra Small Screens: Very narrow phones (~350px and below) */
+/* === Extra Small Screens (≤400px) === */
 @media (max-width: 400px) {
 
-    .section-title-fade h1 {
+    .section-title-fade h1,
+    .section-title-fade h4 {
         font-size: 1.6rem;
         padding: 0 1rem;
     }
@@ -820,17 +801,5 @@ article {
 
     .photo-frame figcaption {
         font-size: 0.8rem;
-    }
-}
-
-/* Shimmer animation keyframes */
-@keyframes shimmer {
-    0% {
-        left: -75%;
-    }
-
-    60%,
-    100% {
-        left: 130%;
     }
 }

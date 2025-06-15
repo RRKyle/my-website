@@ -6,6 +6,13 @@
   align-self: center;
 }
 
+.ribbon-container {
+  background: linear-gradient(to left,
+      #1c4885, transparent 60%),
+    linear-gradient(to right,
+      #1c4885, transparent 60%);
+}
+
 .cork-board {
   position: relative;
   margin: 5rem auto;
@@ -32,28 +39,28 @@
 }
 
 .photo1 {
-  top: 0%;
-  right: -7%;
+  top: -5%;
+  right: -12%;
   transform: rotate(3deg);
   /*width: 400px;*/
-  width: 18vw;
+  width: 15vw;
 }
 
 .photo2 {
-  top: -2%;
-  left: -5%;
+  top: -5%;
+  left: -10%;
   transform: rotate(2deg);
   /*width: 320px;*/
-  width: 18vw;
+  width: 16vw;
 }
 
 .photo3 {
   bottom: -9%;
-  right: 14%;
+  right: 15%;
   transform:
     /*translateX(-50%)*/
     rotate(-2deg);
-  width: 370px;
+  width: 420px;
   /*width: 18vw;*/
 }
 
@@ -62,28 +69,28 @@
   left: -18%;
   transform: rotate(4deg);
   /*width: 300px;*/
-  width: 22vw;
+  width: 16vw;
 }
 
 .photo5 {
-  top: -3%;
+  top: -5%;
   left: 36%;
   transform: translateX(-50%) rotate(-1deg);
   /*width: 400px;*/
-  width: 18vw;
+  width: 16vw;
 }
 
 .photo6 {
-  bottom: -7%;
+  bottom: -12%;
   right: -5%;
   transform: rotate(-3deg);
   /*width: 340px;*/
-  width: 13vw;
+  width: 10vw;
 }
 
 .photo7 {
-  top: 46%;
-  right: -7%;
+  top: 48%;
+  right: -10%;
   transform:
     /*translateX(-50%)*/
     rotate(2deg);
@@ -93,14 +100,14 @@
 
 .photo8 {
   top: 22%;
-  right: -8%;
+  right: -14%;
   transform: rotate(-1deg);
   /*width: 380px;*/
-  width: 17vw;
+  width: 15vw;
 }
 
 .photo9 {
-  bottom: 45%;
+  bottom: 42%;
   left: 52%;
   transform: rotate(0deg);
   /*width: 380px;*/
@@ -112,45 +119,45 @@
   left: 7%;
   transform: rotate(1deg);
   /*width: 980px;*/
-  width: 30vw;
+  width: 26vw;
 }
 
 .photo11 {
   top: 16%;
-  left: 0%;
+  left: -5%;
   transform: translateX(-50%) rotate(0deg);
   /*width: 400px;*/
-  width: 16vw;
+  width: 12vw;
 }
 
 .photo12 {
   top: 16%;
-  left: 12%;
+  left: 6%;
   transform: rotate (10deg);
   /*width: 980px;*/
-  width: 22vw;
+  width: 15vw;
 }
 
 .photo13 {
-  top: -5%;
-  right: 10%;
+  top: -8%;
+  right: 6%;
   transform: translateX(-50%) rotate(-4deg);
   /*width: 400px;*/
-  width: 14vw;
+  width: 12vw;
 }
 
 .photo14 {
-  top: 15%;
-  right: 22%;
+  top: 13%;
+  right: 14%;
   transform:
     /*translateX(-50%)*/
     rotate(3deg);
   /*width: 400px;*/
-  width: 15vw;
+  width: 12vw;
 }
 
 .photo15 {
-  bottom: 14%;
+  bottom: 12%;
   left: 11%;
   transform: rotate(-3deg);
   width: 220px;
@@ -159,22 +166,22 @@
 
 .photo16 {
   bottom: 13%;
-  left: -15%;
+  left: -18%;
   transform: rotate(-2deg);
+  /*width: 380px;*/
+  width: 16vw;
+}
+
+.photo17 {
+  bottom: 26%;
+  left: 46%;
+  transform: rotate(-1deg);
   /*width: 380px;*/
   width: 18vw;
 }
 
-.photo17 {
-  bottom: 28%;
-  left: 46%;
-  transform: rotate(-1deg);
-  /*width: 380px;*/
-  width: 20vw;
-}
-
 .photo18 {
-  bottom: 12%;
+  bottom: 10%;
   right: 15%;
   transform: rotate(1deg);
   /*width: 380px;*/
@@ -182,28 +189,36 @@
 }
 
 .photo19 {
-  bottom: 15%;
+  bottom: 12%;
   left: 30%;
   transform:
     /*translateX(-50%)*/
     rotate(2deg);
   /*width: 370px;*/
-  width: 11vw;
+  width: 9vw;
 }
 
 .photo20 {
-  bottom: -8%;
-  left: 18%;
+  bottom: -10%;
+  left: 15%;
   transform:
     /*translateX(-50%)*/
     rotate(-4deg);
   /*width: 370px;*/
-  width: 18vw;
+  width: 14vw;
 }
 
 .photo21 {
-  bottom: 32%;
+  bottom: 30%;
   left: -8%;
+  transform: rotate(3deg);
+  /*width: 400px;*/
+  width: 10vw;
+}
+
+.photo22 {
+  top: 16%;
+  left: 35%;
   transform: rotate(3deg);
   /*width: 400px;*/
   width: 12vw;
@@ -360,6 +375,13 @@
 }
 
 .photo21 img {
+  height: auto;
+  /*height: 320px;*/
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo22 img {
   height: auto;
   /*height: 320px;*/
   width: 100%;

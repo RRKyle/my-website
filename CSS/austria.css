@@ -5,7 +5,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 1000px;
-  height: 140px;
+  height: 200px;
   background-image: url("../images/graphics/austria-brushstroke.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -22,10 +22,10 @@
   font-size: 3rem;
   font-weight: 900;
   text-shadow:
-    -1px -1px 0 rgba(10, 169, 92, 0.85),
-    1px -1px 0 rgba(10, 169, 92, 0.85),
-    -1px 1px 0 rgba(10, 169, 92, 0.85),
-    1px 1px 0 rgba(10, 169, 92, 0.85);
+    -1px -1px 0 rgba(139, 9, 9, 0.85),
+    1px -1px 0 rgba(139, 9, 9, 0.85),
+    -1px 1px 0 rgba(139, 9, 9, 0.85),
+    1px 1px 0 rgba(139, 9, 9, 0.85);
 }
 
 #austria .country-header img {
@@ -40,10 +40,10 @@
 }
 
 .ribbon-container {
-background: linear-gradient(to left,
-  #800020, transparent 60%),
-linear-gradient(to right,
-  #800020, transparent 60%);
+  background: linear-gradient(to left,
+      #800020, transparent 60%),
+    linear-gradient(to right,
+      #800020, transparent 60%);
 }
 
 /*.ribbon-container {
@@ -52,18 +52,17 @@ linear-gradient(to right,
 
 .visited-heading {
   line-height: 1;
-  margin: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   font-family: 'Great Vibes', cursive;
-  color: #1a1a1a;
+  color: rgb(53, 72, 21);
   font-size: 2.8rem;
   text-align: center;
 }
 
 .visited {
   text-align: center;
-  color: #1a1a1a;
-  margin-top: 2rem;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
   font-family: 'Great Vibes', cursive;
 }
 
@@ -72,17 +71,16 @@ linear-gradient(to right,
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 8rem;
   list-style: none;
   padding: 0;
-  margin: 2rem auto;
   flex-wrap: wrap;
 }
 
 /* Style for places visited */
 .visited-grid li {
   font-size: 2rem;
-  color: #1a1a1a;
+  color: rgb(53, 72, 21);
   font-weight: bold;
   font-family: 'Great Vibes', cursive;
 }
@@ -142,10 +140,10 @@ linear-gradient(to right,
 }
 
 .photo3 {
-  bottom: -10%;
-  left: -18%;
-  transform: rotate(-5deg);
-  width: 500px;
+  top: -12%;
+  left: 28%;
+  transform: rotate(-2deg);
+  width: 520px;
 }
 
 .photo4 {
@@ -158,24 +156,24 @@ linear-gradient(to right,
 }
 
 .photo5 {
-  bottom: 30px;
+  bottom: -4%;
   left: 35%;
   transform: translateX(-50%) rotate(6deg);
   width: 290px;
 }
 
 .photo6 {
-  bottom: -10%;
+  bottom: -14%;
   left: 60%;
   transform: translateX(-50%) rotate(0deg);
   width: 340px;
 }
 
 .photo7 {
-  top: 20px;
-  left: 40%;
-  transform: translateX(-50%) rotate(6deg);
-  width: 320px;
+  bottom: -2%;
+  left: 8%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 340px;
 }
 
 /*.photo8 {
@@ -219,13 +217,13 @@ linear-gradient(to right,
 }
 
 .photo5 img {
-  height: 220px;
+  height: 320px;
   width: 100%;
   object-fit: cover;
 }
 
 .photo6 img {
-  height: 440px;
+  height: 400px;
   width: 100%;
   object-fit: cover;
 }
@@ -263,29 +261,42 @@ linear-gradient(to right,
 
 /* === Country Page Responsiveness === */
 
-/* Medium screens */
+/* === Medium Screens (≤900px) === */
 @media (max-width: 900px) {
+
+  /* Visited Grid */
   .visited-grid {
     gap: 2rem;
   }
 
+  /* Flag Icons */
+  .header-flag {
+    max-height: 36px;
+    padding: 0 0.5rem;
+  }
+
+  /* Photo Polaroids */
   .photo {
     width: 240px;
   }
 
+  /* Pin Icon */
   .pin-drop-icon {
     width: 40px;
     height: 40px;
   }
 }
 
-/* Small screens */
+/* === Small Screens (≤600px) === */
 @media (max-width: 600px) {
+
+  /* Cork Board Container */
   .cork-board {
     padding: 1rem;
     min-height: auto;
   }
 
+  /* Photo Layout */
   .photo {
     width: 90%;
     position: static;
@@ -303,32 +314,54 @@ linear-gradient(to right,
     display: none;
   }
 
+  /* Heading and Text */
   .visited-heading {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .visited {
-    font-size: 1.4rem;
-    margin: 1rem auto;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
+  .visited-grid li {
+    font-size: 1.6rem;
+  }
+
+  /* Pin Icon */
   .pin-drop-icon {
     width: 32px;
     height: 32px;
   }
+
+  /* Flag Icons */
+  .header-flag {
+    max-height: 28px;
+    padding: 0 0.25rem;
+  }
 }
 
-/* Very small screens */
+/* === Very Small Screens (≤400px) === */
 @media (max-width: 400px) {
+
+  /* Caption Text */
   .photo figcaption {
     font-size: 0.8rem;
   }
 
+  /* Heading and Grid Items */
   .visited-heading {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .visited-grid li {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+  }
+
+  /* Pin Icon */
+  .pin-drop-icon {
+    width: 28px;
+    height: 28px;
   }
 }

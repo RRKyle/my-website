@@ -5,7 +5,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 1000px;
-  height: 140px;
+  height: 200px;
   background-image: url("../images/graphics/italy-brushstroke.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -48,110 +48,38 @@
 
 .visited-heading {
   line-height: 1;
-  margin: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   font-family: 'Great Vibes', cursive;
-  color: #1a1a1a;
+  color: rgb(53, 72, 21);
   font-size: 2.8rem;
   text-align: center;
 }
 
 .visited {
   text-align: center;
-  color: #1a1a1a;
-  margin-top: 2rem;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
   font-family: 'Great Vibes', cursive;
 }
-
-/*.italy-map-container {
-  position: relative;
-  width: 100%;
-  max-width: 400px;
-  margin: 2rem auto;
-}*/
-
-/*.italy-map {
-  width: 100%;
-  height: auto;
-  display: block;
-}*/
-
-/*.pin {
-  position: absolute;
-  transform: translate(-50%, -100%);
-  font-family: 'Great Vibes', cursive;
-  font-size: 1rem;
-  color: #b20000;
-  text-shadow: 1px 1px 2px white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}*/
-
-/*.pin::before {
-  content: "📍";
-  font-size: 1.2rem;
-  margin-bottom: 0.1rem;
-}*/
-
 
 .visited-grid {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 8rem;
   list-style: none;
   padding: 0;
-  margin: 2rem auto;
   flex-wrap: wrap;
 }
-
-/*.visited-grid {
-  display: grid;
-  grid-template-columns: repeat(4. 1fr);
-  gap: 2rem;
-  list-style: none;
-  padding: 0;
-  margin: 2rem auto;
-  max-width: 1000px;
-  justify-items: center;
-}*/
-
-/*.visited-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 2rem;
-  list-style: none;
-  padding: 0;
-  margin: 2rem auto;
-  max-width: 1200px;
-  justify-items: center;
-}*/
 
 /* Style for places visited */
 .visited-grid li {
   font-size: 2rem;
-  color: #1a1a1a;
+  color: rgb(53, 72, 21);
   font-weight: bold;
   font-family: 'Great Vibes', cursive;
 }
-
-/*.visited-grid li {
-  font-family: 'Great Vibes', cursive;
-  font-size: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}*/
-
-/*.visited-grid li {
-  font-family: 'Great Vibes', cursive;
-  font-size: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}*/
 
 /* style for pin-drop */
 .pin-drop-icon {
@@ -361,29 +289,42 @@
 
 /* === Country Page Responsiveness === */
 
-/* Medium screens */
+/* === Medium Screens (≤900px) === */
 @media (max-width: 900px) {
+
+  /* Visited Grid */
   .visited-grid {
     gap: 2rem;
   }
 
+  /* Flag Icons */
+  .header-flag {
+    max-height: 36px;
+    padding: 0 0.5rem;
+  }
+
+  /* Photo Polaroids */
   .photo {
     width: 240px;
   }
 
+  /* Pin Icon */
   .pin-drop-icon {
     width: 40px;
     height: 40px;
   }
 }
 
-/* Small screens */
+/* === Small Screens (≤600px) === */
 @media (max-width: 600px) {
+
+  /* Cork Board Container */
   .cork-board {
     padding: 1rem;
     min-height: auto;
   }
 
+  /* Photo Layout */
   .photo {
     width: 90%;
     position: static;
@@ -401,32 +342,54 @@
     display: none;
   }
 
+  /* Heading and Text */
   .visited-heading {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .visited {
-    font-size: 1.4rem;
-    margin: 1rem auto;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
+  .visited-grid li {
+    font-size: 1.6rem;
+  }
+
+  /* Pin Icon */
   .pin-drop-icon {
     width: 32px;
     height: 32px;
   }
+
+  /* Flag Icons */
+  .header-flag {
+    max-height: 28px;
+    padding: 0 0.25rem;
+  }
 }
 
-/* Very small screens */
+/* === Very Small Screens (≤400px) === */
 @media (max-width: 400px) {
+
+  /* Caption Text */
   .photo figcaption {
     font-size: 0.8rem;
   }
 
+  /* Heading and Grid Items */
   .visited-heading {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .visited-grid li {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+  }
+
+  /* Pin Icon */
+  .pin-drop-icon {
+    width: 28px;
+    height: 28px;
   }
 }
